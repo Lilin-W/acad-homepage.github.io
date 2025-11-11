@@ -95,4 +95,4 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 ## <img src="/images/logo.png" alt="cat" width="30" style="vertical-align: middle;"> More Than Work
 
-When I'm coding or reading papers, I'm usually with **Xiaoman Xia** — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻
+When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/) — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻

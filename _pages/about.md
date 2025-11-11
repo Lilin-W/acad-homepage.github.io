@@ -39,25 +39,61 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 # 📝 Publications 
 
-- **A co-evolving agentic AI system for medical imaging analysis**  
-  S. Li, J. Xu, T. Bao, Y. Liu, Y. Liu, Y. Liu, **L. Wang**, W. Lei, S. Wang, Y. Xu, Y. Cui, J. Yao, S. Koga, Z. Huang  
-  *Under review*, 2025  
-  [[arXiv]](https://arxiv.org/abs/2509.20279)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><img src='images/publications/tissuelab-placeholder.png' alt="TissueLab" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**  
-  H. Na, Y. Hua, Z. Wang, T. Shen, B. Yu, **L. Wang**, W. Wang, J. Torous, L. Chen  
-  *Findings of ACL 2025* (Accepted), 2025  
-  [[arXiv]](https://arxiv.org/abs/2502.11095)
+**A co-evolving agentic AI system for medical image analysis**
 
-- **Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection**  
-  Jianfei He, **Lilin Wang**, et al.  
-  *IEEE UIC 2024*, 2024  
-  [[arXiv]](https://arxiv.org/abs/2410.15623)
+Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Lilin Wang**, Wenhui Lei, Sheng Wang, Yinuo Xu, Yan Cui, Jialu Yao, Shunsuke Koga, Zhi Huang
 
-- **Attention-based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**  
-  Hongbin Na\*, **Lilin Wang**\*, et al. (\*Equal contribution)  
-  *2023 IEEE 23rd International Conference on Bioinformatics and Bioengineering (BIBE)*, pp. 219-225, 2023  
-  [[DOI]](https://ieeexplore.ieee.org/document/10332027)
+*Under review*, 2025
+
+[[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [[Code ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**
+
+Hongbin Na\*, Yining Hua\*, Zimu Wang\*, Tao Shen, Beibei Yu, **Lilin Wang**, Wei Wang, John Torous, Ling Chen (\*Equal contribution)
+
+*Findings of ACL 2025* (Accepted), 2025
+
+[[Paper]](https://arxiv.org/abs/2502.11095)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE UIC 2024</div><img src='images/publications/offensive-language.jpg' alt="Offensive Language" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection**
+
+Jianfei He, **Lilin Wang**, Jiaying Wang, Zhenyu Liu, Hongbin Na, Zimu Wang, Wei Wang, Qi Chen
+
+*IEEE UIC 2024*, 2024
+
+[[Paper]](https://arxiv.org/abs/2410.15623)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE BIBE 2023</div><img src='images/publications/lung-cancer.jpg' alt="Lung Cancer" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Attention-Based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**
+
+Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang, Hong-Seng Gan (\*Equal contribution)
+
+*IEEE BIBE 2023*, pp. 219-225, 2023
+
+[[Paper]](https://ieeexplore.ieee.org/document/10431887) [[PDF]](/files/Attention-Based_Multimodal_Bilinear_Feature_Fusion_for_Lung_Cancer_Survival_Analysis.pdf)
+
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**

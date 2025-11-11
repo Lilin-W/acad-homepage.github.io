@@ -17,42 +17,76 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+# 👨‍💻 About Me
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems Engineering at the **University of Pennsylvania**.
+
+I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on [TissueLab](https://www.tissuelab.org/) ([GitHub](https://github.com/zhihuanglab/TissueLab)), a co-evolving agentic AI system for medical imaging analysis.
+
+I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University (XJTLU).
+
+My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and biomedical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
+
+I enjoy collaborating across disciplines and building AI systems that make real-world healthcare more accessible and reliable. Feel free to reach out if you'd like to connect! 😊
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.06*: &nbsp;🚀 Started working as a Research Assistant at the **Perelman School of Medicine, University of Pennsylvania**, contributing to TissueLab project!
+- *2025.02*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review at **Nature**!
+- *2025.01*: &nbsp;🎉 Our paper "A Survey of Large Language Models in Psychotherapy" has been accepted to **Findings of ACL 2025**!
+- *2024.10*: &nbsp;📄 Our paper "Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection" accepted to **IEEE UIC 2024**!
+- *2024.09*: &nbsp;🎓 Started my Master's program in Electrical Engineering at the **University of Pennsylvania**! 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+- **A co-evolving agentic AI system for medical imaging analysis**  
+  S. Li, J. Xu, T. Bao, Y. Liu, Y. Liu, Y. Liu, **L. Wang**, W. Lei, S. Wang, Y. Xu, Y. Cui, J. Yao, S. Koga, Z. Huang  
+  *Under review at Nature*, 2025  
+  [[arXiv]](https://arxiv.org/abs/2509.20279)
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+- **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**  
+  H. Na, Y. Hua, Z. Wang, T. Shen, B. Yu, **L. Wang**, W. Wang, J. Torous, L. Chen  
+  *Findings of ACL 2025* (Accepted), 2025  
+  [[arXiv]](https://arxiv.org/abs/2502.11095)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+- **Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection**  
+  Jianfei He, **Lilin Wang**, et al.  
+  *IEEE UIC 2024*, 2024  
+  [[arXiv]](https://arxiv.org/abs/2410.15623)
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+- **Attention-based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**  
+  Hongbin Na\*, **Lilin Wang**\*, et al. (\*Equal contribution)  
+  *2023 IEEE 23rd International Conference on Bioinformatics and Bioengineering (BIBE)*, pp. 219-225, 2023  
+  [[DOI]](https://ieeexplore.ieee.org/document/10332027)
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
+- *2023-2024* Excellence Academic Award — **Top 5%**
+- *2021-2022* Achievement Academic Award — **Top 10%** 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.08 - 2025.12 (Expected)*, **Master of Science in Engineering in Electrical Engineering**  
+  University of Pennsylvania, Philadelphia, PA, USA
+- *2020.09 - 2024.07*, **Bachelor of Engineering (First Class Honors)**  
+  Xi'an Jiaotong-Liverpool University, Suzhou, China  
+  Major: Data Science and Big Data Technology 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+# 🔬 Research Experience
+- *2025.06 - Present*, **Research Assistant**  
+  Perelman School of Medicine, University of Pennsylvania  
+  Advisor: Prof. Zhi Huang  
+  Working on [TissueLab](https://github.com/zhihuanglab/TissueLab): a co-evolving agentic AI system for medical imaging analysis
+
+- *2023.06 - 2023.10*, **Research Assistant**  
+  School of AI and Advanced Computing, Xi'an Jiaotong-Liverpool University  
+  Developed Attention-based Multimodal Bilinear Feature Fusion (AMBF) model for lung cancer survival analysis
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  
+  Reduced inquiry time by 70% through database optimization and created 10+ data visualization panels
+
+- *2022.07 - 2022.09*, **Data Analyst Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
+  Engineered logistics platform with YOLOv5 for real-time warehouse surveillance
+
+- *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  
+  Streamlined data collection for 200+ brands from TikTok, analyzing 1M+ data points

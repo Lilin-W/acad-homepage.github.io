@@ -21,13 +21,19 @@ redirect_from:
 
 Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems Engineering at the **University of Pennsylvania**.
 
-I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on [TissueLab](https://www.tissuelab.org/) [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
+I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[⭐ ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University (XJTLU).
 
 My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and biomedical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 
 I enjoy collaborating across disciplines and building AI systems that make real-world healthcare more accessible and reliable. Feel free to reach out if you'd like to connect! 😊
+
+---
+
+## 🐱 My Furry Co-worker
+
+When I'm coding or reading papers, I'm usually with **Xiaoman Xia** — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻
 
 
 # 🔥 News
@@ -75,7 +81,7 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 - *2025.06 - Present*, **Research Assistant**  
   Perelman School of Medicine, University of Pennsylvania  
   Advisor: Prof. Zhi Huang  
-  Working on [TissueLab ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab): a co-evolving agentic AI system for medical imaging analysis
+  Working on TissueLab [[website](https://www.tissuelab.org/)] [[⭐ ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]: a co-evolving agentic AI system for medical imaging analysis
 
 - *2023.06 - 2023.10*, **Research Assistant**  
   School of AI and Advanced Computing, Xi'an Jiaotong-Liverpool University  

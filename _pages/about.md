@@ -21,7 +21,7 @@ redirect_from:
 
 Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems Engineering at the **University of Pennsylvania**.
 
-I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on [TissueLab](https://www.tissuelab.org/) ([GitHub ![GitHub stars](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)), a co-evolving agentic AI system for medical imaging analysis.
+I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on [TissueLab](https://www.tissuelab.org/) [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University (XJTLU).
 
@@ -31,8 +31,8 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 
 # 🔥 News
+- *2025.09*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review!
 - *2025.06*: &nbsp;🚀 Started working as a Research Assistant at the **Perelman School of Medicine, University of Pennsylvania**, contributing to TissueLab project!
-- *2025.02*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review at **Nature**!
 - *2025.01*: &nbsp;🎉 Our paper "A Survey of Large Language Models in Psychotherapy" has been accepted to **Findings of ACL 2025**!
 - *2024.10*: &nbsp;📄 Our paper "Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection" accepted to **IEEE UIC 2024**!
 - *2024.09*: &nbsp;🎓 Started my Master's program in Electrical Engineering at the **University of Pennsylvania**! 
@@ -41,7 +41,7 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 - **A co-evolving agentic AI system for medical imaging analysis**  
   S. Li, J. Xu, T. Bao, Y. Liu, Y. Liu, Y. Liu, **L. Wang**, W. Lei, S. Wang, Y. Xu, Y. Cui, J. Yao, S. Koga, Z. Huang  
-  *Under review at Nature*, 2025  
+  *Under review*, 2025  
   [[arXiv]](https://arxiv.org/abs/2509.20279)
 
 - **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**  
@@ -75,7 +75,7 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 - *2025.06 - Present*, **Research Assistant**  
   Perelman School of Medicine, University of Pennsylvania  
   Advisor: Prof. Zhi Huang  
-  Working on [TissueLab ![GitHub stars](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab): a co-evolving agentic AI system for medical imaging analysis
+  Working on [TissueLab ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab): a co-evolving agentic AI system for medical imaging analysis
 
 - *2023.06 - 2023.10*, **Research Assistant**  
   School of AI and Advanced Computing, Xi'an Jiaotong-Liverpool University  

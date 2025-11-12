@@ -129,27 +129,27 @@ When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/)
 ## 💬 What Others Say
 
 <div style="width: 100%; overflow-x: auto; padding: 20px 0; margin: 2em 0;">
-  <div style="display: flex; gap: 20px; padding: 10px; min-width: min-content;">
+  <div style="display: flex; gap: 30px; padding: 10px; min-width: min-content;">
     
     <!-- Testimonial Card 1: Prof. Zhi Huang -->
-    <div style="flex: 0 0 400px; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
-      <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none; margin-bottom: 15px;">
+    <div style="flex: 0 0 650px; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+      <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none; margin-bottom: 20px;">
         <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
-      <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #e0e0e0;">
-        <p style="color: #333; font-weight: 600; margin: 0; font-size: 0.95em;">Prof. Zhi Huang</p>
-        <p style="color: #666; font-size: 0.85em; margin: 5px 0 10px 0;">Perelman School of Medicine, University of Pennsylvania</p>
-        <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none; font-size: 0.85em;">
+      <div style="margin-top: auto; padding-top: 20px; border-top: 2px solid #e0e0e0;">
+        <p style="color: #333; font-weight: 600; margin: 0; font-size: 1.1em;">Prof. Zhi Huang</p>
+        <p style="color: #666; font-size: 0.95em; margin: 8px 0 12px 0;">Perelman School of Medicine, University of Pennsylvania</p>
+        <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none; font-size: 0.95em;">
           View full post →
         </a>
       </div>
     </div>
 
     <!-- Coming Soon Card -->
-    <div style="flex: 0 0 400px; background: #fafafa; border: 2px dashed #d0d0d0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <div style="color: #999; font-size: 3em; margin-bottom: 15px;">✨</div>
-      <p style="color: #555; font-size: 1.1em; font-weight: 600; margin: 0;">More Coming Soon</p>
-      <p style="color: #888; font-size: 0.85em; margin: 10px 0 0 0; text-align: center;">Stay tuned for more testimonials</p>
+    <div style="flex: 0 0 650px; background: #fafafa; border: 2px dashed #d0d0d0; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="color: #999; font-size: 4em; margin-bottom: 20px;">✨</div>
+      <p style="color: #555; font-size: 1.3em; font-weight: 600; margin: 0;">More Coming Soon</p>
+      <p style="color: #888; font-size: 1em; margin: 15px 0 0 0; text-align: center;">Stay tuned for more testimonials</p>
     </div>
 
   </div>

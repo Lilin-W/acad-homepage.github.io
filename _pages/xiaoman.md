@@ -3,7 +3,6 @@ permalink: /xiaoman/
 title: "Xiaoman Xia"
 excerpt: "Meet my furry little boss"
 author_profile: true
-layout: archive
 ---
 
 <div style="text-align: center; margin-bottom: 2em;">
@@ -45,21 +44,6 @@ It's the feeling of grains almost ripe - full but not overflowing - a symbol of 
 
 ---
 
-<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
-  <p style="font-size: 0.95em; color: #888; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
-🐱  mew meooow mew mew
-    meooow meooow meooow
-    mew mew mew meooow
-    mew
-
-M.E.O.W. - Message Encoded, Obviously Whiskered.
-
---- Xiaoman Xia 🐾
-  </p>
-</div>
-
----
-
 ## 📸 Little Moments with Xiaoman
 
 <div style="overflow-x: auto; padding: 20px 0; margin: 2em 0;">
@@ -86,7 +70,7 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
     <!-- Photo 4 -->
     <div style="flex: 0 0 250px; text-align: center;">
       <img src="/images/xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼 When she knows exactly what she wants</p>
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼<br>When she knows exactly what she wants</p>
     </div>
 
     <!-- Photo 5 -->
@@ -104,8 +88,6 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
   </div>
 </div>
 
-<p align="center" style="margin-top: 20px; font-style: italic; color: #666; font-size: 1em;">Every great coder needs a furry supervisor.</p>
-
 <style>
 div[style*="overflow-x: auto"]::-webkit-scrollbar {
   height: 8px;
@@ -122,4 +104,19 @@ div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover {
   background: #ffb6c1;
 }
 </style>
+
+---
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+  <p style="font-size: 0.95em; color: #888; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
+🐱  mew meooow mew mew
+    meooow meooow meooow
+    mew mew mew meooow
+    mew
+
+M.E.O.W. - Message Encoded, Obviously Whiskered.
+
+--- Xiaoman Xia 🐾
+  </p>
+</div>
 

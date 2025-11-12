@@ -1,7 +1,7 @@
 ---
 permalink: /xiaoman/
-title: "Xiaoman Xia"
-excerpt: "Meet my furry little boss"
+title: ""
+excerpt: ""
 author_profile: true
 ---
 

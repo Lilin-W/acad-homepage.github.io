@@ -21,7 +21,7 @@ redirect_from:
 
 Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems Engineering at the **University of Pennsylvania**.
 
-I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
+I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
@@ -29,22 +29,6 @@ My research focuses on **AI for healthcare**, with particular interest in medica
 
 I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 
----
-
-# 💬 What Others Say
-
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2em; border-radius: 10px; margin: 2em 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-  <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="text-decoration: none;">
-    <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-  </a>
-  <div style="text-align: center; margin-top: 1em;">
-    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: white; text-decoration: none; font-size: 0.9em; opacity: 0.9;">
-      📎 View original post on LinkedIn →
-    </a>
-  </div>
-</div>
-
----
 
 # 🔥 News
 - *2025.09*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review!
@@ -55,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank" style="display: block; width: 100%; height: 200px; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><iframe src="https://tissuelab.org/" style="width: 100%; height: 100%; border: none; pointer-events: none;" scrolling="no"></iframe></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/publications/tissuelab-placeholder.png' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover; cursor: pointer;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -64,7 +48,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 
 *Under review*, 2025
 
-[[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
+[[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
 
 </div>
 </div>
@@ -113,17 +97,10 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 📖 Education
 
-**University of Pennsylvania** | Philadelphia, PA, USA  
-*Master of Science in Engineering in Electrical Engineering*  
-2024 – 2025 (Expected)
+- Sep 2024 - Dec 2025, **MS in Electrical and Systems Engineering**, University of Pennsylvania
 
-**The University of Liverpool** | United Kingdom  
-*Bachelor of Engineering in Data Science and Big Data Technology*  
-First Class Honours | 2020 – 2024
-
-**Xi'an Jiaotong-Liverpool University** | Suzhou, China  
-*Bachelor of Engineering in Data Science and Big Data Technology*  
-2020 – 2024
+- Sep 2020 - Jul 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool & Xi'an Jiaotong-Liverpool University  
+  <span style="display: inline-block; background-color: #4A90E2; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; font-weight: 500; margin-left: 5px;">First Class Honours</span>
 
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
@@ -132,7 +109,7 @@ First Class Honours | 2020 – 2024
 
 # 💻 Internships
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  
-  Reduced inquiry time by 70% through database optimization and created 10+ data visualization panels
+  Reduced inquiry time through database optimization and created 10+ data visualization panels
 
 - *2022.07 - 2022.09*, **Data Analyst Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
   Engineered logistics platform with YOLOv5 for real-time warehouse surveillance
@@ -145,3 +122,18 @@ First Class Honours | 2020 – 2024
 ## <img src="/images/logo.png" alt="cat" width="30" style="vertical-align: middle;"> More Than Work
 
 When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/) — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻
+
+---
+
+## 💬 What Others Say
+
+<div style="max-width: 600px; margin: 2em auto;">
+  <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none;">
+    <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  </a>
+  <p style="text-align: center; margin-top: 0.5em; font-size: 0.85em; color: #666;">
+    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none;">
+      View on LinkedIn →
+    </a>
+  </p>
+</div>

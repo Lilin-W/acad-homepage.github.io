@@ -39,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 180px; object-fit: cover; cursor: pointer;"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://arxiv.org/abs/2509.20279"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 180px; object-fit: cover;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -53,7 +53,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 160px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><a href="https://arxiv.org/abs/2502.11095"><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 160px; object-fit: cover;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**
@@ -67,7 +67,7 @@ Hongbin Na\*, Yining Hua\*, Zimu Wang\*, Tao Shen, Beibei Yu, **Lilin Wang**, We
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE UIC 2024</div><img src='images/publications/offensive-language.jpg' alt="Offensive Language" style="max-width: 100%; max-height: 150px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE UIC 2024</div><a href="https://arxiv.org/abs/2410.15623"><img src='images/publications/offensive-language.jpg' alt="Offensive Language" style="max-width: 100%; max-height: 150px; object-fit: cover;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection**
@@ -81,7 +81,7 @@ Jianfei He, **Lilin Wang**, Jiaying Wang, Zhenyu Liu, Hongbin Na, Zimu Wang, Wei
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE BIBE 2023</div><img src='images/publications/lung-cancer.jpg' alt="Lung Cancer" style="max-width: 100%; max-height: 150px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE BIBE 2023</div><a href="https://ieeexplore.ieee.org/document/10431887"><img src='images/publications/lung-cancer.jpg' alt="Lung Cancer" style="max-width: 100%; max-height: 150px; object-fit: cover;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Attention-Based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**

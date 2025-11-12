@@ -41,20 +41,19 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 <style>
 .paper-box {
-  display: flex !important;
-  align-items: flex-start !important;
-  width: 100% !important;
-  margin-bottom: 2em !important;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2em;
 }
 .paper-box-image {
-  flex: 0 0 20% !important;
-  width: 20% !important;
-  padding-right: 1.5em !important;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 1em;
 }
 .paper-box-text {
-  flex: 1 !important;
-  width: 80% !important;
-  padding-left: 0 !important;
+  flex: 1;
+  padding-left: 1em;
 }
 </style>
 

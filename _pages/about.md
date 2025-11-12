@@ -103,7 +103,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 - 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University (*First Class Honours*)
 
-# 🎖 Honors and Awards
+# 🏆 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
 - *2023-2024* Excellence Academic Award (XJTLU) — **Top 5%**
 - *2021-2022* Achievement Academic Award (XJTLU) — **Top 10%** 
@@ -117,6 +117,9 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 - *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  
   Streamlined data collection for 200+ brands from TikTok, analyzing 1M+ data points
+
+- *2021.07 - 2021.09*, **Data Analyst Intern**, PatSnap Co., LTD.  
+  Maintained and updated SQL databases supporting the 'Synapse' Drug Intelligence platform
 
 ---
 

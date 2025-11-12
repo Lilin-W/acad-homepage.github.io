@@ -63,6 +63,12 @@ Her last name 'Xia' (夏) comes from the day we first met - it was **Lixia** (�
 
 A few days later, the day she came home, it happened to be **Xiaoman** (小满) — another solar term that means 'just full enough,' a quiet kind of happiness.
 
+In Chinese culture, Xiaoman represents a quiet kind of contentment - being full, but not overflowing.
+
+There's an old saying, *'Xiaoman sheng wanquan'* (小满胜万全), meaning the happiest moments in life often come from things that are perfectly enough, not completely full.
+
+It's the feeling of grains almost ripe - full but not overflowing - a symbol of balance, warmth, and quiet happiness.
+
 ---
 
 ## 📸 Little Moments with Xiaoman

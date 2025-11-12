@@ -2,24 +2,11 @@
 permalink: /xiaoman/
 title: "Xiaoman Xia"
 excerpt: "Meet my furry little boss"
-author_profile: false
-layout: default
+author_profile: true
+layout: archive
 ---
 
-<style>
-.masthead {
-  display: none !important;
-}
-.page__footer {
-  display: none !important;
-}
-body {
-  margin: 0;
-  padding: 2em;
-}
-</style>
-
-<div style="text-align: center;">
+<div style="text-align: center; margin-bottom: 2em;">
   <img src="/images/logo.png" alt="Xiaoman Xia" width="200" style="margin: 20px auto;">
   
   <h1>🐱 Xiaoman Xia (夏小满)</h1>
@@ -28,8 +15,6 @@ body {
     The One Who Keeps My World Gentle
   </p>
 </div>
-
----
 
 ## About Xiaoman
 
@@ -61,7 +46,7 @@ It's the feeling of grains almost ripe - full but not overflowing - a symbol of 
 ---
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
-  <p style="font-size: 1.1em; color: #888; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
+  <p style="font-size: 0.95em; color: #888; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
 🐱  mew meooow mew mew
     meooow meooow meooow
     mew mew mew meooow
@@ -75,14 +60,66 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
 
 ---
 
-<div align="center" style="margin-top: 40px;">
-  <img src="/images/avatar_xiaoman.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="/images/keyboard.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="/images/wink.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="/images/xiaoman.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="/images/cute.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="/images/jump.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+## 📸 Little Moments with Xiaoman
+
+<div style="overflow-x: auto; padding: 20px 0; margin: 2em 0;">
+  <div style="display: flex; gap: 20px; padding: 10px; min-width: min-content;">
+    
+    <!-- Photo 1 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/avatar_xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">The official portrait 📷</p>
+    </div>
+
+    <!-- Photo 2 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/keyboard.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Chief Keyboard Guardian ⌨️</p>
+    </div>
+
+    <!-- Photo 3 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/wink.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Happy wink moments 😉</p>
+    </div>
+
+    <!-- Photo 4 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼</p>
+    </div>
+
+    <!-- Photo 5 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/cute.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Hunter mode activated 🎯</p>
+    </div>
+
+    <!-- Photo 6 -->
+    <div style="flex: 0 0 250px; text-align: center;">
+      <img src="/images/jump.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">360° backflip in action! 🤸‍♀️</p>
+    </div>
+
+  </div>
 </div>
 
-<p align="center" style="margin-top: 20px; font-style: italic; color: #666; font-size: 1.1em;">Every great coder needs a furry supervisor.</p>
+<p align="center" style="margin-top: 20px; font-style: italic; color: #666; font-size: 1em;">Every great coder needs a furry supervisor.</p>
+
+<style>
+div[style*="overflow-x: auto"]::-webkit-scrollbar {
+  height: 8px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb {
+  background: #ffc0cb;
+  border-radius: 10px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover {
+  background: #ffb6c1;
+}
+</style>
 

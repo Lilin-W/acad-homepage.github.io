@@ -99,9 +99,11 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 - 2024 - 2026, **MSE in Electrical Engineering**, University of Pennsylvania
 
-- 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool <img src="https://img.shields.io/badge/First%20Class%20Honours-blue" alt="First Class Honours" style="vertical-align: middle; margin-left: 5px;">
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool  
+  <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; margin-left: 8px; box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);">🎓 First Class Honours</span>
 
-- 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University  
+  <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; margin-left: 8px; box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);">🎓 First Class Honours</span>
 
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**

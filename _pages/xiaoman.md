@@ -3,7 +3,22 @@ permalink: /xiaoman/
 title: "Xiaoman Xia"
 excerpt: "Meet my furry little boss"
 author_profile: false
+layout: single
+classes: wide
 ---
+
+<style>
+.masthead {
+  display: none !important;
+}
+.page__footer {
+  display: none !important;
+}
+body {
+  margin: 0;
+  padding: 2em;
+}
+</style>
 
 <div style="text-align: center;">
   <img src="/images/logo.png" alt="Xiaoman Xia" width="200" style="margin: 20px auto;">

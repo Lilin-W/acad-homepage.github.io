@@ -23,7 +23,7 @@ Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems
 
 I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
-I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University (XJTLU).
+I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
 My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and biomedical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 
@@ -58,7 +58,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 
 **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**
 
-Hongbin Na\*, Yining Hua\*, Zimu Wang\*, Tao Shen, Beibei Yu, **Lilin Wang**, Wei Wang, John Torous, Ling Chen (\*Equal contribution)
+Hongbin Na\*, Yining Hua\*, Zimu Wang\*, Tao Shen, Beibei Yu, **Lilin Wang**, Wei Wang, John Torous, Ling Chen (\* Equal contribution)
 
 *Findings of ACL 2025*, 2025
 
@@ -86,7 +86,7 @@ Jianfei He, **Lilin Wang**, Jiaying Wang, Zhenyu Liu, Hongbin Na, Zimu Wang, Wei
 
 **Attention-Based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**
 
-Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang, Hong-Seng Gan (\*Equal contribution)
+Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang, Hong-Seng Gan (\* Equal contribution)
 
 *IEEE BIBE 2023*, pp. 219-225, 2023
 

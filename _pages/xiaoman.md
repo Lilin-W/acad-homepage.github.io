@@ -33,13 +33,13 @@ Her daily responsibilities include:
 
 Her name carries a little story.
 
-Her last name "Xia" (夏) comes from the day we first met - it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
+Her last name 'Xia' (夏) comes from the day we first met - it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
 
 A few days later, when I brought her home, it happened to be **Xiaoman** (小满) - another solar term meaning "just full enough."
 
 In Chinese culture, Xiaoman represents a quiet kind of contentment - being full, but not overflowing.
 
-There's an old saying, *"Xiaoman sheng wanquan"* (小满胜万全), meaning the happiest moments in life often come from things that are perfectly enough, not completely full.
+There's an old saying, *'Xiaoman sheng wanquan'* (小满胜万全), meaning the happiest moments in life often come from things that are perfectly enough, not completely full.
 
 It's the feeling of grains almost ripe - full but not overflowing - a symbol of balance, warmth, and quiet happiness.
 
@@ -54,7 +54,7 @@ It's the feeling of grains almost ripe - full but not overflowing - a symbol of 
 
 M.E.O.W. - Message Encoded, Obviously Whiskered.
 
-- Xiaoman Xia 🐾
+--- Xiaoman Xia 🐾
   </p>
 </div>
 
@@ -74,7 +74,7 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
     <!-- Photo 2 -->
     <div style="flex: 0 0 250px; text-align: center;">
       <img src="/images/keyboard.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Chief Keyboard Guardian ⌨️</p>
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Chief Keyboard Guardian ⌨️ Sometimes she rests her head on my hands to stop me from working</p>
     </div>
 
     <!-- Photo 3 -->
@@ -86,7 +86,7 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
     <!-- Photo 4 -->
     <div style="flex: 0 0 250px; text-align: center;">
       <img src="/images/xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼</p>
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼 When she knows exactly what she wants</p>
     </div>
 
     <!-- Photo 5 -->
@@ -98,7 +98,7 @@ M.E.O.W. - Message Encoded, Obviously Whiskered.
     <!-- Photo 6 -->
     <div style="flex: 0 0 250px; text-align: center;">
       <img src="/images/jump.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">360° backflip in action! 🤸‍♀️</p>
+      <p style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">360° mid-air rotation in action! 🤸‍♀️ Yes, she can actually do backflips!</p>
     </div>
 
   </div>

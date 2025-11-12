@@ -39,25 +39,6 @@ I enjoy collaborating across disciplines and building AI systems that make real-
 
 # 📝 Publications 
 
-<style>
-.paper-box {
-  display: flex !important;
-  align-items: flex-start !important;
-  width: 100% !important;
-  margin-bottom: 2em !important;
-}
-.paper-box-image {
-  flex: 0 0 20% !important;
-  width: 20% !important;
-  padding-right: 1.5em !important;
-}
-.paper-box-text {
-  flex: 1 !important;
-  width: 80% !important;
-  padding-left: 0 !important;
-}
-</style>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><img src='images/publications/tissuelab-placeholder.png' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover;"></div></div>
 <div class='paper-box-text' markdown="1">
 

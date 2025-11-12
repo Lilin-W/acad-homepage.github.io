@@ -97,10 +97,11 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 📖 Education
 
-- Sep 2024 - Dec 2025, **MS in Electrical and Systems Engineering**, University of Pennsylvania
+- 2024 - 2026, **MSE in Electrical Engineering**, University of Pennsylvania
 
-- Sep 2020 - Jul 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool & Xi'an Jiaotong-Liverpool University  
-  <span style="display: inline-block; background-color: #4A90E2; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; font-weight: 500; margin-left: 5px;">First Class Honours</span>
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool <img src="https://img.shields.io/badge/First%20Class%20Honours-blue" alt="First Class Honours" style="vertical-align: middle; margin-left: 5px;">
+
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University
 
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
@@ -127,13 +128,18 @@ When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/)
 
 ## 💬 What Others Say
 
-<div style="max-width: 600px; margin: 2em auto;">
-  <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none;">
-    <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  </a>
-  <p style="text-align: center; margin-top: 0.5em; font-size: 0.85em; color: #666;">
-    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none;">
-      View on LinkedIn →
+<div style="max-width: 650px; margin: 2em auto; text-align: center;">
+  <div style="overflow-x: auto; white-space: nowrap; padding: 10px 0; border-radius: 8px;">
+    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: inline-block; text-decoration: none;">
+      <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="max-width: 600px; height: auto; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    </a>
+  </div>
+  <p style="margin-top: 1em; font-size: 0.9em; color: #555; font-style: italic;">
+    — Prof. Zhi Huang, Perelman School of Medicine, University of Pennsylvania
+  </p>
+  <p style="margin-top: 0.5em;">
+    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none; font-size: 0.9em;">
+      View full post →
     </a>
   </p>
 </div>

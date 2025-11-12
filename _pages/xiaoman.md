@@ -1,9 +1,32 @@
 ---
 permalink: /xiaoman/
-title: ""
-excerpt: ""
-author_profile: true
+title: "Xiaoman Xia"
+excerpt: "Meet my furry little boss"
+author_profile: false
 ---
+
+<style>
+body, h1, h2, h3, h4, h5, h6, p, li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-weight: 600 !important;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0.3em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+  margin: 2em 0;
+}
+</style>
 
 <div style="text-align: center; margin-bottom: 2em;">
   <img src="/images/logo.png" alt="Xiaoman Xia" width="200" style="margin: 20px auto;">

@@ -99,11 +99,9 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 - 2024 - 2026, **MSE in Electrical Engineering**, University of Pennsylvania
 
-- 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool  
-  <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; margin-left: 8px; box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);">🎓 First Class Honours</span>
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool (*First Class Honours*)
 
-- 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University  
-  <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; margin-left: 8px; box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);">🎓 First Class Honours</span>
+- 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University (*First Class Honours*)
 
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
@@ -130,18 +128,47 @@ When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/)
 
 ## 💬 What Others Say
 
-<div style="max-width: 650px; margin: 2em auto; text-align: center;">
-  <div style="overflow-x: auto; white-space: nowrap; padding: 10px 0; border-radius: 8px;">
-    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: inline-block; text-decoration: none;">
-      <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="max-width: 600px; height: auto; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-    </a>
+<div style="width: 100%; overflow-x: auto; padding: 20px 0; margin: 2em 0;">
+  <div style="display: flex; gap: 20px; padding: 10px; min-width: min-content;">
+    
+    <!-- Testimonial Card 1 -->
+    <div style="flex: 0 0 350px; background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; flex-direction: column;">
+      <div style="color: #fff; font-size: 2em; margin-bottom: 15px;">"</div>
+      <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none; margin-bottom: 15px;">
+        <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      </a>
+      <p style="color: #e0e0e0; font-size: 0.85em; line-height: 1.5; margin-bottom: 15px;">
+        <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #7ba6ff; text-decoration: none;">View full post →</a>
+      </p>
+      <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p style="color: #7ba6ff; font-weight: 600; margin: 0; font-size: 0.9em;">@ Zhi Huang</p>
+        <p style="color: #a0a0a0; font-size: 0.8em; margin: 5px 0 0 0;">Perelman School of Medicine, University of Pennsylvania</p>
+      </div>
+    </div>
+
+    <!-- Coming Soon Card -->
+    <div style="flex: 0 0 350px; background: linear-gradient(135deg, #2a2a3e 0%, #1e1e2e 100%); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px dashed rgba(255,255,255,0.2);">
+      <div style="color: #7ba6ff; font-size: 3em; margin-bottom: 15px;">✨</div>
+      <p style="color: #e0e0e0; font-size: 1.1em; font-weight: 600; margin: 0;">More to Come</p>
+      <p style="color: #a0a0a0; font-size: 0.85em; margin: 10px 0 0 0; text-align: center;">Stay tuned for more testimonials!</p>
+    </div>
+
   </div>
-  <p style="margin-top: 1em; font-size: 0.9em; color: #555; font-style: italic;">
-    — Prof. Zhi Huang, Perelman School of Medicine, University of Pennsylvania
-  </p>
-  <p style="margin-top: 0.5em;">
-    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none; font-size: 0.9em;">
-      View full post →
-    </a>
-  </p>
 </div>
+
+<style>
+div[style*="overflow-x: auto"]::-webkit-scrollbar {
+  height: 8px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>

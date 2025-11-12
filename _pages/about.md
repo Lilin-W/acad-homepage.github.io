@@ -53,7 +53,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 150px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 180px; object-fit: cover;"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**
@@ -118,7 +118,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 - *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  
   Streamlined data collection for 200+ brands from TikTok, analyzing 1M+ data points
 
-- *2021.07 - 2021.09*, **Data Analyst Intern**, [PatSnap Co., LTD.](https://synapse.patsnap.com/)  
+- *2021.07 - 2021.09*, **Data Analyst Intern**, PatSnap Co., LTD.  
   Maintained and updated SQL databases supporting the 'Synapse' Drug Intelligence platform
 
 ---

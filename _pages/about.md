@@ -39,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover; cursor: pointer;"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 220px; object-fit: cover; cursor: pointer;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**

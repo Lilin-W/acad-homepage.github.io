@@ -19,7 +19,7 @@ redirect_from:
 
 # 👨‍💻 About Me
 
-Hi, I'm **Lilin Wang**, a second-year Master's student in ESE (Electrical and Systems Engineering) at the **University of Pennsylvania**.
+Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering at the **University of Pennsylvania**.
 
 I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 

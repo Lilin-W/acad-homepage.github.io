@@ -34,7 +34,7 @@ Her name carries a little story.
 
 Her last name 'Xia' (夏) comes from the day we first met - it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
 
-A few days later, when I brought her home, it happened to be **Xiaoman** (小满) - another solar term meaning "just full enough."
+A few days later, when I brought her home, it happened to be **Xiaoman** (小满) - another solar term meaning 'just full enough.'
 
 In Chinese culture, Xiaoman represents a quiet kind of contentment - being full, but not overflowing.
 

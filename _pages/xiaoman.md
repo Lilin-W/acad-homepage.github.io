@@ -3,8 +3,7 @@ permalink: /xiaoman/
 title: "Xiaoman Xia"
 excerpt: "Meet my furry little boss"
 author_profile: false
-layout: single
-classes: wide
+layout: default
 ---
 
 <style>

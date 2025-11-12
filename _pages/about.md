@@ -25,7 +25,7 @@ I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for psychological and clinical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
+My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and psychological applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 
 I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered.
 

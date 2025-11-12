@@ -21,13 +21,13 @@ redirect_from:
 
 Hi, I'm **Lilin Wang**, a second-year master's student in Electrical and Systems Engineering at the **University of Pennsylvania**.
 
-I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
+I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and biomedical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
+My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for psychological and clinical applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 
-I enjoy collaborating across disciplines and building AI systems that make real-world healthcare more accessible and reliable. Feel free to reach out if you'd like to connect! 😊
+I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered.
 
 
 # 🔥 News
@@ -86,7 +86,7 @@ Jianfei He, **Lilin Wang**, Jiaying Wang, Zhenyu Liu, Hongbin Na, Zimu Wang, Wei
 
 **Attention-Based Multimodal Bilinear Feature Fusion for Lung Cancer Survival Analysis**
 
-Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang, Hong-Seng Gan (\* Equal contribution)
+Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang, Hong-Seng Gan    (\* Equal contribution)
 
 *IEEE BIBE 2023*, pp. 219-225, 2023
 
@@ -95,27 +95,24 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 </div>
 </div>
 
+# 📖 Education
+
+**University of Pennsylvania** | Philadelphia, PA, USA  
+*Master of Science in Engineering in Electrical Engineering*  
+2024 – 2025 (Expected)
+
+**The University of Liverpool** | United Kingdom  
+*Bachelor of Engineering in Data Science and Big Data Technology*  
+First Class Honours | 2020 – 2024
+
+**Xi'an Jiaotong-Liverpool University** | Suzhou, China  
+*Bachelor of Engineering in Data Science and Big Data Technology*  
+2020 – 2024
+
 # 🎖 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
-- *2023-2024* Excellence Academic Award — **Top 5%**
-- *2021-2022* Achievement Academic Award — **Top 10%** 
-
-# 📖 Educations
-- *2024.08 - 2025.12 (Expected)*, **Master of Science in Engineering in Electrical Engineering**  
-  University of Pennsylvania, Philadelphia, PA, USA
-- *2020.09 - 2024.07*, **Bachelor of Engineering (First Class Honors)**  
-  Xi'an Jiaotong-Liverpool University, Suzhou, China  
-  Major: Data Science and Big Data Technology 
-
-# 🔬 Research Experience
-- *2025.06 - Present*, **Research Assistant**  
-  Perelman School of Medicine, University of Pennsylvania  
-  Advisor: Prof. Zhi Huang  
-  Working on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]: a co-evolving agentic AI system for medical imaging analysis
-
-- *2023.06 - 2023.10*, **Research Assistant**  
-  School of AI and Advanced Computing, Xi'an Jiaotong-Liverpool University  
-  Developed Attention-based Multimodal Bilinear Feature Fusion (AMBF) model for lung cancer survival analysis
+- *2023-2024* Excellence Academic Award (XJTLU) — **Top 5%**
+- *2021-2022* Achievement Academic Award (XJTLU) — **Top 10%** 
 
 # 💻 Internships
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  

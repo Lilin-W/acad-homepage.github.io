@@ -39,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 160px; object-fit: cover; cursor: pointer;"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 180px; object-fit: cover; cursor: pointer;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -113,12 +113,12 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
   Reduced inquiry time through database optimization and created 10+ data visualization panels
 
 - *2022.07 - 2022.09*, **Data Analyst Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
-  Engineered logistics platform with YOLOv5 for real-time warehouse surveillance
+  Engineered a logistics data platform to unify node information, structure interfaces, and enable real-time operational visibility.
 
 - *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  
   Streamlined data collection for 200+ brands from TikTok, analyzing 1M+ data points
 
-- *2021.07 - 2021.09*, **Data Analyst Intern**, PatSnap Co., LTD.  
+- *2021.07 - 2021.09*, **Data Analyst Intern**, [PatSnap Co., LTD.](https://synapse.patsnap.com/)  
   Maintained and updated SQL databases supporting the 'Synapse' Drug Intelligence platform
 
 ---

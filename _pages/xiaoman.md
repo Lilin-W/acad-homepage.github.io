@@ -48,28 +48,41 @@ Her daily responsibilities include:
 
 Her name carries a little story.
 
-Her last name "Xia" (夏) comes from the day we first met — it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
+Her last name "Xia" (夏) comes from the day we first met - it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
 
-A few days later, when I brought her home, it happened to be **Xiaoman** (小满) — another solar term meaning "just full enough."
+A few days later, when I brought her home, it happened to be **Xiaoman** (小满) - another solar term meaning "just full enough."
 
-In Chinese culture, Xiaoman represents a quiet kind of contentment — being full, but not overflowing.
+In Chinese culture, Xiaoman represents a quiet kind of contentment - being full, but not overflowing.
 
 There's an old saying, *"Xiaoman sheng wanquan"* (小满胜万全), meaning the happiest moments in life often come from things that are perfectly enough, not completely full.
 
-It's the feeling of grains almost ripe — full but not overflowing — a symbol of balance, warmth, and quiet happiness.
+It's the feeling of grains almost ripe - full but not overflowing - a symbol of balance, warmth, and quiet happiness.
 
 ---
 
-<div style="text-align: center; margin-top: 40px;">
-  <p style="font-size: 0.9em; color: #999; font-family: monospace; white-space: pre;">
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+  <p style="font-size: 1.1em; color: #888; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
 🐱  mew meooow mew mew
     meooow meooow meooow
     mew mew mew meooow
     mew
 
-M.E.O.W. — Message Encoded, Obviously Whiskered.
+M.E.O.W. - Message Encoded, Obviously Whiskered.
 
-— Xiaoman Xia 🐾
+- Xiaoman Xia 🐾
   </p>
 </div>
+
+---
+
+<div align="center" style="margin-top: 40px;">
+  <img src="/images/avatar_xiaoman.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/keyboard.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/wink.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/xiaoman.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/cute.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/jump.jpg" width="200" style="margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+<p align="center" style="margin-top: 20px; font-style: italic; color: #666; font-size: 1.1em;">Every great coder needs a furry supervisor.</p>
 

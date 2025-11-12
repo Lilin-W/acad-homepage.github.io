@@ -39,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 220px; object-fit: cover; cursor: pointer;"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 160px; object-fit: cover; cursor: pointer;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -105,8 +105,8 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 🏆 Honors and Awards
 - *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
-- *2023-2024* Excellence Academic Award (XJTLU) — **Top 5%**
-- *2021-2022* Achievement Academic Award (XJTLU) — **Top 10%** 
+- *2023-2024* XJTLU Excellence Academic Award — **Top 5%**
+- *2021-2022* XJTLU Achievement Academic Award — **Top 10%** 
 
 # 💻 Internships
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  

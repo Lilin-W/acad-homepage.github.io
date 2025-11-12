@@ -53,7 +53,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 180px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL Findings 2025</div><img src='images/publications/psychotherapy.jpg' alt="Psychotherapy" style="max-width: 100%; max-height: 160px; object-fit: cover;"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A Survey of Large Language Models in Psychotherapy: Current Landscape and Future Directions**

@@ -27,8 +27,24 @@ I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by
 
 My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and psychological applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 
-I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered.
+I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 
+---
+
+# 💬 What Others Say
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2em; border-radius: 10px; margin: 2em 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+  <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="text-decoration: none;">
+    <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+  </a>
+  <div style="text-align: center; margin-top: 1em;">
+    <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: white; text-decoration: none; font-size: 0.9em; opacity: 0.9;">
+      📎 View original post on LinkedIn →
+    </a>
+  </div>
+</div>
+
+---
 
 # 🔥 News
 - *2025.09*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review!

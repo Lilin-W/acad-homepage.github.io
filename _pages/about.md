@@ -55,7 +55,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><img src='images/publications/tissuelab-placeholder.png' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank" style="display: block; width: 100%; height: 200px; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><iframe src="https://tissuelab.org/" style="width: 100%; height: 100%; border: none; pointer-events: none;" scrolling="no"></iframe></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -64,7 +64,7 @@ Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Li
 
 *Under review*, 2025
 
-[[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [(https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
+[[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [[GitHub ![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
 
 </div>
 </div>

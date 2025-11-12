@@ -39,7 +39,7 @@ I hope to contribute to building intelligent systems that help make healthcare m
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/publications/tissuelab-placeholder.png' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover; cursor: pointer;"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://tissuelab.org/" target="_blank"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 150px; object-fit: cover; cursor: pointer;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 **A co-evolving agentic AI system for medical image analysis**
@@ -146,10 +146,9 @@ When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/)
     </div>
 
     <!-- Coming Soon Card -->
-    <div style="flex: 0 0 500px; background: #fafafa; border: 2px dashed #d0d0d0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="flex: 0 0 350px; background: #fafafa; border: 2px dashed #d0d0d0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <div style="color: #999; font-size: 3em; margin-bottom: 15px;">✨</div>
       <p style="color: #555; font-size: 1.1em; font-weight: 600; margin: 0;">More Coming Soon</p>
-      <p style="color: #888; font-size: 0.9em; margin: 10px 0 0 0; text-align: center;">Stay tuned for more testimonials</p>
     </div>
 
   </div>

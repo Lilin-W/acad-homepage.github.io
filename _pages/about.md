@@ -23,7 +23,7 @@ Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering
 
 I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
 
-I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
+I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University, supervised by Prof. Jasmine Kah Phooi Seng for my final year project.
 
 My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and psychological applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
 

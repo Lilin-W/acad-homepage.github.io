@@ -59,13 +59,13 @@ Her daily responsibilities include:
 
 Her name carries a small story.
 
-Her last name "Xia" (夏) comes from the day we first met — Lixia (立夏), the Start of Summer.
+Her last name 'Xia' (夏) comes from the day we first met - it was **Lixia** (立夏), the **Start of Summer** in the traditional Chinese calendar.
 
-A few days later, when she came home, it happened to be Xiaoman (小满) — a solar term meaning "just full enough," a quiet kind of happiness.
+A few days later, when she came home, it happened to be **Xiaoman** (小满) — a solar term meaning **'just full enough,'** a quiet kind of happiness.
 
 In Chinese culture, Xiaoman is about gentle contentment — being full, but not overflowing.
 
-There's a saying, "Xiaoman sheng wanquan" (小满胜万全): sometimes the happiest moments come from things that are simply, perfectly enough.
+There's an old saying, 'Xiaoman sheng wanquan' (小满胜万全): sometimes the happiest moments come from things that are simply, perfectly enough.
 
 ---
 

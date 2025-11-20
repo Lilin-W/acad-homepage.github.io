@@ -112,7 +112,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  
   Reduced inquiry time through database optimization and created 10+ data visualization panels
 
-- *2022.07 - 2022.09*, **Data Analyst Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
+- *2022.07 - 2022.09*, **Management Consulting Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
   Engineered a logistics data platform to unify node information, structure interfaces, and enable real-time operational visibility.
 
 - *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  

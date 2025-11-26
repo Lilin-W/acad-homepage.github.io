@@ -30,7 +30,7 @@ a:hover { color: #c71585; }
 
 /* --- 容器与卡片 --- */
 .cat-container {
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -78,21 +78,21 @@ a:hover { color: #c71585; }
 .portrait-gallery {
   display: flex;
   justify-content: center;
-  gap: 2%;
-  flex-wrap: wrap;
+  gap: 3%;
+  flex-wrap: nowrap;
   margin: 2em auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 100%;
+  padding: 0 40px;
 }
 .polaroid {
   background: white;
-  padding: 15px 15px 35px 15px;
+  padding: 20px 20px 40px 20px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transform: rotate(0deg);
   transition: all 0.3s ease;
-  flex: 0 1 30%;
-  max-width: 350px;
-  min-width: 250px;
+  flex: 1 1 0;
+  max-width: 400px;
+  min-width: 0;
   cursor: pointer;
 }
 .polaroid img {
@@ -114,23 +114,29 @@ a:hover { color: #c71585; }
 }
 
 /* 响应式：平板 */
-@media (max-width: 900px) {
-  .portrait-gallery { gap: 3%; }
-  .polaroid { flex: 0 1 30%; min-width: 200px; }
+@media (max-width: 1024px) {
+  .portrait-gallery { 
+    gap: 2%;
+    padding: 0 20px;
+  }
+  .polaroid { 
+    flex: 1 1 0;
+    max-width: 350px;
+    padding: 15px 15px 30px 15px;
+  }
 }
 
 /* 响应式：手机 */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .cat-container { max-width: 100%; }
   .portrait-gallery { 
-    flex-direction: row; 
-    gap: 2%;
-    padding: 0 10px;
+    gap: 1.5%;
+    padding: 0 15px;
   }
   .polaroid { 
-    flex: 0 1 31%; 
-    min-width: 0;
+    flex: 1 1 0;
+    padding: 10px 10px 25px 10px;
     max-width: none;
-    padding: 8px 8px 20px 8px;
   }
   .polaroid:nth-child(2) { margin-top: 0; }
 }

@@ -42,27 +42,68 @@ a:hover { color: #c71585; }
   margin-bottom: 30px;
   box-shadow: 0 10px 25px rgba(216, 112, 147, 0.1);
   border: 2px solid #fff0f5;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* 纸胶带装饰 */
+.cat-card::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 120px;
+  height: 35px;
+  background-color: rgba(255, 228, 225, 0.6);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  opacity: 0.8;
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+/* 第二个卡片的胶带换颜色和角度 */
+.cat-card:nth-of-type(2)::before {
+  background-color: rgba(255, 250, 205, 0.6);
+  transform: translateX(-50%) rotate(1.5deg);
 }
 
 .cat-card p {
-  font-size: 1.1em;
-  line-height: 1.8;
+  font-size: 1.05em;
+  line-height: 1.7;
   margin-bottom: 1em;
 }
 
 .cat-card h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-bottom: 1.2em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* 标题下划线高亮 */
+.cat-card h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  height: 12px;
+  background: rgba(255, 228, 225, 0.5);
+  border-radius: 6px;
+  z-index: -1;
 }
 
 .cat-card h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
 .cat-card ul {
-  font-size: 1.05em;
+  font-size: 1.02em;
 }
 
 .cat-card li {

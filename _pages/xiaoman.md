@@ -84,16 +84,16 @@ a:hover { color: #c71585; }
 }
 .polaroid {
   background: white;
-  padding: 10px 10px 25px 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 15px 15px 35px 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transform: rotate(0deg);
   transition: all 0.3s ease;
-  width: 220px;
+  width: 300px;
 }
 .polaroid img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
   border: 1px solid #eee;
 }
 /* 给照片一点随机的角度，看起来更活泼 */
@@ -179,12 +179,6 @@ a:hover { color: #c71585; }
 
 <div class="cat-container">
 
-  <div class="cat-header">
-    <img src="/images/logo.png" alt="Xiaoman Avatar" class="cat-avatar">
-    <h1 class="main-title">Xiaoman Xia (夏小满)</h1>
-    <p class="sub-title">✨ The One Who Keeps My World Gentle ✨</p>
-  </div>
-
   <div class="portrait-gallery">
     <div class="polaroid">
       <img src="/images/xiaoman-portrait-1.png" alt="Xiaoman 1">
@@ -195,6 +189,11 @@ a:hover { color: #c71585; }
     <div class="polaroid">
       <img src="/images/xiaoman-portrait-3.png" alt="Xiaoman 3">
     </div>
+  </div>
+
+  <div class="cat-header" style="margin-top: 40px;">
+    <h1 class="main-title">Xiaoman Xia (夏小满)</h1>
+    <p class="sub-title">✨ The One Who Keeps My World Gentle ✨</p>
   </div>
 
   <div class="cat-card">

@@ -38,7 +38,7 @@ a:hover { color: #c71585; }
 .cat-card {
   background: white;
   border-radius: 20px;
-  padding: 40px 45px;
+  padding: 35px 40px;
   margin-bottom: 30px;
   box-shadow: 0 10px 25px rgba(216, 112, 147, 0.1);
   border: 2px solid #fff0f5;
@@ -46,40 +46,41 @@ a:hover { color: #c71585; }
   margin-top: 50px;
 }
 
-/* 纸胶带装饰 */
+/* 纸胶带装饰 - 左上角 */
 .cat-card::before {
   content: '';
   position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-2deg);
-  width: 120px;
-  height: 35px;
-  background-color: rgba(255, 228, 225, 0.6);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  opacity: 0.8;
-  backdrop-filter: blur(2px);
+  top: -12px;
+  left: 60px;
+  transform: rotate(-3deg);
+  width: 100px;
+  height: 30px;
+  background-color: rgba(255, 228, 225, 0.65);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  opacity: 0.85;
   z-index: 1;
 }
 
-/* 第二个卡片的胶带换颜色和角度 */
+/* 第二个卡片的胶带换位置和颜色 */
 .cat-card:nth-of-type(2)::before {
-  background-color: rgba(255, 250, 205, 0.6);
-  transform: translateX(-50%) rotate(1.5deg);
+  background-color: rgba(255, 250, 205, 0.65);
+  left: 80px;
+  transform: rotate(2deg);
 }
 
 .cat-card p {
-  font-size: 1.05em;
-  line-height: 1.7;
-  margin-bottom: 1em;
+  font-size: 1.02em;
+  line-height: 1.8;
+  margin-bottom: 0.9em;
+  color: #5d4037;
 }
 
 .cat-card h2 {
-  font-size: 1.6em;
-  margin-bottom: 1.2em;
+  font-size: 1.5em;
+  margin-bottom: 1.3em;
   position: relative;
   display: inline-block;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 /* 标题下划线高亮 */
@@ -88,27 +89,28 @@ a:hover { color: #c71585; }
   display: block;
   position: absolute;
   bottom: 0;
-  left: -5px;
-  right: -5px;
-  height: 12px;
-  background: rgba(255, 228, 225, 0.5);
-  border-radius: 6px;
+  left: -4px;
+  right: -4px;
+  height: 10px;
+  background: rgba(255, 228, 225, 0.45);
+  border-radius: 5px;
   z-index: -1;
 }
 
 .cat-card h3 {
-  font-size: 1.2em;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  font-size: 1.15em;
+  margin-top: 1.3em;
+  margin-bottom: 0.8em;
 }
 
 .cat-card ul {
-  font-size: 1.02em;
+  font-size: 1em;
+  margin-top: 0.5em;
 }
 
 .cat-card li {
-  margin-bottom: 0.8em;
-  line-height: 1.6;
+  margin-bottom: 0.7em;
+  line-height: 1.7;
 }
 
 /* --- 头部设计 --- */
@@ -385,12 +387,16 @@ a:hover { color: #c71585; }
 
   <div class="cat-card" style="background: #fff0f5; border-color: #ffc0cb;">
     <h2>🌿 The Story of Her Name</h2>
+    
     <p>Her last name <strong>'Xia' (夏)</strong> comes from the day we first met - it was <strong>Lixia (立夏)</strong>, the Start of Summer in the traditional Chinese calendar.</p>
+    
     <p>A few days later, when she came home, it happened to be <strong>Xiaoman (小满)</strong> — a solar term meaning <strong>'just full enough'</strong>.</p>
-    <hr style="border-top: 1px dashed #d87093; opacity: 0.3;">
-    <p style="font-size: 1.1em; text-align: center; margin-top: 15px;">
-      <em>There's an old saying, "Xiaoman sheng wanquan" (小满胜万全)<br>
-      Sometimes the happiest moments come from things that are simply, perfectly enough.</em>
+    
+    <hr style="border: 0; border-top: 1px dashed rgba(216, 112, 147, 0.3); margin: 1.8em 0;">
+    
+    <p style="font-size: 1.05em; text-align: center; font-style: italic; color: #8d6e63; line-height: 1.8;">
+      There's an old saying, <em>"Xiaoman sheng wanquan"</em> (小满胜万全)<br>
+      Sometimes the happiest moments come from things that are simply, perfectly enough.
     </p>
   </div>
 

@@ -30,7 +30,7 @@ a:hover { color: #c71585; }
 
 /* --- 容器与卡片 --- */
 .cat-container {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -38,10 +38,36 @@ a:hover { color: #c71585; }
 .cat-card {
   background: white;
   border-radius: 20px;
-  padding: 30px;
+  padding: 40px 45px;
   margin-bottom: 30px;
   box-shadow: 0 10px 25px rgba(216, 112, 147, 0.1);
   border: 2px solid #fff0f5;
+}
+
+.cat-card p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+.cat-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
+}
+
+.cat-card h3 {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.cat-card ul {
+  font-size: 1.05em;
+}
+
+.cat-card li {
+  margin-bottom: 0.8em;
+  line-height: 1.6;
 }
 
 /* --- 头部设计 --- */

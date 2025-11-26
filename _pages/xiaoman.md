@@ -42,6 +42,28 @@ hr {
   </p>
 </div>
 
+<!-- Portrait Gallery -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin: 3em 0; flex-wrap: wrap;">
+  <div style="flex: 0 0 auto; position: relative; transition: transform 0.3s ease;">
+    <img src="/images/xiaoman-portrait-1.png" alt="Xiaoman Portrait" style="width: 280px; height: 280px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.12)); transition: transform 0.3s ease;">
+  </div>
+  <div style="flex: 0 0 auto; position: relative; transition: transform 0.3s ease;">
+    <img src="/images/xiaoman-portrait-2.png" alt="Xiaoman Portrait" style="width: 280px; height: 280px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.12)); transition: transform 0.3s ease;">
+  </div>
+  <div style="flex: 0 0 auto; position: relative; transition: transform 0.3s ease;">
+    <img src="/images/xiaoman-portrait-3.png" alt="Xiaoman Portrait" style="width: 280px; height: 280px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.12)); transition: transform 0.3s ease;">
+  </div>
+</div>
+
+<style>
+div[style*="flex: 0 0 auto"]:hover {
+  transform: scale(1.05);
+}
+div[style*="flex: 0 0 auto"]:hover img {
+  transform: translateY(-5px);
+}
+</style>
+
 ## About Xiaoman
 
 Xiaoman Xia is not just a cat — she's the **Chief Keyboard Supervisor** and **Chief Emotional Support Officer** of my workspace.

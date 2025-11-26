@@ -200,64 +200,106 @@ a:hover { color: #c71585; }
     <h2>🐱 About Xiaoman</h2>
     <p>Xiaoman Xia is not just a cat — she's the <strong>Chief Keyboard Supervisor</strong> and <strong>Chief Emotional Support Officer</strong> of my workspace.</p>
     
-    <h3>Daily Responsibilities:</h3>
-    <ul class="cute-list">
-      <li>Sitting on keyboards at critical moments (Ctrl+Z won't save you)</li>
-      <li>Supervising every Git commit (Code review via staring)</li>
-      <li>Napping on research papers (Knowledge absorption via osmosis)</li>
-      <li>Ensuring work-life balance is maintained</li>
-      <li>Providing unconditional emotional support ❤️</li>
+    <p>Her daily responsibilities include:</p>
+    <ul>
+      <li>🐾 Sitting on keyboards at critical moments</li>
+      <li>💻 Supervising every Git commit</li>
+      <li>😴 Napping on research papers</li>
+      <li>🎯 Ensuring work-life balance is maintained</li>
+      <li>❤️ Providing unconditional emotional support</li>
     </ul>
   </div>
 
-  <div class="cat-card" style="background: #fff0f5; border-color: #ffc0cb;">
-    <h2>🌿 The Story of Her Name</h2>
-    <p>Her last name <strong>'Xia' (夏)</strong> comes from the day we first met - it was <strong>Lixia (立夏)</strong>, the Start of Summer.</p>
-    <p>When she came home, it happened to be <strong>Xiaoman (小满)</strong> — a solar term meaning <strong>'just full enough'</strong>.</p>
-    <hr style="border-top: 1px dashed #d87093; opacity: 0.3;">
-    <p style="font-size: 1.1em; text-align: center; margin-top: 15px;">
-      <em>"Xiaoman sheng wanquan" (小满胜万全)<br>
-      Sometimes the happiest moments come from things that are simply, perfectly enough.</em>
-    </p>
+  <hr style="border: 0; border-top: 1px solid #e8e8e8; margin: 2em 0;">
+
+  <div class="cat-card">
+    <h2>🌿 About Her Name</h2>
+    
+    <p>Her name carries a small story.</p>
+    
+    <p>Her last name 'Xia' (夏) comes from the day we first met - it was <strong>Lixia</strong> (立夏), the <strong>Start of Summer</strong> in the traditional Chinese calendar.</p>
+    
+    <p>A few days later, when she came home, it happened to be <strong>Xiaoman</strong> (小满) — a solar term meaning <strong>'just full enough,'</strong> a quiet kind of happiness.</p>
+    
+    <p>In Chinese culture, Xiaoman is about gentle contentment — being full, but not overflowing.</p>
+    
+    <p>There's an old saying, 'Xiaoman sheng wanquan' (小满胜万全): sometimes the happiest moments come from things that are simply, perfectly enough.</p>
   </div>
 
-  <h2 style="text-align: center; margin-top: 50px;">📸 Little Moments Gallery</h2>
-  <div class="moments-grid">
-    <div class="moment-item">
-      <img src="/images/avatar_xiaoman.jpg" alt="Official Portrait">
-      <div class="caption-overlay">The official portrait 📷</div>
-    </div>
-    <div class="moment-item">
-      <img src="/images/keyboard.jpg" alt="Keyboard Guardian">
-      <div class="caption-overlay">Chief Keyboard Guardian ⌨️</div>
-    </div>
-    <div class="moment-item">
-      <img src="/images/wink.jpg" alt="Wink">
-      <div class="caption-overlay">Happy wink moments 😉</div>
-    </div>
-    <div class="moment-item">
-      <img src="/images/xiaoman.jpg" alt="Stubborn">
-      <div class="caption-overlay">That stubborn look 😼</div>
-    </div>
-    <div class="moment-item">
-      <img src="/images/cute.jpg" alt="Hunter Mode">
-      <div class="caption-overlay">Hunter mode activated 🎯</div>
-    </div>
-    <div class="moment-item">
-      <img src="/images/jump.jpg" alt="Jump">
-      <div class="caption-overlay">360° mid-air rotation! 🤸‍♀️</div>
+  <hr style="border: 0; border-top: 1px solid #e8e8e8; margin: 2em 0;">
+
+  <h2>📸 Little Moments with Xiaoman</h2>
+
+  <div style="overflow-x: auto; padding: 20px 0; margin: 2em 0;">
+    <div style="display: flex; gap: 20px; padding: 10px; min-width: min-content;">
+      
+      <!-- Photo 1 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/avatar_xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">The official portrait 📷</p>
+      </div>
+
+      <!-- Photo 2 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/keyboard.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Chief Keyboard Guardian ⌨️ Sometimes she rests her head on my hands to stop me from working</p>
+      </div>
+
+      <!-- Photo 3 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/wink.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Happy wink moments 😉</p>
+      </div>
+
+      <!-- Photo 4 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/xiaoman.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">That stubborn look 😼<br>When she knows exactly what she wants</p>
+      </div>
+
+      <!-- Photo 5 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/cute.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">Hunter mode activated 🎯</p>
+      </div>
+
+      <!-- Photo 6 -->
+      <div style="flex: 0 0 250px; text-align: center;">
+        <img src="/images/jump.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p class="photo-caption" style="margin-top: 10px; color: #555; font-size: 0.9em; font-style: italic;">360° mid-air rotation in action! 🤸‍♀️<br>Yes, she can actually do backflips!</p>
+      </div>
+
     </div>
   </div>
 
-  <div style="text-align: center; margin-top: 60px; color: #8d6e63;">
-    <p style="font-family: 'Courier New', monospace; font-size: 0.9em; opacity: 0.7;">
-    🐱  mew meooow mew mew
-        meooow meooow meooow
-        mew mew mew meooow
-        mew
+  <style>
+  div[style*="overflow-x: auto"]::-webkit-scrollbar {
+    height: 8px;
+  }
+  div[style*="overflow-x: auto"]::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb {
+    background: #ffc0cb;
+    border-radius: 10px;
+  }
+  div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover {
+    background: #ffb6c1;
+  }
+  </style>
 
-    M.E.O.W. - Message Encoded, Obviously Whiskered.
+  <hr style="border: 0; border-top: 1px solid #e8e8e8; margin: 2em 0;">
+
+  <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <p style="font-size: 0.95em; color: #8d6e63; font-family: 'Courier New', monospace; white-space: pre; line-height: 1.6;">
+🐱  mew meooow mew mew
+    meooow meooow meooow
+    mew mew mew meooow
+    mew
+
+M.E.O.W. - Message Encoded, Obviously Whiskered.
+
+--- Xiaoman Xia 🐾
     </p>
-    <img src="/images/logo.png" style="width: 50px; opacity: 0.5; margin-top: 10px;">
-    <p style="font-weight: bold; margin-top: 5px;">— Xiaoman Xia 🐾</p>
   </div>

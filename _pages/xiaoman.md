@@ -195,12 +195,13 @@ a:hover { color: #c71585; }
   top: 2px;
 }
 
-/* --- 底部网格相册 --- */
+/* --- 底部照片墙 --- */
 .moments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 20px;
+  max-width: 100%;
 }
 .moment-item {
   position: relative;
@@ -215,6 +216,7 @@ a:hover { color: #c71585; }
 .moment-item img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
 }
@@ -233,6 +235,20 @@ a:hover { color: #c71585; }
 }
 .moment-item:hover .caption-overlay {
   transform: translateY(0);
+}
+
+/* 响应式：照片墙 */
+@media (max-width: 768px) {
+  .moments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .moments-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 /* --- 动画 --- */

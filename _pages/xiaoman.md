@@ -46,13 +46,13 @@ a:hover { color: #c71585; }
   margin-top: 50px;
 }
 
-/* 纸胶带装饰 - 左上角 */
+/* 纸胶带装饰 - 居中 */
 .cat-card::before {
   content: '';
   position: absolute;
   top: -12px;
-  left: 60px;
-  transform: rotate(-3deg);
+  left: 50%;
+  transform: translateX(-50%) rotate(-2.5deg);
   width: 100px;
   height: 30px;
   background-color: rgba(255, 228, 225, 0.65);
@@ -61,11 +61,10 @@ a:hover { color: #c71585; }
   z-index: 1;
 }
 
-/* 第二个卡片的胶带换位置和颜色 */
+/* 第二个卡片的胶带换颜色和角度 */
 .cat-card:nth-of-type(2)::before {
   background-color: rgba(255, 250, 205, 0.65);
-  left: 80px;
-  transform: rotate(2deg);
+  transform: translateX(-50%) rotate(1.8deg);
 }
 
 .cat-card p {

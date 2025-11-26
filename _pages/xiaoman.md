@@ -78,9 +78,11 @@ a:hover { color: #c71585; }
 .portrait-gallery {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2%;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 2em auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 .polaroid {
   background: white;
@@ -88,11 +90,15 @@ a:hover { color: #c71585; }
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   transform: rotate(0deg);
   transition: all 0.3s ease;
-  width: 300px;
+  flex: 0 1 30%;
+  max-width: 350px;
+  min-width: 250px;
+  cursor: pointer;
 }
 .polaroid img {
   width: 100%;
-  height: 300px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
   border: 1px solid #eee;
 }
@@ -102,9 +108,67 @@ a:hover { color: #c71585; }
 .polaroid:nth-child(3) { transform: rotate(-2deg); }
 
 .polaroid:hover {
-  transform: scale(1.05) rotate(0deg);
+  transform: scale(1.05) rotate(0deg) !important;
   z-index: 10;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 响应式：平板 */
+@media (max-width: 900px) {
+  .portrait-gallery { gap: 3%; }
+  .polaroid { flex: 0 1 30%; min-width: 200px; }
+}
+
+/* 响应式：手机 */
+@media (max-width: 600px) {
+  .portrait-gallery { 
+    flex-direction: row; 
+    gap: 2%;
+    padding: 0 10px;
+  }
+  .polaroid { 
+    flex: 0 1 31%; 
+    min-width: 0;
+    max-width: none;
+    padding: 8px 8px 20px 8px;
+  }
+  .polaroid:nth-child(2) { margin-top: 0; }
+}
+
+/* 灯箱效果 */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: zoomIn 0.3s ease;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 /* --- 列表与文字 --- */
@@ -171,25 +235,45 @@ a:hover { color: #c71585; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- 响应式调整 --- */
-@media (max-width: 768px) {
-  .polaroid { width: 100%; max-width: 280px; margin: 10px auto; transform: none !important; }
-}
 </style>
 
 <div class="cat-container">
 
   <div class="portrait-gallery">
-    <div class="polaroid">
+    <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-1.png')">
       <img src="/images/xiaoman-portrait-1.png" alt="Xiaoman 1">
     </div>
-    <div class="polaroid">
+    <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-2.png')">
       <img src="/images/xiaoman-portrait-2.png" alt="Xiaoman 2">
     </div>
-    <div class="polaroid">
+    <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-3.png')">
       <img src="/images/xiaoman-portrait-3.png" alt="Xiaoman 3">
     </div>
   </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+  </div>
+
+  <script>
+    function openLightbox(imgSrc) {
+      document.getElementById('lightbox').classList.add('active');
+      document.getElementById('lightbox-img').src = imgSrc;
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+    
+    // ESC键关闭
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 
   <div class="cat-header" style="margin-top: 40px;">
     <h1 class="main-title">Xiaoman Xia (夏小满)</h1>
@@ -210,20 +294,15 @@ a:hover { color: #c71585; }
     </ul>
   </div>
 
-  <hr style="border: 0; border-top: 1px solid #e8e8e8; margin: 2em 0;">
-
-  <div class="cat-card">
-    <h2>🌿 About Her Name</h2>
-    
-    <p>Her name carries a small story.</p>
-    
-    <p>Her last name 'Xia' (夏) comes from the day we first met - it was <strong>Lixia</strong> (立夏), the <strong>Start of Summer</strong> in the traditional Chinese calendar.</p>
-    
-    <p>A few days later, when she came home, it happened to be <strong>Xiaoman</strong> (小满) — a solar term meaning <strong>'just full enough,'</strong> a quiet kind of happiness.</p>
-    
-    <p>In Chinese culture, Xiaoman is about gentle contentment — being full, but not overflowing.</p>
-    
-    <p>There's an old saying, 'Xiaoman sheng wanquan' (小满胜万全): sometimes the happiest moments come from things that are simply, perfectly enough.</p>
+  <div class="cat-card" style="background: #fff0f5; border-color: #ffc0cb;">
+    <h2>🌿 The Story of Her Name</h2>
+    <p>Her last name <strong>'Xia' (夏)</strong> comes from the day we first met - it was <strong>Lixia (立夏)</strong>, the Start of Summer in the traditional Chinese calendar.</p>
+    <p>A few days later, when she came home, it happened to be <strong>Xiaoman (小满)</strong> — a solar term meaning <strong>'just full enough'</strong>.</p>
+    <hr style="border-top: 1px dashed #d87093; opacity: 0.3;">
+    <p style="font-size: 1.1em; text-align: center; margin-top: 15px;">
+      <em>There's an old saying, "Xiaoman sheng wanquan" (小满胜万全)<br>
+      Sometimes the happiest moments come from things that are simply, perfectly enough.</em>
+    </p>
   </div>
 
   <hr style="border: 0; border-top: 1px solid #e8e8e8; margin: 2em 0;">

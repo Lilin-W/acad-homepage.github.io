@@ -127,7 +127,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/) — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻
 
-I love Lana Del Rey's music and the aesthetic of her work. I've been experimenting with capturing similar vibes in my own photos and videos.
+I love [**Lana Del Rey's music**](/lana/) and the aesthetic of her work. I've been experimenting with capturing similar vibes in my own photos and videos.
 
 I've also gotten into film photography lately. Still learning, but I love the process and I'm always looking to get better at it.
 

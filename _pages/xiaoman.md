@@ -337,7 +337,7 @@ a:hover { color: #c71585; }
       <img src="/images/xiaoman-portrait-2.png" alt="Xiaoman 2">
     </div>
     <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-3.png')">
-      <img src="/images/xiaoman-portrait-3.png" alt="Xiaoman 3">
+      <img src="/images/xiaoman-portrait-4.png" alt="Xiaoman 3">
     </div>
   </div>
 

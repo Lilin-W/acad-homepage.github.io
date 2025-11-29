@@ -1,171 +1,55 @@
 ---
 layout: single
-title: "Lana's Journal"
+title: "Lana Del Rey"
 permalink: /lana/
 author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@600&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;1,400&family=Special+Elite&display=swap" rel="stylesheet">
 
 <style>
-/* --- 全局背景：蕾丝纹理 + 皱纸感 --- */
-.journal-wrapper {
-    /* 模拟复杂的蕾丝/桌布背景 */
-    background-color: #f4e4d4;
-    background-image: 
-        radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent),
-        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent) !important;
-    background-size: 50px 50px;
-    padding: 40px 10px;
+/* --- 全局容器 --- */
+.lana-wrapper {
     font-family: 'Playfair Display', serif;
-    overflow-x: hidden;
-    color: #2b2b2b;
+    background-color: #fdfbf7; /* 米色纸张质感 */
+    color: #2c2c2c;
+    overflow: hidden; /* 防止旋转元素溢出 */
+    padding: 20px 0;
 }
 
-/* --- 特效组件：透明胶带 (Scotch Tape) --- */
-.tape {
-    position: absolute;
-    width: 120px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transform: rotate(-3deg);
-    z-index: 10;
-    backdrop-filter: blur(2px); /* 磨砂感 */
-    border-left: 1px dashed rgba(255,255,255,0.3);
-    border-right: 1px dashed rgba(255,255,255,0.3);
-    opacity: 0.7;
-}
-
-/* --- 特效组件：撕裂的纸张边缘 (Torn Paper) --- */
-.torn-paper-box {
-    background: #fffdf5;
-    padding: 30px;
-    margin: 40px auto;
-    position: relative;
-    box-shadow: 5px 10px 15px rgba(0,0,0,0.1);
-    max-width: 90%;
-    /* CSS 锯齿边缘模拟撕裂效果 */
-    --mask: radial-gradient(10px at 50% 12.5px, #000 99%, #0000 101%) 50% -12.5px / 20px 25px repeat-x;
-    -webkit-mask: var(--mask) bottom, var(--mask) top;
-     mask: var(--mask) bottom, var(--mask) top;
-}
-
-/* --- 1. 顶部旧报纸头条区 --- */
-.newspaper-clipping {
-    background-color: #f7f1e3; /* 泛黄旧报纸色 */
-    padding: 20px;
-    border: 1px solid #dcdcdc;
+/* --- 1. 标题区 (Hero Section) --- */
+.hero-title {
+    text-align: center;
     margin-bottom: 50px;
-    transform: rotate(1deg);
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    position: relative;
 }
 
-.newspaper-header {
-    border-bottom: 2px solid #333;
-    border-top: 4px double #333;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.newspaper-title {
-    font-family: 'UnifrakturMaguntia', cursive; /* 哥特式报纸标题字 */
-    font-size: 3em;
-    margin: 0;
-    color: #111;
-    letter-spacing: 2px;
-}
-
-.newspaper-date {
-    font-family: 'Special Elite', monospace;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #555;
-    padding: 5px 0;
-    margin-top: 5px;
-}
-
-/* 报纸正文分栏 */
-.newspaper-body {
-    column-count: 2;
-    column-gap: 20px;
-    font-size: 0.95em;
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.drop-cap {
-    float: left;
-    font-size: 3.5em;
-    line-height: 0.8;
-    padding-right: 5px;
+.hero-title h1 {
     font-family: 'Cinzel', serif;
-    color: #6a1b9a; /* 紫色首字母 */
+    font-size: 3.5em; /* 更大的标题 */
+    letter-spacing: 5px;
+    color: #111;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 }
 
-/* --- 2. 拍立得散乱拼贴区 --- */
-.scrapbook-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    margin: 60px 0;
-    position: relative;
-}
-
-.polaroid-frame {
-    background: #fff;
-    padding: 12px 12px 40px 12px;
-    box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
-    width: 280px;
-    transition: transform 0.3s ease;
-    position: relative;
-}
-
-/* 胶带位置微调 */
-.tape.top-center { top: -15px; left: 35%; transform: rotate(2deg); }
-.tape.corner-left { top: -10px; left: -20px; transform: rotate(-35deg); }
-.tape.corner-right { bottom: 10px; right: -20px; transform: rotate(-35deg); }
-
-.polaroid-frame img {
-    width: 100%;
-    height: 280px; /* 正方形裁剪 */
-    object-fit: cover;
-    filter: sepia(20%) contrast(95%);
-}
-
-.handwritten-caption {
+.hero-subtitle {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.4em;
-    color: #444;
-    text-align: center;
-    margin-top: 15px;
+    font-size: 1.8em;
+    color: #b76e79; /* 干燥玫瑰色 */
+    margin-top: -10px;
     transform: rotate(-2deg);
+    display: inline-block;
 }
 
-/* 让照片乱一点 */
-.polaroid-frame:nth-child(1) { transform: rotate(-4deg); z-index: 1; }
-.polaroid-frame:nth-child(2) { transform: rotate(3deg); margin-top: 40px; z-index: 2; }
-.polaroid-frame:nth-child(3) { transform: rotate(-2deg); z-index: 3; }
-.polaroid-frame:nth-child(4) { transform: rotate(5deg); margin-top: -20px; z-index: 1; }
-.polaroid-frame:nth-child(5) { transform: rotate(-3deg); margin-top: 30px; z-index: 2; }
-.polaroid-frame:nth-child(6) { transform: rotate(2deg); z-index: 3; }
-
-.polaroid-frame:hover {
-    transform: scale(1.05) rotate(0deg) !important;
-    z-index: 100;
-    box-shadow: 10px 20px 30px rgba(0,0,0,0.3);
-}
-
-/* --- 3. 撕页诗歌 (Torn Note) --- */
+/* --- 撕页诗歌 (Torn Note) - 保留的部分 --- */
 .torn-note {
     background: #fdf6e3;
     width: 300px;
     padding: 20px;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
@@ -175,86 +59,203 @@ toc: false
     clip-path: polygon(0% 0%, 5% 5%, 10% 0%, 15% 5%, 20% 0%, 25% 5%, 30% 0%, 35% 5%, 40% 0%, 45% 5%, 50% 0%, 55% 5%, 60% 0%, 65% 5%, 70% 0%, 75% 5%, 80% 0%, 85% 5%, 90% 0%, 95% 5%, 100% 0%, 100% 100%, 0% 100%);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+
+/* --- 2. 胶片长廊 (Film Strip) --- */
+/* 模拟电影底片的黑色边框和穿孔效果 */
+.film-strip-container {
+    background-color: #1a1a1a;
+    padding: 30px 0;
+    margin: 40px -20px; /* 负边距让它撑满宽度 */
+    overflow-x: auto; /* 允许横向滑动 */
+    white-space: nowrap;
+    box-shadow: inset 0 0 20px #000;
+    
+    /* 胶片上下穿孔效果 (用虚线模拟) */
+    border-top: 2px dashed #555;
+    border-bottom: 2px dashed #555;
+}
+
+/* 隐藏滚动条但保留功能 */
+.film-strip-container::-webkit-scrollbar {
+    height: 8px;
+    background: #111;
+}
+
+.film-strip-container::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.film-frame {
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    margin: 0 15px;
+    background: #000;
+    padding: 15px 5px; /* 上下留黑边 */
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.film-frame:hover {
+    transform: scale(1.02); /* 悬停轻微放大 */
+    z-index: 10;
+}
+
+.film-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(40%) contrast(110%); /* 略微黑白+高反差 */
+    border-radius: 2px;
+}
+
+/* --- 3. 手账拼贴区 (Journal Collage) --- */
+.journal-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 20px;
+    position: relative;
+}
+
+/* 左侧：打字机文字 */
+.journal-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 40px;
+    font-family: 'Special Elite', cursive; /* 打字机字体 */
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.05);
+    transform: rotate(1deg);
+    border: 1px solid #eee;
+    z-index: 2; /* 文字浮在最上层 */
+}
+
+/* 右侧：散落的照片堆 */
+.journal-photos {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    height: 400px; /* 预留高度给堆叠照片 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scattered-photo {
+    position: absolute;
+    border: 8px solid #fff;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+    width: 240px;
+    transition: all 0.4s ease;
+}
+
+/* 第一张照片：向左歪，放在底层 */
+.scattered-photo:nth-child(1) {
+    transform: rotate(-10deg) translate(-30px, 10px);
+    z-index: 1;
+}
+
+/* 第二张照片：向右歪，叠在上面 */
+.scattered-photo:nth-child(2) {
+    transform: rotate(8deg) translate(20px, -10px);
+    z-index: 3;
+}
+
+/* 鼠标悬停时的动态效果：照片散开 */
+.journal-photos:hover .scattered-photo:nth-child(1) {
+    transform: rotate(-15deg) translate(-60px, 20px) scale(1.05);
+}
+
+.journal-photos:hover .scattered-photo:nth-child(2) {
+    transform: rotate(10deg) translate(50px, -20px) scale(1.05);
+}
+
+.lyric-highlight {
+    color: #a83f39; /* 深红色高亮 */
+    font-weight: bold;
+}
+
+/* 装饰性分割线 */
+.vintage-line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
 </style>
 
-<div class="journal-wrapper">
-
-    <div class="newspaper-clipping">
-        <div class="newspaper-header">
-            <h1 class="newspaper-title">The Daily Lana</h1>
-            <div class="newspaper-date">
-                <span>VOL. I</span>
-                <span>EST. 2025</span>
-                <span>$0.25</span>
-            </div>
-        </div>
-        
-        <div class="newspaper-body">
-            <p>
-                <span class="drop-cap">S</span>he wears her heart on her sleeve like a badge of honor. 
-                The world is chaotic, but in these frames, time stands still. 
-                We are capturing the fleeting moments of youth, the summertime sadness, and the golden hour glow.
-            </p>
-            <p>
-                Everything is a collage of memories. Old tickets, dried roses, and the sound of a vinyl spinning in an empty room.
-                <br><br>
-                <em>"I'm your national anthem."</em>
-            </p>
-        </div>
+<div class="lana-wrapper">
+    <div class="hero-title">
+        <h1>Lana Del Rey</h1>
+        <div class="hero-subtitle">"I'm your little harlot, starlet."</div>
     </div>
 
     <div class="torn-note">
-        <div class="tape top-center" style="opacity:0.5;"></div>
         <p>
             "That's how the light gets in.<br>
             Then you're <strong style="color:#d4af37;">golden</strong>."
         </p>
     </div>
 
-    <div class="scrapbook-grid">
-        <div class="polaroid-frame">
-            <div class="tape top-center"></div>
-            <img src="/images/xiaoman-portrait-1.png" alt="Lana 1">
-            <div class="handwritten-caption">Vintage Soul</div>
+    <div class="film-strip-container">
+        
+        <div class="film-frame">
+            <img src="/images/xiaoman-portrait-1.png" alt="Film Shot 1">
+        </div>
+        
+        <div class="film-frame">
+            <img src="/images/xiaoman-portrait-2.png" alt="Film Shot 2">
         </div>
 
-        <div class="polaroid-frame">
-            <div class="tape corner-left"></div>
-            <img src="/images/xiaoman-portrait-2.png" alt="Lana 2">
-            <div class="handwritten-caption">Soft Grunge</div>
+        <div class="film-frame">
+            <img src="/images/xiaoman-portrait-3.png" alt="Lana Vibe">
         </div>
 
-        <div class="polaroid-frame">
-            <div class="tape top-center"></div>
-            <img src="/images/xiaoman-portrait-3.png" alt="Lana 3">
-            <div class="handwritten-caption">Art Deco</div>
+        <div class="film-frame">
+            <img src="/images/cute.jpg" alt="Vintage Car">
         </div>
 
-        <div class="polaroid-frame">
-             <div class="tape corner-right"></div>
-            <img src="/images/cute.jpg" alt="Lana 4">
-            <div class="handwritten-caption">Cherry</div>
+        <div class="film-frame">
+            <img src="/images/wink.jpg" alt="Film Shot 5">
         </div>
 
-        <div class="polaroid-frame">
-            <div class="tape top-center"></div>
-            <img src="/images/wink.jpg" alt="Lana 5">
-            <div class="handwritten-caption">West Coast</div>
-        </div>
-
-        <div class="polaroid-frame">
-            <div class="tape corner-left"></div>
-            <img src="/images/jump.jpg" alt="Lana 6">
-            <div class="handwritten-caption">Ultraviolence</div>
+        <div class="film-frame">
+            <img src="/images/jump.jpg" alt="Film Shot 6">
         </div>
     </div>
 
-    <div class="torn-paper-box">
-        <p style="text-align:center; font-style:italic; color:#555;">
-           More than work. Just vibes. <br>
-           Designed with love & tears.
-        </p>
-    </div>
+    <hr class="vintage-line">
 
+    <div class="journal-section">
+        
+        <div class="journal-text">
+            <p>
+                <strong>September 2025.</strong><br><br>
+                Sitting on the porch, listening to <span class="lyric-highlight">Ultraviolence</span> on repeat. 
+                The world feels like a grainy movie scene sometimes. 
+                <br><br>
+                I try to capture these fleeting moments—the light, the shadows, the melancholy beauty of everyday life. 
+                It's not just about the picture; it's about the feeling of being <em>infinite</em>.
+            </p>
+        </div>
+
+        <div class="journal-photos">
+            <img class="scattered-photo" src="/images/xiaoman-portrait-4.png" alt="Memory 1">
+            <img class="scattered-photo" src="/images/keyboard.jpg" alt="Memory 2">
+        </div>
+    </div>
+    
+    <div style="text-align:center; margin-top:50px; font-family:'Cinzel', serif; font-size:0.9em; opacity:0.6;">
+        — EST. 2025 —
+    </div>
 </div>
 

@@ -330,11 +330,11 @@ a:hover { color: #c71585; }
 <div class="cat-container">
 
   <div class="portrait-gallery">
-    <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-2.png')">
-      <img src="/images/xiaoman-portrait-2.png" alt="Xiaoman 2">
-    </div>
     <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-1.png')">
       <img src="/images/xiaoman-portrait-1.png" alt="Xiaoman 1">
+    </div>
+    <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-2.png')">
+      <img src="/images/xiaoman-portrait-2.png" alt="Xiaoman 2">
     </div>
     <div class="polaroid" onclick="openLightbox('/images/xiaoman-portrait-4.png')">
       <img src="/images/xiaoman-portrait-4.png" alt="Xiaoman 3">

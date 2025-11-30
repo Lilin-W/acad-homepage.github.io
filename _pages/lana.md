@@ -117,22 +117,22 @@ toc: false
     border: 8px solid #1a1a1a;
     display: flex;
     align-items: stretch; /* 左右等高 */
-    max-width: 650px; /* 缩小宽度 */
-    min-width: 450px;
+    max-width: 520px; /* 更紧凑 */
+    min-width: 420px;
     flex: 2;
     position: relative;
 }
 
-/* 左侧屏幕 */
+/* 左侧屏幕 - 真正的 4:3 比例 */
 .tv-screen-bezel {
-    width: 427px; /* 4:3 比例: 320px * 4/3 */
+    width: 400px; /* 4:3 比例精确计算: 300 * 4/3 = 400 */
     background: #000;
     border-radius: 12px; /* 屏幕圆角 */
     border: 4px solid #444; /* 屏幕边框 */
     box-shadow: inset 0 0 20px #000;
     overflow: hidden;
     position: relative;
-    height: 320px; /* 改成矮宽的 4:3 比例 */
+    height: 300px; /* 4:3 比例 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,13 +161,13 @@ toc: false
 
 /* 右侧控制面板 (The Side Box) */
 .tv-control-panel {
-    width: 120px; /* 固定宽度 */
+    width: 55px; /* 非常紧凑的宽度 */
     background: #222;
-    margin-left: 15px;
+    margin-left: 10px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 12px 5px;
     border: 2px solid #111;
     position: relative;
     /* 木纹质感模拟 */
@@ -180,31 +180,31 @@ toc: false
 .speaker-grille {
     flex: 1; /* 占据剩余空间 */
     background-image: repeating-linear-gradient(0deg, #111, #111 2px, #333 3px, #333 4px);
-    border-radius: 4px;
-    margin-top: 20px;
+    border-radius: 3px;
+    margin-top: 8px;
     box-shadow: inset 0 0 5px #000;
 }
 
 /* 旋钮 (Knobs) */
 .knob {
-    width: 50px; height: 50px;
+    width: 28px; height: 28px;
     background: #111;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 6px auto;
     border: 2px solid #444;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     position: relative;
 }
 .knob::after {
-    content: ""; position: absolute; top: 5px; left: 50%; width: 4px; height: 15px; background: #fff; transform: translateX(-50%);
+    content: ""; position: absolute; top: 2px; left: 50%; width: 2px; height: 8px; background: #fff; transform: translateX(-50%);
 }
 .knob.channel { transform: rotate(45deg); }
 .knob.volume { transform: rotate(-15deg); }
 
 /* 电源灯 */
 .power-led {
-    width: 10px; height: 10px; background: #f00; border-radius: 50%; margin: 0 auto 10px;
-    box-shadow: 0 0 5px #f00; animation: blink 3s infinite;
+    width: 6px; height: 6px; background: #f00; border-radius: 50%; margin: 0 auto 6px;
+    box-shadow: 0 0 3px #f00; animation: blink 3s infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.6} }
 
@@ -259,22 +259,19 @@ toc: false
 /* 专辑名文字 */
 .vhs-case span {
     z-index: 2;
-    font-family: 'Monsieur La Doulaise', cursive; /* 手写体 */
-    font-size: 1.6em;
-    color: #2a2a2a;
-    font-weight: bold;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.3); /* 轻微的浮雕效果 */
+    font-family: 'Special Elite', cursive; /* 打字机字体，更清晰 */
+    font-size: 1.1em;
+    color: #1a1a1a;
+    font-weight: normal;
+    text-shadow: none;
     letter-spacing: 0.5px;
 }
 
 /* 给不同专辑加彩色底边标记 */
-.vhs-case:nth-child(1)::before { border-bottom: 3px solid #a93226; } /* Born to Die 红 */
-.vhs-case:nth-child(2)::before { border-bottom: 3px solid #2c3e50; } /* Ultraviolence 蓝黑 */
-.vhs-case:nth-child(3)::before { border-bottom: 3px solid #1abc9c; } /* Honeymoon 绿 */
+.vhs-case:nth-child(1)::before { border-bottom: 3px solid #d35400; } /* Born to Die 橙红 */
+.vhs-case:nth-child(2)::before { border-bottom: 3px solid #2980b9; } /* Ultraviolence 蓝 */
+.vhs-case:nth-child(3)::before { border-bottom: 3px solid #27ae60; } /* Honeymoon 绿 */
 .vhs-case:nth-child(4)::before { border-bottom: 3px solid #8e44ad; } /* Lana's Cut 紫 */
-
-/* 特殊款用红色字体 */
-.vhs-case:nth-child(4) span { color: #a83f39; }
 
 
 /* --- C. 超市小票歌单 (The Receipt) --- */
@@ -313,8 +310,8 @@ toc: false
 @media (max-width: 900px) {
     .vintage-scene-container { flex-direction: column; align-items: center; }
     .tv-unit { width: 100%; min-width: auto; max-width: 100%; flex-direction: column; }
-    .tv-screen-bezel { width: 100%; max-width: 373px; height: 280px; } /* 移动端保持 4:3 比例 */
-    .tv-control-panel { width: 100%; max-width: 373px; flex-direction: row; height: 80px; margin-left: 0; margin-top: 10px; }
+    .tv-screen-bezel { width: 100%; max-width: 320px; height: 240px; } /* 移动端保持 4:3 比例 (320:240) */
+    .tv-control-panel { width: 100%; max-width: 320px; flex-direction: row; height: 70px; margin-left: 0; margin-top: 10px; }
     .speaker-grille { margin-top: 0; margin-left: 20px; }
     .knob { margin: 5px 10px; }
     .receipt-paper { transform: rotate(0); margin-top: 30px; }

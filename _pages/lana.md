@@ -6,257 +6,217 @@ author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
 <style>
-/* --- 全局设置：揉皱纸张背景 --- */
+/* --- 全局重置：纯白、极简 --- */
 .lana-wrapper {
-    /* 1. 设置纸张底色 */
-    background-color: #f3eada; 
-    color: #222;
-    font-family: 'Cormorant Garamond', serif;
-    padding: 80px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    
-    /* 2. 加入揉皱纸张纹理图片 */
-    /* 这是一个模拟皱纸和纤维的纹理图案 */
-    background-image: url("https://www.transparenttextures.com/patterns/criss-cross.png"), 
-                      linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(0,0,0,0.05));
-    background-blend-mode: overlay; /* 混合模式让纹理更自然 */
-    box-shadow: inset 0 0 100px rgba(0,0,0,0.1); /* 内阴影增加立体感 */
-}
-
-/* 装饰线条：颜色加深一点以适应纸张 */
-.vertical-line {
-    position: absolute;
-    top: 0; bottom: 0; left: 15%;
-    width: 1px;
-    background: rgba(0,0,0,0.15);
-    z-index: 0;
-}
-
-/* --- 1. 标题区 --- */
-.header-section {
-    position: relative;
-    margin-bottom: 100px;
-    padding-left: 15%;
-    z-index: 2;
-}
-
-.big-title {
-    font-size: 6em;
-    font-weight: 300;
-    line-height: 0.9;
-    letter-spacing: -2px;
-    margin: 0;
-    margin-left: -5px;
+    background-color: #ffffff;
     color: #111;
-    /* 文字也带一点纹理感 */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.sub-meta {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.75em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    color: #666;
+/* --- 核心布局：双栏 (左固定，右滚动) --- */
+.split-container {
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
-/* --- 2. 核心视觉区 --- */
-.feature-layout {
+/* 左侧：固定区域 (Sticky) */
+.left-pane {
+    width: 35%; /* 左侧宽度 */
+    padding: 80px 50px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 150px;
-    position: relative;
-    z-index: 2;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    border-right: 1px solid #f0f0f0; /* 极淡的分割线 */
+    background: #fff;
+    z-index: 10;
 }
 
-.left-col {
-    width: 35%;
-    padding-top: 60px;
+/* 右侧：滚动区域 */
+.right-pane {
+    width: 65%; /* 右侧宽度 */
+    padding: 80px 60px;
+    background: #fff;
+}
+
+/* --- 字体排版 --- */
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    color: #000;
 }
 
 .intro-text {
-    font-size: 1.4em;
-    font-style: italic;
-    line-height: 1.6;
-    color: #333;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #666;
+    font-weight: 300;
+    max-width: 90%;
     margin-bottom: 40px;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 
-.small-img-wrapper {
-    width: 80%;
-    margin-left: auto;
-    position: relative;
-}
-
-/* 小图也同步变黑白 */
-.small-img {
-    width: 100%;
-    display: block;
-    transition: all 0.5s;
-    filter: grayscale(100%) contrast(110%);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-}
-.small-img:hover { filter: grayscale(0%) contrast(100%); }
-
-.right-col {
-    width: 55%;
-    position: relative;
-    margin-top: -40px;
-}
-
-/* --- 重点修改：大图黑白印刷效果 --- */
-.large-img {
-    width: 100%;
-    display: block;
-    /* 1. 强烈的黑白高对比滤镜 */
-    filter: grayscale(100%) contrast(120%) brightness(0.9);
-    /* 2. 正片叠底模式：让纸张纹理透上来，像印在纸上一样 */
-    mix-blend-mode: multiply; 
-    /* 3. 柔和的阴影，不再是硬卡片 */
-    box-shadow: 15px 20px 40px rgba(0,0,0,0.3);
-    transition: all 0.5s ease;
-}
-
-/* 悬停时稍微恢复一点色彩（可选，如果不喜欢可以删掉下面这行）*/
-.large-img:hover {
-     filter: grayscale(50%) contrast(110%) brightness(1);
-}
-
-.img-caption-vertical {
-    position: absolute;
-    right: -30px; bottom: 0;
-    transform: rotate(-90deg);
-    transform-origin: bottom right;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7em;
-    letter-spacing: 3px;
-    color: #777;
+.meta-info {
+    font-size: 0.75em;
     text-transform: uppercase;
-    white-space: nowrap;
+    letter-spacing: 2px;
+    color: #aaa;
+    margin-top: auto; /* 推到底部 */
 }
 
-/* --- 3. 底部画廊 --- */
-.gallery-section {
-    padding-left: 15%;
-    position: relative;
-    z-index: 2;
+/* 装饰性短线 */
+.separator {
+    width: 40px;
+    height: 1px;
+    background: #000;
+    margin-bottom: 30px;
 }
 
-.section-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    color: #555;
+/* --- 图片流列表 --- */
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* 图片之间的大间距 */
 }
 
-.minimal-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.grid-item {
-    aspect-ratio: 3/4;
-    overflow: hidden;
-    position: relative;
-    background: #e0e0e0;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-}
-
-.grid-item img {
+.work-item {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    /* 底部网格图也默认黑白 */
-    filter: grayscale(100%) contrast(110%);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards; /* 淡入动画 */
 }
 
-.grid-item:hover img {
-    transform: scale(1.1);
-    filter: grayscale(0%); /* 悬停恢复彩色 */
+/* 图片样式：无滤镜，可能有微弱阴影 */
+.work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03); /* 极轻的阴影，增加离地感 */
+    transition: transform 0.5s ease;
 }
 
-/* 移动端适配 */
-@media (max-width: 768px) {
-    .lana-wrapper { padding: 40px 20px; }
-    .vertical-line { display: none; }
-    .header-section, .gallery-section { padding-left: 0; }
-    .feature-layout { flex-direction: column-reverse; }
-    .left-col, .right-col { width: 100%; }
-    .right-col { margin-top: 0; margin-bottom: 40px; }
-    .big-title { font-size: 4em; }
-    .minimal-grid { grid-template-columns: 1fr 1fr; }
+.work-item:hover img {
+    transform: translateY(-5px); /* 悬停轻微上浮 */
+}
+
+.work-caption {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f5f5f5;
+    padding-top: 15px;
+}
+
+.caption-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #222;
+}
+
+.caption-date {
+    font-size: 0.8em;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* 动画 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 延迟动画，让图片依次出现 */
+.work-item:nth-child(1) { animation-delay: 0.1s; }
+.work-item:nth-child(2) { animation-delay: 0.3s; }
+.work-item:nth-child(3) { animation-delay: 0.5s; }
+.work-item:nth-child(4) { animation-delay: 0.7s; }
+
+/* 移动端适配：取消分屏，改为上下排列 */
+@media (max-width: 900px) {
+    .split-container { flex-direction: column; }
+    .left-pane { 
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+        padding: 60px 30px; 
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .right-pane { width: 100%; padding: 40px 20px; }
+    .work-list { gap: 60px; }
 }
 </style>
 
 <div class="lana-wrapper">
-    
-    <div class="vertical-line"></div>
-
-    <div class="header-section">
-        <h1 class="big-title">Lana<br>Del Rey</h1>
-        <div class="sub-meta">
-            <span>Vol. 2025</span>
-            <span>Est. Los Angeles</span>
-            <span>Archive</span>
-        </div>
-    </div>
-
-    <div class="feature-layout">
+    <div class="split-container">
         
-        <div class="left-col">
+        <div class="left-pane">
+            <div class="separator"></div>
+            <h1 class="brand-title">Lana<br>Del Rey</h1>
             <div class="intro-text">
-                "That's how the light gets in. <br>
-                Then you're golden."
-                <br><br>
-                <span style="font-size:0.7em; font-family:'Montserrat'; color:#777; text-transform:uppercase; letter-spacing:2px;">
-                    — The Philosophy
-                </span>
+                <p>
+                    A visual archive exploring the aesthetics of nostalgia, glamour, and melancholia. 
+                    Capturing moments that feel like a faded memory from a different era.
+                </p>
+                <p>
+                    <em>"That's how the light gets in."</em>
+                </p>
             </div>
-
-            <div class="small-img-wrapper">
-                <img src="/images/xiaoman-portrait-2.png" alt="Detail Shot" class="small-img">
+            
+            <div class="meta-info">
+                <span>Est. 2025</span> &nbsp;—&nbsp; <span>Los Angeles</span>
             </div>
         </div>
 
-        <div class="right-col">
-            <img src="/images/xiaoman-portrait-4.png" alt="Main Visual" class="large-img">
-            <div class="img-caption-vertical">Figure 01. Ultraviolence Era</div>
-        </div>
+        <div class="right-pane">
+            <div class="work-list">
+                
+                <div class="work-item">
+                    <img src="/images/xiaoman-portrait-4.png" alt="Portrait">
+                    <div class="work-caption">
+                        <span class="caption-title">Summertime Sadness</span>
+                        <span class="caption-date">01 / 25</span>
+                    </div>
+                </div>
 
+                <div class="work-item">
+                    <img src="/images/xiaoman-portrait-1.png" alt="Detail">
+                    <div class="work-caption">
+                        <span class="caption-title">Blue Jeans</span>
+                        <span class="caption-date">02 / 25</span>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <img src="/images/cute.jpg" alt="Vibe">
+                    <div class="work-caption">
+                        <span class="caption-title">Young & Beautiful</span>
+                        <span class="caption-date">03 / 25</span>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <img src="/images/keyboard.jpg" alt="Object">
+                    <div class="work-caption">
+                        <span class="caption-title">Ultraviolence</span>
+                        <span class="caption-date">04 / 25</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-    <div class="gallery-section">
-        <div class="section-label">Selected Works / Print Archive</div>
-        
-        <div class="minimal-grid">
-            <div class="grid-item">
-                <img src="/images/xiaoman-portrait-1.png" alt="Gallery 1">
-            </div>
-            <div class="grid-item">
-                <img src="/images/cute.jpg" alt="Gallery 2">
-            </div>
-            <div class="grid-item">
-                <img src="/images/keyboard.jpg" alt="Gallery 3">
-            </div>
-        </div>
-    </div>
-
 </div>

@@ -132,7 +132,7 @@ toc: false
     box-shadow: inset 0 0 20px #000;
     overflow: hidden;
     position: relative;
-    min-height: 400px; /* 高度 */
+    height: 320px; /* 改成矮宽的 4:3 比例 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,6 +143,19 @@ toc: false
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%); background-size: 100% 4px; /* 扫描线 */
     pointer-events: none; z-index: 20;
     box-shadow: inset 0 0 80px rgba(0,0,0,0.7); /* 暗角 */
+}
+
+/* 视频居中显示 */
+.tv-screen-bezel blockquote {
+    position: relative;
+    margin: 0 !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+}
+.tv-screen-bezel iframe {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
 }
 
 /* 右侧控制面板 (The Side Box) */
@@ -268,6 +281,7 @@ toc: false
 @media (max-width: 900px) {
     .vintage-scene-container { flex-direction: column; align-items: center; }
     .tv-unit { width: 100%; min-width: auto; flex-direction: column; }
+    .tv-screen-bezel { height: 280px; } /* 移动端稍微矮一点 */
     .tv-control-panel { flex-direction: row; height: 80px; margin-left: 0; margin-top: 10px; }
     .speaker-grille { margin-top: 0; margin-left: 20px; }
     .knob { margin: 5px 10px; }
@@ -358,10 +372,10 @@ toc: false
         </div>
 
         <div class="vhs-rack">
-            <div class="vhs-case"><span>TAPES 01</span></div>
-            <div class="vhs-case"><span>TAPES 02</span></div>
-            <div class="vhs-case"><span>TAPES 03</span></div>
-            <div class="vhs-case"><span>XIAOMAN</span></div>
+            <div class="vhs-case"><span>Born to Die</span></div>
+            <div class="vhs-case"><span>Ultraviolence</span></div>
+            <div class="vhs-case"><span>Honeymoon</span></div>
+            <div class="vhs-case"><span>Lana's Cut</span></div>
         </div>
 
     </div>

@@ -232,10 +232,17 @@ toc: false
     position: relative;
     border: 2px solid #333;
     box-shadow: inset 0 0 30px #000;
-    min-height: 450px;
+    height: 450px; /* 固定高度 */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Instagram 嵌入容器 - 裁剪上下部分 */
+.tv-screen blockquote {
+    position: relative;
+    top: -60px; /* 向上移动，裁掉头部 */
+    margin: 0 !important;
 }
 
 /* 扫描线滤镜 */
@@ -263,7 +270,7 @@ toc: false
 .tv-screen iframe {
     width: 100% !important;
     max-width: 540px;
-    height: 450px;
+    height: 650px !important; /* 加高，让裁剪后正好 */
     border: none;
 }
 

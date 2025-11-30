@@ -92,14 +92,14 @@ toc: false
 /* --- 4. 极致复古场景区 (The Living Room) --- */
 .vintage-scene-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* 改为左对齐 */
     align-items: flex-end;
-    gap: 30px; /* 间距 */
+    gap: 40px; /* 增加间距 */
     margin: 100px auto 80px;
     padding: 0 20px;
     flex-wrap: wrap;
     position: relative;
-    max-width: 1200px;
+    max-width: 1300px; /* 增加最大宽度 */
     z-index: 10;
 }
 
@@ -109,6 +109,7 @@ toc: false
     align-items: flex-end;
     gap: 0px;
     position: relative;
+    margin-right: auto; /* 推到左边 */
 }
 
 /* 霓虹灯 */

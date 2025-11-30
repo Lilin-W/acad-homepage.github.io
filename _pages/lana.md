@@ -6,314 +6,257 @@ author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@700&family=Monsieur+La+Doulaise&family=Special+Elite&family=Playfair+Display:ital,wght@1,500&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 
 <style>
-/* --- 全局背景：粉色格纹 + 纸张纹理 --- */
+/* --- 全局设置：揉皱纸张背景 --- */
 .lana-wrapper {
-    background-color: #fff0f5; /* 浅粉色底 */
-    background-image: 
-        linear-gradient(rgba(200, 0, 0, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px; /* 格纹信纸效果 */
-    font-family: 'Special Elite', cursive;
-    padding: 60px 20px;
-    overflow-x: hidden;
-    position: relative;
-    color: #333;
-}
-
-/* 装饰：顶部悬挂的蕾丝边 (CSS模拟) */
-.lana-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 15px;
-    background: radial-gradient(circle, #fff 50%, transparent 60%);
-    background-size: 20px 20px;
-    background-position: bottom;
-    opacity: 0.8;
-}
-
-/* --- 1. 标题区：杂志剪报风格 (Ransom Note) --- */
-.collage-header {
-    text-align: center;
-    margin-bottom: 80px;
-    position: relative;
-    z-index: 10;
-}
-
-.cutout-letter {
-    display: inline-block;
-    padding: 5px 12px;
-    margin: 2px;
-    background: #111;
-    color: #fff;
-    font-family: 'Abril Fatface', serif;
-    font-size: 3.5em;
-    transform: rotate(-3deg);
-    box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-}
-/* 给每个字母不同的样式，模拟剪报 */
-.cutout-letter:nth-child(2n) { background: #d4af37; color: #000; font-family: 'Cinzel'; transform: rotate(2deg); }
-.cutout-letter:nth-child(3n) { background: #b76e79; color: #fff; font-family: 'Permanent Marker'; transform: rotate(-5deg); }
-.cutout-letter:nth-child(4n) { background: #fff; color: #000; border: 2px solid #000; transform: rotate(4deg); }
-
-.subtitle-badge {
-    display: inline-block;
-    background: #e74c3c;
-    color: #fff;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 2em;
-    transform: rotate(-10deg) translate(20px, -20px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-/* --- 装饰贴纸 (Stickers) --- */
-.sticker {
-    position: absolute;
-    font-size: 3em;
-    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
-    z-index: 20;
-    pointer-events: none;
-    animation: float 3s ease-in-out infinite alternate;
-}
-@keyframes float { from {transform: translateY(0) rotate(0);} to {transform: translateY(-5px) rotate(5deg);} }
-
-/* --- 2. 核心内容：凌乱的桌面 (Messy Desk) --- */
-.messy-desk {
-    position: relative;
-    max-width: 1000px;
+    /* 1. 设置纸张底色 */
+    background-color: #f3eada; 
+    color: #222;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 80px 40px;
+    max-width: 1100px;
     margin: 0 auto;
-    height: 1200px; /* 足够的高度来堆叠 */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    
+    /* 2. 加入揉皱纸张纹理图片 */
+    /* 这是一个模拟皱纸和纤维的纹理图案 */
+    background-image: url("https://www.transparenttextures.com/patterns/criss-cross.png"), 
+                      linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(0,0,0,0.05));
+    background-blend-mode: overlay; /* 混合模式让纹理更自然 */
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.1); /* 内阴影增加立体感 */
 }
 
-/* 通用：所有元素都是绝对定位，随意摆放 */
-.desk-item {
+/* 装饰线条：颜色加深一点以适应纸张 */
+.vertical-line {
     position: absolute;
-    transition: transform 0.3s;
-    cursor: grab;
-}
-.desk-item:hover { transform: scale(1.05); z-index: 50 !important; }
-
-/* 元素 A: 邮票 (Stamp) */
-.stamp-box {
-    width: 160px;
-    height: 180px;
-    background: #fff;
-    padding: 10px;
-    /* 邮票齿孔边框 */
-    background-image: radial-gradient(transparent 50%, #fff 50%);
-    background-size: 20px 20px;
-    background-position: -10px -10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-5deg);
-    top: 50px; left: 5%;
-    z-index: 5;
-}
-.stamp-box img { width: 90%; height: 90%; object-fit: cover; border: 1px solid #ddd; }
-
-/* 元素 B: 拍立得照片 */
-.polaroid-pic {
-    background: #fff;
-    padding: 10px 10px 40px 10px;
-    box-shadow: 5px 10px 20px rgba(0,0,0,0.15);
-    width: 240px;
-    transform: rotate(8deg);
-    top: 150px; left: 30%;
-    z-index: 3;
-}
-.polaroid-pic img { width: 100%; filter: sepia(30%); }
-
-/* 元素 C: 复古票根 (Ticket) */
-.vintage-ticket {
-    background: #f4d03f;
-    color: #111;
-    width: 200px;
-    padding: 15px;
-    text-align: center;
-    border-left: 2px dashed rgba(0,0,0,0.5);
-    border-right: 2px dashed rgba(0,0,0,0.5);
-    font-family: 'Cinzel', serif;
-    transform: rotate(-15deg);
-    top: 80px; right: 10%;
-    z-index: 4;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    top: 0; bottom: 0; left: 15%;
+    width: 1px;
+    background: rgba(0,0,0,0.15);
+    z-index: 0;
 }
 
-/* 元素 D: 撕纸日记 (Torn Paper) */
-.torn-paper {
-    background: #fffdf0;
-    width: 320px;
-    padding: 30px;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 1.8em;
-    color: #111;
-    top: 400px; left: 10%;
+/* --- 1. 标题区 --- */
+.header-section {
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 15%;
     z-index: 2;
-    transform: rotate(2deg);
+}
+
+.big-title {
+    font-size: 6em;
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin: 0;
+    margin-left: -5px;
+    color: #111;
+    /* 文字也带一点纹理感 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.sub-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #666;
+    display: flex;
+    gap: 40px;
+}
+
+/* --- 2. 核心视觉区 --- */
+.feature-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.left-col {
+    width: 35%;
+    padding-top: 60px;
+}
+
+.intro-text {
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 40px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.small-img-wrapper {
+    width: 80%;
+    margin-left: auto;
+    position: relative;
+}
+
+/* 小图也同步变黑白 */
+.small-img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    filter: grayscale(100%) contrast(110%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+.small-img:hover { filter: grayscale(0%) contrast(100%); }
+
+.right-col {
+    width: 55%;
+    position: relative;
+    margin-top: -40px;
+}
+
+/* --- 重点修改：大图黑白印刷效果 --- */
+.large-img {
+    width: 100%;
+    display: block;
+    /* 1. 强烈的黑白高对比滤镜 */
+    filter: grayscale(100%) contrast(120%) brightness(0.9);
+    /* 2. 正片叠底模式：让纸张纹理透上来，像印在纸上一样 */
+    mix-blend-mode: multiply; 
+    /* 3. 柔和的阴影，不再是硬卡片 */
+    box-shadow: 15px 20px 40px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+/* 悬停时稍微恢复一点色彩（可选，如果不喜欢可以删掉下面这行）*/
+.large-img:hover {
+     filter: grayscale(50%) contrast(110%) brightness(1);
+}
+
+.img-caption-vertical {
+    position: absolute;
+    right: -30px; bottom: 0;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    color: #777;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* --- 3. 底部画廊 --- */
+.gallery-section {
+    padding-left: 15%;
+    position: relative;
+    z-index: 2;
+}
+
+.section-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.minimal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-    /* 撕裂效果 */
-    clip-path: polygon(0% 10px, 5% 0px, 10% 10px, 15% 0px, 20% 10px, 25% 0px, 30% 10px, 35% 0px, 40% 10px, 45% 0px, 50% 10px, 55% 0px, 60% 10px, 65% 0px, 70% 10px, 75% 0px, 80% 10px, 85% 0px, 90% 10px, 95% 0px, 100% 10px, 100% 100%, 0% 100%);
 }
 
-/* 元素 E: 胶片条 (Film Strip Fragment) */
-.film-fragment {
-    background: #000;
-    width: 120px;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    top: 300px; right: 20%;
-    z-index: 6;
-    transform: rotate(10deg);
-    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
-}
-.film-fragment img { width: 100%; border: 2px solid #fff; }
-
-/* 元素 F: 蝴蝶结装饰 */
-.bow-decoration {
-    font-size: 5em;
-    position: absolute;
-    color: #ffb7b2;
-    top: -20px; left: 45%;
-    z-index: 10;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* 底部网格图也默认黑白 */
+    filter: grayscale(100%) contrast(110%);
 }
 
-/* 元素 G: 磁带 (Cassette Tape CSS) */
-.cassette-tape {
-    width: 260px; height: 160px;
-    background: #333;
-    border-radius: 10px;
-    position: absolute;
-    top: 650px; right: 5%;
-    transform: rotate(-5deg);
-    z-index: 3;
-    border: 3px solid #555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-.cassette-label {
-    width: 220px; height: 100px;
-    background: #f1c40f;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 10px;
-    font-family: 'Permanent Marker', cursive;
-    color: #000;
-    font-size: 1.2em;
+.grid-item:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%); /* 悬停恢复彩色 */
 }
 
-/* 元素 H: 更多的照片散落 */
-.scatter-photo-2 {
-    width: 200px;
-    border: 8px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    top: 600px; left: 20%;
-    transform: rotate(-12deg);
-    z-index: 4;
-}
-
-.scatter-photo-3 {
-    width: 220px;
-    border: 8px solid #fff;
-    top: 850px; left: 45%;
-    transform: rotate(6deg);
-    z-index: 5;
-}
-
-/* 底部：手写签名 */
-.footer-sign {
-    position: absolute;
-    bottom: 50px; width: 100%;
-    text-align: center;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 3em;
-    color: #a83f39;
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .lana-wrapper { padding: 40px 20px; }
+    .vertical-line { display: none; }
+    .header-section, .gallery-section { padding-left: 0; }
+    .feature-layout { flex-direction: column-reverse; }
+    .left-col, .right-col { width: 100%; }
+    .right-col { margin-top: 0; margin-bottom: 40px; }
+    .big-title { font-size: 4em; }
+    .minimal-grid { grid-template-columns: 1fr 1fr; }
 }
 </style>
 
 <div class="lana-wrapper">
+    
+    <div class="vertical-line"></div>
 
-    <div class="collage-header">
-        <div>
-            <span class="cutout-letter">L</span>
-            <span class="cutout-letter">A</span>
-            <span class="cutout-letter">N</span>
-            <span class="cutout-letter">A</span>
-            <br>
-            <span class="cutout-letter">D</span>
-            <span class="cutout-letter">E</span>
-            <span class="cutout-letter">L</span>
-            <br>
-            <span class="cutout-letter">R</span>
-            <span class="cutout-letter">E</span>
-            <span class="cutout-letter">Y</span>
+    <div class="header-section">
+        <h1 class="big-title">Lana<br>Del Rey</h1>
+        <div class="sub-meta">
+            <span>Vol. 2025</span>
+            <span>Est. Los Angeles</span>
+            <span>Archive</span>
         </div>
-        <div class="subtitle-badge">Coquette Aesthetic</div>
-        <div class="bow-decoration">🎀</div>
     </div>
 
-    <div class="sticker" style="top: 100px; left: 10%;">🍒</div>
-    <div class="sticker" style="top: 200px; right: 5%;">💄</div>
-    <div class="sticker" style="top: 500px; left: 5%;">🦢</div>
-    <div class="sticker" style="top: 800px; right: 15%;">🩰</div>
-    <div class="sticker" style="top: 1100px; left: 10%;">🕯️</div>
-
-    <div class="messy-desk">
-
-        <div class="desk-item vintage-ticket">
-            ADMIT ONE<br>
-            <span style="font-size:0.6em; color:#333;">LANA LIVE 2025</span>
-            <hr style="border-top:1px dashed #000; margin:5px 0;">
-            No. 082491
-        </div>
-
-        <div class="desk-item stamp-box">
-            <img src="/images/xiaoman-portrait-1.png" alt="Stamp">
-        </div>
-
-        <div class="desk-item polaroid-pic">
-            <img src="/images/xiaoman-portrait-4.png" alt="Polaroid">
-            <div style="font-family:'Dancing Script'; text-align:center; font-size:1.5em; margin-top:10px; color:#555;">Pretty when you cry</div>
-        </div>
-
-        <div class="desk-item film-fragment">
-            <img src="/images/cute.jpg">
-            <img src="/images/wink.jpg">
-            <img src="/images/jump.jpg">
-        </div>
-
-        <div class="desk-item torn-paper">
-            <div style="position:absolute; top:-15px; left:40%; width:80px; height:30px; background:rgba(255,100,100,0.3); transform:rotate(-2deg);"></div> Dear Diary,<br>
-            The world is a collage of beautiful, broken things.<br>
-            <br>
-            "Live fast. Die young."
-        </div>
-
-        <img class="desk-item scatter-photo-2" src="/images/keyboard.jpg">
+    <div class="feature-layout">
         
-        <div class="desk-item cassette-tape">
-            <div class="cassette-label">
-                Born to Die<br>
-                <span style="font-size:0.6em;">SIDE A</span>
+        <div class="left-col">
+            <div class="intro-text">
+                "That's how the light gets in. <br>
+                Then you're golden."
+                <br><br>
+                <span style="font-size:0.7em; font-family:'Montserrat'; color:#777; text-transform:uppercase; letter-spacing:2px;">
+                    — The Philosophy
+                </span>
+            </div>
+
+            <div class="small-img-wrapper">
+                <img src="/images/xiaoman-portrait-2.png" alt="Detail Shot" class="small-img">
             </div>
         </div>
 
-        <img class="desk-item scatter-photo-3" src="/images/xiaoman-portrait-2.png">
-
-        <div class="footer-sign">
-            Designed with Love & Cherry Pie
+        <div class="right-col">
+            <img src="/images/xiaoman-portrait-4.png" alt="Main Visual" class="large-img">
+            <div class="img-caption-vertical">Figure 01. Ultraviolence Era</div>
         </div>
 
+    </div>
+
+    <div class="gallery-section">
+        <div class="section-label">Selected Works / Print Archive</div>
+        
+        <div class="minimal-grid">
+            <div class="grid-item">
+                <img src="/images/xiaoman-portrait-1.png" alt="Gallery 1">
+            </div>
+            <div class="grid-item">
+                <img src="/images/cute.jpg" alt="Gallery 2">
+            </div>
+            <div class="grid-item">
+                <img src="/images/keyboard.jpg" alt="Gallery 3">
+            </div>
+        </div>
     </div>
 
 </div>

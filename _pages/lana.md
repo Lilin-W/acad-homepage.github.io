@@ -225,7 +225,7 @@ toc: false
 /* --- B. 录像带收纳箱 (VHS Crate) --- */
 .vhs-crate {
     background: #8e6e54; /* 浅木色 */
-    padding: 8px 10px 0 10px; /* 缩小顶部内边距 */
+    padding: 12px 10px 0 10px; /* 增加顶部内边距 */
     border: 4px solid #5d4037;
     border-bottom: 15px solid #5d4037;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.4);
@@ -234,12 +234,12 @@ toc: false
     align-items: center;
     transform: perspective(800px) rotateY(-5deg) translateX(-10px); /* 稍微侧一点，靠着电视 */
     z-index: 4;
-    max-height: 280px; /* 限制最大高度 */
+    max-height: 380px; /* 增加最大高度以容纳8盘 */
 }
 
 .vhs-tape {
     width: 220px;
-    height: 35px; /* 缩小高度以容纳6个 */
+    height: 32px; /* 进一步缩小高度以容纳8个 */
     background: #1a1a1a;
     border-bottom: 1px solid #333;
     margin-bottom: -1px; /* 紧挨着 */
@@ -253,11 +253,11 @@ toc: false
 /* 录像带脊背标签 */
 .vhs-spine {
     width: 200px;
-    height: 25px; /* 缩小高度以适应6盘 */
+    height: 22px; /* 进一步缩小高度以适应8盘 */
     background: #f0f0f0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1em; /* 缩小字体 */
-    letter-spacing: 0.5px;
+    font-size: 0.95em; /* 进一步缩小字体 */
+    letter-spacing: 0.3px;
     color: #111;
     display: flex;
     align-items: center;
@@ -269,16 +269,18 @@ toc: false
 }
 
 .vhs-spine small {
-    font-size: 0.85em;
+    font-size: 0.8em;
 }
 
 /* 不同颜色的脊背 */
-.vhs-tape:nth-child(1) .vhs-spine { border-left: 15px solid #c0392b; }
-.vhs-tape:nth-child(2) .vhs-spine { border-left: 15px solid #2980b9; }
-.vhs-tape:nth-child(3) .vhs-spine { border-left: 15px solid #27ae60; background: #ffecb3; }
-.vhs-tape:nth-child(4) .vhs-spine { border-left: 15px solid #8e44ad; }
-.vhs-tape:nth-child(5) .vhs-spine { border-left: 15px solid #f39c12; background: #fff3cd; }
-.vhs-tape:nth-child(6) .vhs-spine { border-left: 15px solid #e74c3c; background: #ecf0f1; }
+.vhs-tape:nth-child(1) .vhs-spine { border-left: 15px solid #c0392b; } /* Fishtail 红 */
+.vhs-tape:nth-child(2) .vhs-spine { border-left: 15px solid #16a085; background: #d5f4e6; } /* Chemtrails 青绿 */
+.vhs-tape:nth-child(3) .vhs-spine { border-left: 15px solid #f39c12; background: #fff3cd; } /* California 橙黄 */
+.vhs-tape:nth-child(4) .vhs-spine { border-left: 15px solid #2980b9; } /* Ultraviolence 蓝 */
+.vhs-tape:nth-child(5) .vhs-spine { border-left: 15px solid #27ae60; background: #ffecb3; } /* Honeymoon 绿黄 */
+.vhs-tape:nth-child(6) .vhs-spine { border-left: 15px solid #8e44ad; } /* Lust for Life 紫 */
+.vhs-tape:nth-child(7) .vhs-spine { border-left: 15px solid #e67e22; background: #ffe5cc; } /* Lie Down W/ Me 橙 */
+.vhs-tape:nth-child(8) .vhs-spine { border-left: 15px solid #e74c3c; background: #ecf0f1; } /* TV in B&W 红灰 */
 
 /* 录像带可点击 */
 .vhs-tape {
@@ -328,7 +330,7 @@ toc: false
     .tv-control-panel { flex-direction: row; height: auto; margin-left: 0; margin-top: 20px; width: 100%; border-left: none; border-top: 2px solid rgba(0,0,0,0.2); }
     .knob { width: 50px; height: 50px; margin: 0 10px; }
     .speaker-grille { height: 50px; margin-top: 0; flex: 1; margin-left: 10px; }
-    .vhs-crate { transform: none; margin-top: 30px; width: 280px; }
+    .vhs-crate { transform: none; margin-top: 30px; width: 280px; max-height: 320px; overflow-y: auto; } /* 移动端添加滚动 */
     .receipt-paper { transform: rotate(-2deg); margin-bottom: 0; }
 }
 </style>
@@ -389,7 +391,7 @@ toc: false
                 
                 <div class="tv-screen-bezel" id="tv-screen">
                     <div class="tv-screen-overlay"></div>
-                    <iframe id="video-frame" src="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; fullscreen" style="border:none;"></iframe>
+                    <iframe id="video-frame" src="https://www.youtube.com/embed/cs8VlhUDna0?autoplay=0&mute=0" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; fullscreen; encrypted-media" style="border:none;"></iframe>
                 </div>
                 
                 <div class="tv-control-panel">
@@ -400,10 +402,22 @@ toc: false
             </div>
 
             <div class="vhs-crate">
-                <div class="vhs-tape active" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
+                <div class="vhs-tape active" data-video="https://www.youtube.com/embed/cs8VlhUDna0?autoplay=0&mute=0" data-type="youtube">
                     <div class="vhs-spine">
-                        <span>BORN TO DIE</span>
-                        <small>'12</small>
+                        <span>FISHTAIL</span>
+                        <small>'23</small>
+                    </div>
+                </div>
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/vBHild0PiTE?autoplay=0&mute=0" data-type="youtube">
+                    <div class="vhs-spine">
+                        <span>CHEMTRAILS/CC</span>
+                        <small>'21</small>
+                    </div>
+                </div>
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/vK1YiArMDfg?autoplay=0&mute=0" data-type="youtube">
+                    <div class="vhs-spine">
+                        <span>CALIFORNIA</span>
+                        <small>'23</small>
                     </div>
                 </div>
                 <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">

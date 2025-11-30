@@ -291,8 +291,8 @@ toc: false
     </div>
 
     <div class="film-strip-container">
-        <div class="film-frame"><img src="/images/lana0.png"></div>
         <div class="film-frame"><img src="/images/lana4.png"></div>
+        <div class="film-frame"><img src="/images/lana0.png"></div>
         <div class="film-frame"><img src="/images/lana3.png"></div>
         <div class="film-frame"><img src="/images/lana6.png"></div>
         <div class="film-frame"><img src="/images/lana1.jpg"></div>

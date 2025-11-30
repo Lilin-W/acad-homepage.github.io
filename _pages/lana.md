@@ -291,7 +291,7 @@ toc: false
     </div>
     
     <div style="text-align:center; margin-top:80px; font-size:0.8em; letter-spacing:3px; opacity:0.6;">
-        EST. 2025 • LOS ANGELES
+        EST. 2025 
     </div>
 
 </div>

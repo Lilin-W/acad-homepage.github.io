@@ -6,315 +6,314 @@ author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Monsieur+La+Doulaise&family=Special+Elite&family=Playfair+Display+SC:wght@700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@700&family=Monsieur+La+Doulaise&family=Special+Elite&family=Playfair+Display:ital,wght@1,500&family=Permanent+Marker&display=swap" rel="stylesheet">
 
 <style>
-/* --- 0. 全局设置 --- */
+/* --- 全局背景：粉色格纹 + 纸张纹理 --- */
 .lana-wrapper {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #fdfbf7;
-    color: #1a1a1a;
+    background-color: #fff0f5; /* 浅粉色底 */
+    background-image: 
+        linear-gradient(rgba(200, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px; /* 格纹信纸效果 */
+    font-family: 'Special Elite', cursive;
+    padding: 60px 20px;
     overflow-x: hidden;
-    padding-bottom: 0; /* 底部由深色块接管 */
     position: relative;
-    font-size: 19px;
+    color: #333;
 }
 
-/* 动态噪点层 */
-.lana-wrapper::after {
+/* 装饰：顶部悬挂的蕾丝边 (CSS模拟) */
+.lana-wrapper::before {
     content: "";
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.06;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    animation: grain-flicker 2s infinite steps(10);
-}
-@keyframes grain-flicker { 0%, 100% { transform: translate(0,0); } 50% { transform: translate(-1px, 1px); } }
-
-/* --- 1. 标题区 --- */
-.hero-header {
-    text-align: center;
-    padding: 80px 20px 60px;
-    border-bottom: 1px double #e0e0e0;
-    margin: 0 40px;
-}
-.hero-title {
-    font-family: 'Playfair Display SC', serif; /* 新的大写标题字 */
-    font-size: 4.5em;
-    letter-spacing: 5px;
-    color: #111;
-    margin: 0;
-    line-height: 1;
-}
-.hero-subtitle {
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 3.2em;
-    color: #8e44ad;
-    margin-top: -15px;
-    transform: rotate(-2deg);
-}
-
-/* --- 2. 胶片区 (保留) --- */
-.film-strip-container {
-    background-color: #050505;
-    padding: 30px 0;
-    margin: 60px -20px;
-    overflow-x: auto;
-    white-space: nowrap;
-    position: relative;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-    /* 方孔 */
-    background-image: linear-gradient(90deg, #fdfbf7 50%, transparent 50%), linear-gradient(90deg, #fdfbf7 50%, transparent 50%);
-    background-position: 0 10px, 0 calc(100% - 10px);
-    background-size: 16px 10px;
-    background-repeat: repeat-x;
-    background-attachment: local;
-}
-.film-strip-container::-webkit-scrollbar { display: none; }
-.film-frame {
-    display: inline-block;
-    height: 240px;
-    padding: 0 12px;
-    border-right: 1px solid #333;
-}
-.film-frame img {
-    height: 100%;
-    width: auto;
-    filter: sepia(20%) contrast(110%) brightness(0.9);
-    transition: all 0.5s;
-}
-.film-frame:hover img { filter: none; opacity: 1; transform: scale(1.02); }
-
-/* --- 3. 关键词词典 (The Vocabulary) - 新增 --- */
-.keywords-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 80px auto;
-    max-width: 900px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 40px 0;
-}
-
-.keyword-item {
-    flex: 1;
-    min-width: 200px;
-}
-
-.kw-title {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #111;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-}
-
-.kw-def {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: #666;
-    font-size: 1.1em;
-}
-
-/* --- 4. 杂志手账区 (Journal) --- */
-.journal-layout {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
-    margin: 80px 20px;
-    align-items: center;
-}
-
-.poem-card {
-    background: #fff;
-    padding: 40px;
-    border: 1px solid #eee;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.03); /* 硬阴影，像杂志排版 */
-    font-family: 'Special Elite', monospace;
-    line-height: 2;
-    position: relative;
-}
-/* 装饰：右上角的樱桃 */
-.poem-card::after {
-    content: "🍒";
-    font-size: 2em;
     position: absolute;
-    top: 10px; right: 20px;
+    top: 0; left: 0; right: 0; height: 15px;
+    background: radial-gradient(circle, #fff 50%, transparent 60%);
+    background-size: 20px 20px;
+    background-position: bottom;
     opacity: 0.8;
 }
 
-.visual-stack {
-    position: relative;
-    height: 450px;
-}
-.vinyl-record {
-    position: absolute;
-    right: 20px; bottom: 0;
-    width: 220px; height: 220px;
-    background: radial-gradient(circle, #111 20%, #222 21%, #111 22%, #000 70%);
-    border-radius: 50%;
-    z-index: 1;
-    animation: spin 12s linear infinite;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-.vinyl-label {
-    position: absolute;
-    top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 80px; height: 80px;
-    background: #a93226; border-radius: 50%; border: 3px solid #fff;
-}
-@keyframes spin { 100% { transform: rotate(360deg); } }
-
-.framed-photo {
-    position: absolute;
-    top: 0; left: 0;
-    width: 300px;
-    background: #fff;
-    padding: 15px 15px 50px 15px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    transform: rotate(-5deg);
-    z-index: 2;
-    transition: transform 0.3s;
-}
-.framed-photo:hover { transform: rotate(0deg) scale(1.02); z-index: 10; }
-.framed-photo img { width: 100%; filter: grayscale(10%); }
-
-/* --- 5. 暗房区 (The Dark Room) - 新增底部深色区 --- */
-.dark-section {
-    background-color: #111;
-    color: #ddd;
-    margin: 80px -50vw -60px -50vw; /* 全宽背景 */
-    padding: 80px 50vw;
-    position: relative;
+/* --- 1. 标题区：杂志剪报风格 (Ransom Note) --- */
+.collage-header {
     text-align: center;
-    border-top: 3px solid #d4af37; /* 金边 */
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 10;
 }
 
-.dark-quote {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 2.5em;
+.cutout-letter {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 2px;
+    background: #111;
     color: #fff;
-    margin-bottom: 40px;
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    font-family: 'Abril Fatface', serif;
+    font-size: 3.5em;
+    transform: rotate(-3deg);
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+}
+/* 给每个字母不同的样式，模拟剪报 */
+.cutout-letter:nth-child(2n) { background: #d4af37; color: #000; font-family: 'Cinzel'; transform: rotate(2deg); }
+.cutout-letter:nth-child(3n) { background: #b76e79; color: #fff; font-family: 'Permanent Marker'; transform: rotate(-5deg); }
+.cutout-letter:nth-child(4n) { background: #fff; color: #000; border: 2px solid #000; transform: rotate(4deg); }
+
+.subtitle-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 2em;
+    transform: rotate(-10deg) translate(20px, -20px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-.dark-gallery {
+/* --- 装饰贴纸 (Stickers) --- */
+.sticker {
+    position: absolute;
+    font-size: 3em;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    z-index: 20;
+    pointer-events: none;
+    animation: float 3s ease-in-out infinite alternate;
+}
+@keyframes float { from {transform: translateY(0) rotate(0);} to {transform: translateY(-5px) rotate(5deg);} }
+
+/* --- 2. 核心内容：凌乱的桌面 (Messy Desk) --- */
+.messy-desk {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 1200px; /* 足够的高度来堆叠 */
+}
+
+/* 通用：所有元素都是绝对定位，随意摆放 */
+.desk-item {
+    position: absolute;
+    transition: transform 0.3s;
+    cursor: grab;
+}
+.desk-item:hover { transform: scale(1.05); z-index: 50 !important; }
+
+/* 元素 A: 邮票 (Stamp) */
+.stamp-box {
+    width: 160px;
+    height: 180px;
+    background: #fff;
+    padding: 10px;
+    /* 邮票齿孔边框 */
+    background-image: radial-gradient(transparent 50%, #fff 50%);
+    background-size: 20px 20px;
+    background-position: -10px -10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-5deg);
+    top: 50px; left: 5%;
+    z-index: 5;
+}
+.stamp-box img { width: 90%; height: 90%; object-fit: cover; border: 1px solid #ddd; }
+
+/* 元素 B: 拍立得照片 */
+.polaroid-pic {
+    background: #fff;
+    padding: 10px 10px 40px 10px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.15);
+    width: 240px;
+    transform: rotate(8deg);
+    top: 150px; left: 30%;
+    z-index: 3;
+}
+.polaroid-pic img { width: 100%; filter: sepia(30%); }
+
+/* 元素 C: 复古票根 (Ticket) */
+.vintage-ticket {
+    background: #f4d03f;
+    color: #111;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-left: 2px dashed rgba(0,0,0,0.5);
+    border-right: 2px dashed rgba(0,0,0,0.5);
+    font-family: 'Cinzel', serif;
+    transform: rotate(-15deg);
+    top: 80px; right: 10%;
+    z-index: 4;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* 元素 D: 撕纸日记 (Torn Paper) */
+.torn-paper {
+    background: #fffdf0;
+    width: 320px;
+    padding: 30px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 1.8em;
+    color: #111;
+    top: 400px; left: 10%;
+    z-index: 2;
+    transform: rotate(2deg);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    /* 撕裂效果 */
+    clip-path: polygon(0% 10px, 5% 0px, 10% 10px, 15% 0px, 20% 10px, 25% 0px, 30% 10px, 35% 0px, 40% 10px, 45% 0px, 50% 10px, 55% 0px, 60% 10px, 65% 0px, 70% 10px, 75% 0px, 80% 10px, 85% 0px, 90% 10px, 95% 0px, 100% 10px, 100% 100%, 0% 100%);
+}
+
+/* 元素 E: 胶片条 (Film Strip Fragment) */
+.film-fragment {
+    background: #000;
+    width: 120px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 300px; right: 20%;
+    z-index: 6;
+    transform: rotate(10deg);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+}
+.film-fragment img { width: 100%; border: 2px solid #fff; }
+
+/* 元素 F: 蝴蝶结装饰 */
+.bow-decoration {
+    font-size: 5em;
+    position: absolute;
+    color: #ffb7b2;
+    top: -20px; left: 45%;
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 元素 G: 磁带 (Cassette Tape CSS) */
+.cassette-tape {
+    width: 260px; height: 160px;
+    background: #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 650px; right: 5%;
+    transform: rotate(-5deg);
+    z-index: 3;
+    border: 3px solid #555;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
 }
-
-.mini-polaroid {
-    width: 180px;
-    background: #fff;
-    padding: 8px 8px 25px 8px;
-    transform: rotate(3deg);
-    transition: transform 0.3s;
+.cassette-label {
+    width: 220px; height: 100px;
+    background: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Permanent Marker', cursive;
     color: #000;
+    font-size: 1.2em;
 }
-.mini-polaroid:hover { transform: scale(1.1) rotate(0deg); }
-.mini-polaroid img { width: 100%; height: 180px; object-fit: cover; filter: sepia(50%); }
-.mini-caption { font-family: 'Special Elite'; font-size: 0.8em; text-align: center; margin-top: 5px; }
 
+/* 元素 H: 更多的照片散落 */
+.scatter-photo-2 {
+    width: 200px;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    top: 600px; left: 20%;
+    transform: rotate(-12deg);
+    z-index: 4;
+}
+
+.scatter-photo-3 {
+    width: 220px;
+    border: 8px solid #fff;
+    top: 850px; left: 45%;
+    transform: rotate(6deg);
+    z-index: 5;
+}
+
+/* 底部：手写签名 */
+.footer-sign {
+    position: absolute;
+    bottom: 50px; width: 100%;
+    text-align: center;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 3em;
+    color: #a83f39;
+}
 </style>
 
 <div class="lana-wrapper">
 
-    <div class="hero-header">
-        <h1 class="hero-title">Lana Del Rey</h1>
-        <div class="hero-subtitle">The Honeymoon Era</div>
+    <div class="collage-header">
+        <div>
+            <span class="cutout-letter">L</span>
+            <span class="cutout-letter">A</span>
+            <span class="cutout-letter">N</span>
+            <span class="cutout-letter">A</span>
+            <br>
+            <span class="cutout-letter">D</span>
+            <span class="cutout-letter">E</span>
+            <span class="cutout-letter">L</span>
+            <br>
+            <span class="cutout-letter">R</span>
+            <span class="cutout-letter">E</span>
+            <span class="cutout-letter">Y</span>
+        </div>
+        <div class="subtitle-badge">Coquette Aesthetic</div>
+        <div class="bow-decoration">🎀</div>
     </div>
 
-    <div class="film-strip-container">
-        <div class="film-frame"><img src="/images/xiaoman-portrait-1.png"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-2.png"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-3.png"></div>
-        <div class="film-frame"><img src="/images/cute.jpg"></div>
-        <div class="film-frame"><img src="/images/wink.jpg"></div>
-        <div class="film-frame"><img src="/images/jump.jpg"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-4.png"></div>
-        <div class="film-frame"><img src="/images/keyboard.jpg"></div>
-    </div>
+    <div class="sticker" style="top: 100px; left: 10%;">🍒</div>
+    <div class="sticker" style="top: 200px; right: 5%;">💄</div>
+    <div class="sticker" style="top: 500px; left: 5%;">🦢</div>
+    <div class="sticker" style="top: 800px; right: 15%;">🩰</div>
+    <div class="sticker" style="top: 1100px; left: 10%;">🕯️</div>
 
-    <div class="keywords-section">
-        <div class="keyword-item">
-            <div class="kw-title">COQUETTE</div>
-            <div class="kw-def">adj. Flirtatious, playful, charming.</div>
-            <div style="font-size:1.5em; margin-top:5px;">🎀</div>
-        </div>
-        <div class="keyword-item">
-            <div class="kw-title">AMERICANA</div>
-            <div class="kw-def">n. Vintage cultural artifacts of the U.S.</div>
-            <div style="font-size:1.5em; margin-top:5px;">🇺🇸</div>
-        </div>
-        <div class="keyword-item">
-            <div class="kw-title">SADCORE</div>
-            <div class="kw-def">n. Melancholic alternative rock.</div>
-            <div style="font-size:1.5em; margin-top:5px;">🚬</div>
-        </div>
-        <div class="keyword-item">
-            <div class="kw-title">OLD MONEY</div>
-            <div class="kw-def">n. Inherited wealth, classic elegance.</div>
-            <div style="font-size:1.5em; margin-top:5px;">🥂</div>
-        </div>
-    </div>
+    <div class="messy-desk">
 
-    <div class="journal-layout">
-        <div class="poem-card">
-            <p>
-                <strong>September 2025.</strong><br><br>
-                Sitting on the porch, listening to <span class="lyric-highlight">Ultraviolence</span>. 
-                The world feels like a grainy movie scene.
-                <br><br>
-                "That's how the light gets in. <br>
-                Then you're <strong style="color:#d4af37;">golden</strong>."
-                <br><br>
-                It's not just about the picture; it's about the feeling of being <em>infinite</em>.
-            </p>
-            <div style="text-align:right; margin-top:20px; font-family:'Monsieur La Doulaise'; font-size:1.5em; color:#888;">— L.</div>
+        <div class="desk-item vintage-ticket">
+            ADMIT ONE<br>
+            <span style="font-size:0.6em; color:#333;">LANA LIVE 2025</span>
+            <hr style="border-top:1px dashed #000; margin:5px 0;">
+            No. 082491
         </div>
 
-        <div class="visual-stack">
-            <div class="vinyl-record">
-                <div class="vinyl-label"></div>
-            </div>
-            <div class="framed-photo">
-                <img src="/images/xiaoman-portrait-4.png" alt="Memory">
-                <div style="font-family:'Monsieur La Doulaise'; font-size:1.8em; text-align:center; margin-top:10px; color:#444;">
-                    Summertime Sadness
-                </div>
-            </div>
+        <div class="desk-item stamp-box">
+            <img src="/images/xiaoman-portrait-1.png" alt="Stamp">
         </div>
-    </div>
 
-    <div class="dark-section">
-        <div class="dark-quote">"Live fast. Die young. Be wild. Have fun."</div>
+        <div class="desk-item polaroid-pic">
+            <img src="/images/xiaoman-portrait-4.png" alt="Polaroid">
+            <div style="font-family:'Dancing Script'; text-align:center; font-size:1.5em; margin-top:10px; color:#555;">Pretty when you cry</div>
+        </div>
+
+        <div class="desk-item film-fragment">
+            <img src="/images/cute.jpg">
+            <img src="/images/wink.jpg">
+            <img src="/images/jump.jpg">
+        </div>
+
+        <div class="desk-item torn-paper">
+            <div style="position:absolute; top:-15px; left:40%; width:80px; height:30px; background:rgba(255,100,100,0.3); transform:rotate(-2deg);"></div> Dear Diary,<br>
+            The world is a collage of beautiful, broken things.<br>
+            <br>
+            "Live fast. Die young."
+        </div>
+
+        <img class="desk-item scatter-photo-2" src="/images/keyboard.jpg">
         
-        <div class="dark-gallery">
-            <div class="mini-polaroid">
-                <img src="/images/87548e0c9ae86ef457b731266c6413bf.jpg" alt="Vintage">
-                <div class="mini-caption">Vintage</div>
-            </div>
-            <div class="mini-polaroid" style="transform: rotate(-3deg);">
-                <img src="/images/a80dc8e60f983566d2ac8fbbc990884d.jpg" alt="Mood">
-                <div class="mini-caption">Mood</div>
-            </div>
-            <div class="mini-polaroid">
-                <img src="/images/b4601eb8b32e7a6281897e1f6385b73c.jpg" alt="Style">
-                <div class="mini-caption">Style</div>
+        <div class="desk-item cassette-tape">
+            <div class="cassette-label">
+                Born to Die<br>
+                <span style="font-size:0.6em;">SIDE A</span>
             </div>
         </div>
-        
-        <div style="margin-top:50px; font-size:0.8em; letter-spacing:2px; color:#666;">
-            © 2025 THE VINTAGE ARCHIVE
+
+        <img class="desk-item scatter-photo-3" src="/images/xiaoman-portrait-2.png">
+
+        <div class="footer-sign">
+            Designed with Love & Cherry Pie
         </div>
+
     </div>
 
 </div>

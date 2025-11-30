@@ -366,7 +366,7 @@ a:hover { color: #c71585; }
   </script>
 
   <div class="cat-header" style="margin-top: 40px;">
-    <h1 class="main-title"><img src="/images/ava.png" alt="cat" width="35" style="vertical-align: middle; margin-right: 8px;"> Xiaoman Xia (夏小满)</h1>
+    <h1 class="main-title"><img src="/images/ava.png" alt="cat" width="70" style="vertical-align: middle; margin-right: 10px;"> Xiaoman Xia (夏小满)</h1>
     <p class="sub-title">✨ The One Who Keeps My World Gentle ✨</p>
   </div>
 

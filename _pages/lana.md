@@ -13,6 +13,11 @@ toc: false
 .lana-wrapper {
     font-family: 'Cormorant Garamond', serif;
     background-color: #fdfbf7;
+    background-image: url('/images/bg.png'); /* 添加背景图 */
+    background-size: cover; /* 覆盖整个区域 */
+    background-position: center; /* 居中 */
+    background-repeat: no-repeat; /* 不重复 */
+    background-attachment: fixed; /* 固定背景，滚动时不动 */
     color: #1a1a1a;
     overflow-x: hidden;
     padding: 60px 0;

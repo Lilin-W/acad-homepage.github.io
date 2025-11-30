@@ -83,6 +83,9 @@ toc: false
     white-space: nowrap;
     position: relative;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: rotate(-2deg); /* 胶片倾斜效果 */
+    width: 105%; /* 稍微加宽让倾斜后不留白 */
+    left: -2.5%;
 
     /* 精致的小方孔 */
     background-image: 
@@ -131,16 +134,39 @@ toc: false
     align-items: center;
 }
 
-/* 左侧：打字机诗歌 */
+/* 左侧：便签样式 */
 .poem-card {
-    background: transparent; /* 去掉背景块，直接写在纸上 */
-    padding: 20px;
-    border-left: 2px solid #d4af37; /* 金色竖线 */
+    background: #fffdf0; /* 米黄色便签纸 */
+    padding: 45px 40px;
     font-family: 'Special Elite', cursive;
     font-size: 1.1em;
     line-height: 2.2; /* 宽行距 */
     color: #333;
     position: relative;
+    box-shadow: 5px 10px 25px rgba(0,0,0,0.15);
+    transform: rotate(1deg);
+    
+    /* 撕裂边缘效果 */
+    --mask: radial-gradient(10px at 50% 12.5px, #000 99%, #0000 101%) 50% -12.5px / 20px 25px repeat-x;
+    -webkit-mask: var(--mask) bottom, var(--mask) top;
+    mask: var(--mask) bottom, var(--mask) top;
+}
+
+/* 透明胶带 */
+.poem-card::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1deg);
+    width: 140px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-left: 2px dotted rgba(255,255,255,0.5);
+    border-right: 2px dotted rgba(255,255,255,0.5);
+    z-index: 10;
 }
 
 /* 右侧：堆叠的相片 + 黑胶唱片 */

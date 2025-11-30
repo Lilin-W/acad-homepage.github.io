@@ -82,7 +82,12 @@ toc: false
 .framed-photo img { width: 100%; filter: grayscale(20%); }
 .framed-photo:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
 .vinyl-record {
-    position: absolute; right: 0px; bottom: 20px; width: 200px; height: 200px; background: radial-gradient(circle, #111 20%, #333 21%, #111 22%, #111 30%, #333 31%, #111 32%, #111 40%, #333 41%, #111 42%, #000 70%); border-radius: 50%; z-index: 1; box-shadow: 0 10px 30px rgba(0,0,0,0.4); animation: spin 10s linear infinite;
+    position: absolute; right: 0px; bottom: 20px; width: 200px; height: 200px; background: radial-gradient(circle, #111 20%, #333 21%, #111 22%, #111 30%, #333 31%, #111 32%, #111 40%, #333 41%, #111 42%, #000 70%); border-radius: 50%; z-index: 1; box-shadow: 0 10px 30px rgba(0,0,0,0.4); animation: spin 10s linear infinite; cursor: pointer; transition: all 0.3s ease;
+}
+.vinyl-record:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    animation-play-state: paused;
 }
 .vinyl-label { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background: #b76e79; border-radius: 50%; border: 2px solid #fff; }
 @keyframes spin { 100% { transform: rotate(360deg); } }
@@ -370,7 +375,7 @@ toc: false
         </div>
 
         <div class="visual-stack">
-            <div class="vinyl-record">
+            <div class="vinyl-record" id="vinyl-record" data-video="https://www.youtube.com/embed/TdrL3QxjyVw?autoplay=0&mute=0" data-type="youtube">
                 <div class="vinyl-label"></div>
             </div>
             <div class="framed-photo">
@@ -474,7 +479,39 @@ toc: false
 document.addEventListener('DOMContentLoaded', function() {
     const tapes = document.querySelectorAll('.vhs-tape');
     const videoFrame = document.getElementById('video-frame');
+    const vinylRecord = document.getElementById('vinyl-record');
     
+    // 统一的视频切换函数
+    function switchVideo(videoUrl, videoType) {
+        // 根据视频类型添加不静音参数
+        if (videoType === 'youtube') {
+            // YouTube 视频：确保不静音
+            if (!videoUrl.includes('mute=')) {
+                videoUrl += (videoUrl.includes('?') ? '&' : '?') + 'mute=0&autoplay=1';
+            }
+        } else if (videoType === 'bilibili') {
+            // B站视频：添加自动播放参数
+            if (!videoUrl.includes('autoplay=')) {
+                videoUrl += '&autoplay=1';
+            }
+        }
+        
+        // 切换视频
+        if (videoUrl) {
+            videoFrame.src = videoUrl;
+            // 确保 iframe 允许音频播放
+            videoFrame.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
+        }
+        
+        // 添加换台效果
+        const tvScreen = document.getElementById('tv-screen');
+        tvScreen.style.opacity = '0.3';
+        setTimeout(() => {
+            tvScreen.style.opacity = '1';
+        }, 200);
+    }
+    
+    // 录像带点击事件
     tapes.forEach(tape => {
         tape.addEventListener('click', function() {
             // 移除所有 active 状态
@@ -484,36 +521,31 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             // 获取视频 URL
-            let videoUrl = this.getAttribute('data-video');
+            const videoUrl = this.getAttribute('data-video');
             const videoType = this.getAttribute('data-type');
             
-            // 根据视频类型添加不静音参数
-            if (videoType === 'youtube') {
-                // YouTube 视频：确保不静音
-                if (!videoUrl.includes('mute=')) {
-                    videoUrl += (videoUrl.includes('?') ? '&' : '?') + 'mute=0&autoplay=1';
-                }
-            } else if (videoType === 'bilibili') {
-                // B站视频：添加自动播放参数
-                if (!videoUrl.includes('autoplay=')) {
-                    videoUrl += '&autoplay=1';
-                }
-            }
-            
-            // 切换视频
-            if (videoUrl) {
-                videoFrame.src = videoUrl;
-                // 确保 iframe 允许音频播放
-                videoFrame.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
-            }
-            
-            // 添加换台效果
-            const tvScreen = document.getElementById('tv-screen');
-            tvScreen.style.opacity = '0.3';
-            setTimeout(() => {
-                tvScreen.style.opacity = '1';
-            }, 200);
+            switchVideo(videoUrl, videoType);
         });
     });
+    
+    // 黑胶唱片点击事件
+    if (vinylRecord) {
+        vinylRecord.addEventListener('click', function() {
+            // 移除所有录像带的 active 状态
+            tapes.forEach(t => t.classList.remove('active'));
+            
+            // 获取视频 URL
+            const videoUrl = this.getAttribute('data-video');
+            const videoType = this.getAttribute('data-type');
+            
+            switchVideo(videoUrl, videoType);
+            
+            // 添加特殊的旋转加速效果
+            this.style.animationDuration = '2s';
+            setTimeout(() => {
+                this.style.animationDuration = '10s';
+            }, 2000);
+        });
+    }
 });
 </script>

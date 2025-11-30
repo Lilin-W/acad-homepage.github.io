@@ -6,217 +6,292 @@ author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Monsieur+La+Doulaise&family=Special+Elite&display=swap" rel="stylesheet">
 
 <style>
-/* --- 全局重置：纯白、极简 --- */
+/* --- 0. 全局设置：电影胶片噪点背景 --- */
 .lana-wrapper {
-    background-color: #ffffff;
+    font-family: 'Cormorant Garamond', serif; /* 核心字体升级 */
+    background-color: #fdfbf7;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    padding: 60px 0;
+    position: relative;
+    font-size: 18px; /* 基础字号调大 */
+}
+
+/* 动态噪点层 (Film Grain Overlay) */
+.lana-wrapper::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.08; /* 噪点透明度 */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    animation: grain-flicker 1s infinite steps(5); /* 微微闪动 */
+}
+
+@keyframes grain-flicker {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+}
+
+/* --- 1. 标题区：极简文学风 --- */
+.hero-header {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* 细线分割 */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5em;
+    font-weight: 400; /* 极细字体，更高级 */
+    letter-spacing: -1px; /* 紧凑排版 */
+    text-transform: uppercase;
     color: #111;
-    font-family: 'Lato', sans-serif;
-    padding: 0;
-    max-width: 100%;
     margin: 0;
-    box-sizing: border-box;
+    line-height: 0.9;
 }
 
-/* --- 核心布局：双栏 (左固定，右滚动) --- */
-.split-container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
+.hero-subtitle {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 3em; /* 大号手写体 */
+    color: #6a1b9a; /* 复古紫 */
+    margin-top: -20px;
+    transform: rotate(-3deg);
+    text-shadow: 2px 2px 0px rgba(255,255,255,0.8);
+    position: relative;
+    z-index: 2;
 }
 
-/* 左侧：固定区域 (Sticky) */
-.left-pane {
-    width: 35%; /* 左侧宽度 */
-    padding: 80px 50px;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 垂直居中 */
-    border-right: 1px solid #f0f0f0; /* 极淡的分割线 */
-    background: #fff;
+/* --- 2. 胶片长廊：保留 V9 的精致方孔，但加深色调 --- */
+.film-strip-container {
+    background-color: #0a0a0a; /* 接近纯黑 */
+    padding: 30px 0;
+    margin: 60px -20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: rotate(-2deg); /* 胶片倾斜效果 */
+    width: 105%; /* 稍微加宽让倾斜后不留白 */
+    left: -2.5%;
+
+    /* 精致的小方孔 */
+    background-image: 
+        linear-gradient(90deg, #fdfbf7 50%, transparent 50%),
+        linear-gradient(90deg, #fdfbf7 50%, transparent 50%);
+    background-position: 0 10px, 0 calc(100% - 10px);
+    background-size: 16px 10px; /* 更小更密 */
+    background-repeat: repeat-x;
+    background-attachment: local;
+}
+
+.film-strip-container::-webkit-scrollbar { display: none; }
+
+.film-frame {
+    display: inline-block;
+    height: 220px;
+    margin: 0 0px; /* 无缝连接 */
+    padding: 0 10px;
+    vertical-align: middle;
+    border-right: 1px solid #222; /* 隐约的分割线 */
+}
+
+.film-frame img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    filter: sepia(30%) contrast(110%) brightness(0.8); /* 稍微暗一点，显质感 */
+    transition: all 0.6s ease;
+    border-radius: 1px;
+}
+
+.film-frame:hover img {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 0 30px rgba(255,255,255,0.1);
+}
+
+/* --- 3. 文艺手账区 (Editorial Layout) --- */
+.journal-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 左右分栏 */
+    gap: 60px;
+    margin: 80px 20px;
+    align-items: center;
+}
+
+/* 左侧：便签样式 */
+.poem-card {
+    background: #fffdf0; /* 米黄色便签纸 */
+    padding: 45px 40px;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1em;
+    line-height: 2.2; /* 宽行距 */
+    color: #333;
+    position: relative;
+    box-shadow: 5px 10px 25px rgba(0,0,0,0.15);
+    transform: rotate(1deg);
+    
+    /* 撕裂边缘效果 */
+    --mask: radial-gradient(10px at 50% 12.5px, #000 99%, #0000 101%) 50% -12.5px / 20px 25px repeat-x;
+    -webkit-mask: var(--mask) bottom, var(--mask) top;
+    mask: var(--mask) bottom, var(--mask) top;
+}
+
+/* 透明胶带 */
+.poem-card::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1deg);
+    width: 140px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-left: 2px dotted rgba(255,255,255,0.5);
+    border-right: 2px dotted rgba(255,255,255,0.5);
     z-index: 10;
 }
 
-/* 右侧：滚动区域 */
-.right-pane {
-    width: 65%; /* 右侧宽度 */
-    padding: 80px 60px;
-    background: #fff;
-}
-
-/* --- 字体排版 --- */
-.brand-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5em;
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    letter-spacing: -1px;
-    color: #000;
-}
-
-.intro-text {
-    font-size: 1em;
-    line-height: 1.8;
-    color: #666;
-    font-weight: 300;
-    max-width: 90%;
-    margin-bottom: 40px;
-}
-
-.meta-info {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #aaa;
-    margin-top: auto; /* 推到底部 */
-}
-
-/* 装饰性短线 */
-.separator {
-    width: 40px;
-    height: 1px;
-    background: #000;
-    margin-bottom: 30px;
-}
-
-/* --- 图片流列表 --- */
-.work-list {
+/* 右侧：堆叠的相片 + 黑胶唱片 */
+.visual-stack {
+    position: relative;
+    height: 400px;
     display: flex;
-    flex-direction: column;
-    gap: 100px; /* 图片之间的大间距 */
-}
-
-.work-item {
-    width: 100%;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards; /* 淡入动画 */
-}
-
-/* 图片样式：无滤镜，可能有微弱阴影 */
-.work-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03); /* 极轻的阴影，增加离地感 */
-    transition: transform 0.5s ease;
-}
-
-.work-item:hover img {
-    transform: translateY(-5px); /* 悬停轻微上浮 */
-}
-
-.work-caption {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-top: 1px solid #f5f5f5;
-    padding-top: 15px;
 }
 
-.caption-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
-    color: #222;
+/* 相片相框 */
+.framed-photo {
+    position: absolute;
+    width: 280px;
+    padding: 15px 15px 50px 15px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transform: rotate(-3deg);
+    z-index: 2;
+    transition: transform 0.4s;
+}
+.framed-photo img { width: 100%; filter: grayscale(20%); }
+.framed-photo:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
+
+/* 黑胶唱片 (Vinyl) 装饰 */
+.vinyl-record {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #111 20%, #333 21%, #111 22%, #111 30%, #333 31%, #111 32%, #111 40%, #333 41%, #111 42%, #000 70%);
+    border-radius: 50%;
+    z-index: 1; /* 在照片下面 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    animation: spin 10s linear infinite; /* 缓慢旋转 */
 }
 
-.caption-date {
-    font-size: 0.8em;
-    color: #999;
-    letter-spacing: 1px;
+/* 唱片中间的标签 */
+.vinyl-label {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px; height: 70px;
+    background: #b76e79; /* 玫瑰色 */
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
 
-/* 动画 */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* --- 装饰性细节 --- */
+.signature-text {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 1.8em;
+    color: #555;
+    text-align: right;
+    margin-top: 20px;
 }
 
-/* 延迟动画，让图片依次出现 */
-.work-item:nth-child(1) { animation-delay: 0.1s; }
-.work-item:nth-child(2) { animation-delay: 0.3s; }
-.work-item:nth-child(3) { animation-delay: 0.5s; }
-.work-item:nth-child(4) { animation-delay: 0.7s; }
+.lyric-highlight {
+    color: #a83f39; /* 深红 */
+    font-weight: bold;
+}
 
-/* 移动端适配：取消分屏，改为上下排列 */
-@media (max-width: 900px) {
-    .split-container { flex-direction: column; }
-    .left-pane { 
-        width: 100%; 
-        height: auto; 
-        position: relative; 
-        padding: 60px 30px; 
-        border-right: none;
-        border-bottom: 1px solid #f0f0f0;
-    }
-    .right-pane { width: 100%; padding: 40px 20px; }
-    .work-list { gap: 60px; }
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .journal-layout { grid-template-columns: 1fr; gap: 40px; }
+    .vinyl-record { right: 20px; bottom: -40px; width: 150px; height: 150px; }
 }
 </style>
 
 <div class="lana-wrapper">
-    <div class="split-container">
+
+    <div class="hero-header">
+        <h1 class="hero-title">Lana Del Rey</h1>
+        <div class="hero-subtitle">The Honeymoon Era</div>
+    </div>
+
+    <div class="film-strip-container">
+        <div class="film-frame"><img src="/images/xiaoman-portrait-1.png"></div>
+        <div class="film-frame"><img src="/images/xiaoman-portrait-2.png"></div>
+        <div class="film-frame"><img src="/images/xiaoman-portrait-3.png"></div>
+        <div class="film-frame"><img src="/images/cute.jpg"></div>
+        <div class="film-frame"><img src="/images/wink.jpg"></div>
+        <div class="film-frame"><img src="/images/jump.jpg"></div>
+        <div class="film-frame"><img src="/images/xiaoman-portrait-4.png"></div>
+        <div class="film-frame"><img src="/images/keyboard.jpg"></div>
+    </div>
+
+    <div class="journal-layout">
         
-        <div class="left-pane">
-            <div class="separator"></div>
-            <h1 class="brand-title">Lana<br>Del Rey</h1>
-            <div class="intro-text">
-                <p>
-                    A visual archive exploring the aesthetics of nostalgia, glamour, and melancholia. 
-                    Capturing moments that feel like a faded memory from a different era.
-                </p>
-                <p>
-                    <em>"That's how the light gets in."</em>
-                </p>
+        <div class="poem-card">
+            <p>
+                <strong>September 2025.</strong><br><br>
+                Sitting on the porch, listening to <span class="lyric-highlight">Ultraviolence</span>. 
+                The world feels like a grainy movie scene.
+                <br><br>
+                "That's how the light gets in. <br>
+                Then you're <strong style="color:#d4af37;">golden</strong>."
+                <br><br>
+                Capturing the melancholy beauty of everyday life. 
+                It's not just about the picture; it's about the feeling of being <em>infinite</em>.
+            </p>
+            <div class="signature-text">— Yours, L.</div>
+        </div>
+
+        <div class="visual-stack">
+            <div class="vinyl-record">
+                <div class="vinyl-label"></div>
             </div>
             
-            <div class="meta-info">
-                <span>Est. 2025</span> &nbsp;—&nbsp; <span>Los Angeles</span>
+            <div class="framed-photo">
+                <img src="/images/xiaoman-portrait-4.png" alt="Memory">
+                <div style="font-family:'Monsieur La Doulaise'; font-size:1.8em; text-align:center; margin-top:10px; color:#444;">
+                    Summertime Sadness
+                </div>
             </div>
         </div>
 
-        <div class="right-pane">
-            <div class="work-list">
-                
-                <div class="work-item">
-                    <img src="/images/xiaoman-portrait-4.png" alt="Portrait">
-                    <div class="work-caption">
-                        <span class="caption-title">Summertime Sadness</span>
-                        <span class="caption-date">01 / 25</span>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <img src="/images/xiaoman-portrait-1.png" alt="Detail">
-                    <div class="work-caption">
-                        <span class="caption-title">Blue Jeans</span>
-                        <span class="caption-date">02 / 25</span>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <img src="/images/cute.jpg" alt="Vibe">
-                    <div class="work-caption">
-                        <span class="caption-title">Young & Beautiful</span>
-                        <span class="caption-date">03 / 25</span>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <img src="/images/keyboard.jpg" alt="Object">
-                    <div class="work-caption">
-                        <span class="caption-title">Ultraviolence</span>
-                        <span class="caption-date">04 / 25</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
+    
+    <div style="text-align:center; margin-top:80px; font-size:0.8em; letter-spacing:3px; opacity:0.6;">
+        EST. 2025 • LOS ANGELES
+    </div>
+
 </div>

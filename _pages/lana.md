@@ -129,8 +129,10 @@ toc: false
 .journal-layout {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 左右分栏 */
-    gap: 60px;
-    margin: 80px 20px;
+    gap: 40px; /* 减小间距，让便签靠近 */
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 40px;
     align-items: center;
 }
 
@@ -249,10 +251,10 @@ toc: false
 
     <div class="film-strip-container">
         <div class="film-frame"><img src="/images/lana0.png"></div>
-        <div class="film-frame"><img src="/images/lana2.jpg"></div>
+        <div class="film-frame"><img src="/images/lana4.png"></div>
         <div class="film-frame"><img src="/images/lana3.png"></div>
         <div class="film-frame"><img src="/images/lana6.png"></div>
-        <div class="film-frame"><img src="/images/lana4.png"></div>
+        <div class="film-frame"><img src="/images/lana1.jpg"></div>
         <div class="film-frame"><img src="/images/lana8.png"></div>
         <div class="film-frame"><img src="/images/lana7.jpg"></div>
     </div>

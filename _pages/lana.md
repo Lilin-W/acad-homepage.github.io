@@ -129,8 +129,10 @@ toc: false
 .journal-layout {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 左右分栏 */
-    gap: 60px;
-    margin: 80px 20px;
+    gap: 40px; /* 减小间距 */
+    margin: 80px auto; /* 居中 */
+    max-width: 1200px; /* 限制最大宽度 */
+    padding: 0 40px;
     align-items: center;
 }
 
@@ -139,12 +141,13 @@ toc: false
     background: #fffdf0; /* 米黄色便签纸 */
     padding: 45px 40px;
     font-family: 'Special Elite', cursive;
-    font-size: 1.1em;
-    line-height: 2.2; /* 宽行距 */
+    font-size: 1.05em; /* 稍微调小字体 */
+    line-height: 2.1; /* 调整行距 */
     color: #333;
     position: relative;
     box-shadow: 5px 10px 25px rgba(0,0,0,0.15);
     transform: rotate(1deg);
+    min-height: 380px; /* 设置最小高度，与右侧对齐 */
     
     /* 撕裂边缘效果 */
     --mask: radial-gradient(10px at 50% 12.5px, #000 99%, #0000 101%) 50% -12.5px / 20px 25px repeat-x;
@@ -172,7 +175,7 @@ toc: false
 /* 右侧：堆叠的相片 + 黑胶唱片 */
 .visual-stack {
     position: relative;
-    height: 400px;
+    height: 380px; /* 调整高度 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,13 +184,14 @@ toc: false
 /* 相片相框 */
 .framed-photo {
     position: absolute;
-    width: 280px;
+    width: 260px; /* 稍微缩小 */
     padding: 15px 15px 50px 15px;
     background: #fff;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     transform: rotate(-3deg);
     z-index: 2;
     transition: transform 0.4s;
+    left: 10px; /* 向左移一点 */
 }
 .framed-photo img { width: 100%; filter: grayscale(20%); }
 .framed-photo:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
@@ -195,10 +199,10 @@ toc: false
 /* 黑胶唱片 (Vinyl) 装饰 */
 .vinyl-record {
     position: absolute;
-    right: 0px;
-    bottom: 20px;
-    width: 200px;
-    height: 200px;
+    right: -20px; /* 调整位置 */
+    bottom: 10px;
+    width: 180px; /* 稍微缩小 */
+    height: 180px;
     background: radial-gradient(circle, #111 20%, #333 21%, #111 22%, #111 30%, #333 31%, #111 32%, #111 40%, #333 41%, #111 42%, #000 70%);
     border-radius: 50%;
     z-index: 1; /* 在照片下面 */
@@ -211,7 +215,7 @@ toc: false
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px; height: 70px;
+    width: 60px; height: 60px; /* 相应缩小 */
     background: #b76e79; /* 玫瑰色 */
     border-radius: 50%;
     border: 2px solid #fff;

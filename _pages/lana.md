@@ -156,6 +156,13 @@ toc: false
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: opacity 0.2s ease; /* 切换视频时的淡入淡出效果 */
+}
+
+#video-frame {
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
 /* 屏幕玻璃反光层 */
@@ -231,7 +238,7 @@ toc: false
 
 .vhs-tape {
     width: 220px;
-    height: 45px;
+    height: 40px; /* 稍微缩小高度以容纳5个 */
     background: #1a1a1a;
     border-bottom: 1px solid #333;
     margin-bottom: -1px; /* 紧挨着 */
@@ -245,10 +252,10 @@ toc: false
 /* 录像带脊背标签 */
 .vhs-spine {
     width: 200px;
-    height: 32px;
+    height: 28px; /* 稍微缩小高度 */
     background: #f0f0f0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em; /* 稍微缩小字体 */
     letter-spacing: 1px;
     color: #111;
     display: flex;
@@ -265,6 +272,21 @@ toc: false
 .vhs-tape:nth-child(2) .vhs-spine { border-left: 15px solid #2980b9; }
 .vhs-tape:nth-child(3) .vhs-spine { border-left: 15px solid #27ae60; background: #ffecb3; }
 .vhs-tape:nth-child(4) .vhs-spine { border-left: 15px solid #8e44ad; }
+.vhs-tape:nth-child(5) .vhs-spine { border-left: 15px solid #e74c3c; background: #ecf0f1; }
+
+/* 录像带可点击 */
+.vhs-tape {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.vhs-tape:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.vhs-tape.active .vhs-spine {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
 
 /* --- C. 超市小票 (独立放置) --- */
 .receipt-paper {
@@ -359,10 +381,9 @@ toc: false
         <div class="tv-vhs-group">
             <div class="tv-unit">
                 
-                <div class="tv-screen-bezel">
+                <div class="tv-screen-bezel" id="tv-screen">
                     <div class="tv-screen-overlay"></div>
-                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DN_UxT6Ea_o/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-                    <script async src="//www.instagram.com/embed.js"></script>
+                    <iframe id="video-frame" src="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;"></iframe>
                 </div>
                 
                 <div class="tv-control-panel">
@@ -373,28 +394,34 @@ toc: false
             </div>
 
             <div class="vhs-crate">
-                <div class="vhs-tape">
+                <div class="vhs-tape active" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
                     <div class="vhs-spine">
                         <span>BORN TO DIE</span>
                         <small>'12</small>
                     </div>
                 </div>
-                <div class="vhs-tape">
+                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
                     <div class="vhs-spine">
                         <span>ULTRAVIOLENCE</span>
                         <small>'14</small>
                     </div>
                 </div>
-                <div class="vhs-tape">
+                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
                     <div class="vhs-spine">
                         <span>HONEYMOON</span>
                         <small>'15</small>
                     </div>
                 </div>
-                <div class="vhs-tape">
+                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
                     <div class="vhs-spine">
                         <span>LUST FOR LIFE</span>
                         <small>'17</small>
+                    </div>
+                </div>
+                <div class="vhs-tape" data-video="https://player.bilibili.com/player.html?bvid=BV1yG4y1W7AD&page=1&high_quality=1&danmaku=0" data-type="bilibili">
+                    <div class="vhs-spine">
+                        <span>TV IN B&W</span>
+                        <small>'24</small>
                     </div>
                 </div>
             </div>
@@ -415,3 +442,37 @@ toc: false
     </div>
 
 </div>
+
+<script>
+// 录像带切换视频功能
+document.addEventListener('DOMContentLoaded', function() {
+    const tapes = document.querySelectorAll('.vhs-tape');
+    const videoFrame = document.getElementById('video-frame');
+    
+    tapes.forEach(tape => {
+        tape.addEventListener('click', function() {
+            // 移除所有 active 状态
+            tapes.forEach(t => t.classList.remove('active'));
+            
+            // 添加当前 active 状态
+            this.classList.add('active');
+            
+            // 获取视频 URL
+            const videoUrl = this.getAttribute('data-video');
+            const videoType = this.getAttribute('data-type');
+            
+            // 切换视频
+            if (videoUrl) {
+                videoFrame.src = videoUrl;
+            }
+            
+            // 添加换台效果
+            const tvScreen = document.getElementById('tv-screen');
+            tvScreen.style.opacity = '0.3';
+            setTimeout(() => {
+                tvScreen.style.opacity = '1';
+            }, 200);
+        });
+    });
+});
+</script>

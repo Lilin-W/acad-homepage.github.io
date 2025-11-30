@@ -225,7 +225,7 @@ toc: false
 /* --- B. 录像带收纳箱 (VHS Crate) --- */
 .vhs-crate {
     background: #8e6e54; /* 浅木色 */
-    padding: 10px 10px 0 10px;
+    padding: 8px 10px 0 10px; /* 缩小顶部内边距 */
     border: 4px solid #5d4037;
     border-bottom: 15px solid #5d4037;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.4);
@@ -234,11 +234,12 @@ toc: false
     align-items: center;
     transform: perspective(800px) rotateY(-5deg) translateX(-10px); /* 稍微侧一点，靠着电视 */
     z-index: 4;
+    max-height: 280px; /* 限制最大高度 */
 }
 
 .vhs-tape {
     width: 220px;
-    height: 40px; /* 稍微缩小高度以容纳5个 */
+    height: 35px; /* 缩小高度以容纳6个 */
     background: #1a1a1a;
     border-bottom: 1px solid #333;
     margin-bottom: -1px; /* 紧挨着 */
@@ -252,19 +253,23 @@ toc: false
 /* 录像带脊背标签 */
 .vhs-spine {
     width: 200px;
-    height: 28px; /* 稍微缩小高度 */
+    height: 25px; /* 缩小高度以适应6盘 */
     background: #f0f0f0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1em; /* 稍微缩小字体 */
-    letter-spacing: 1px;
+    font-size: 1em; /* 缩小字体 */
+    letter-spacing: 0.5px;
     color: #111;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 8px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     /* 纸张纹理 */
     background-image: linear-gradient(rgba(0,0,0,0.05), transparent);
+}
+
+.vhs-spine small {
+    font-size: 0.85em;
 }
 
 /* 不同颜色的脊背 */
@@ -272,7 +277,8 @@ toc: false
 .vhs-tape:nth-child(2) .vhs-spine { border-left: 15px solid #2980b9; }
 .vhs-tape:nth-child(3) .vhs-spine { border-left: 15px solid #27ae60; background: #ffecb3; }
 .vhs-tape:nth-child(4) .vhs-spine { border-left: 15px solid #8e44ad; }
-.vhs-tape:nth-child(5) .vhs-spine { border-left: 15px solid #e74c3c; background: #ecf0f1; }
+.vhs-tape:nth-child(5) .vhs-spine { border-left: 15px solid #f39c12; background: #fff3cd; }
+.vhs-tape:nth-child(6) .vhs-spine { border-left: 15px solid #e74c3c; background: #ecf0f1; }
 
 /* 录像带可点击 */
 .vhs-tape {
@@ -383,7 +389,7 @@ toc: false
                 
                 <div class="tv-screen-bezel" id="tv-screen">
                     <div class="tv-screen-overlay"></div>
-                    <iframe id="video-frame" src="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;"></iframe>
+                    <iframe id="video-frame" src="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; fullscreen" style="border:none;"></iframe>
                 </div>
                 
                 <div class="tv-control-panel">
@@ -416,6 +422,12 @@ toc: false
                     <div class="vhs-spine">
                         <span>LUST FOR LIFE</span>
                         <small>'17</small>
+                    </div>
+                </div>
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/xFv0wg_alGk?autoplay=0&mute=0" data-type="youtube">
+                    <div class="vhs-spine">
+                        <span>LIE DOWN W/ ME</span>
+                        <small>'23</small>
                     </div>
                 </div>
                 <div class="vhs-tape" data-video="https://player.bilibili.com/player.html?bvid=BV1yG4y1W7AD&page=1&high_quality=1&danmaku=0" data-type="bilibili">
@@ -458,12 +470,27 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             // 获取视频 URL
-            const videoUrl = this.getAttribute('data-video');
+            let videoUrl = this.getAttribute('data-video');
             const videoType = this.getAttribute('data-type');
+            
+            // 根据视频类型添加不静音参数
+            if (videoType === 'youtube') {
+                // YouTube 视频：确保不静音
+                if (!videoUrl.includes('mute=')) {
+                    videoUrl += (videoUrl.includes('?') ? '&' : '?') + 'mute=0&autoplay=1';
+                }
+            } else if (videoType === 'bilibili') {
+                // B站视频：添加自动播放参数
+                if (!videoUrl.includes('autoplay=')) {
+                    videoUrl += '&autoplay=1';
+                }
+            }
             
             // 切换视频
             if (videoUrl) {
                 videoFrame.src = videoUrl;
+                // 确保 iframe 允许音频播放
+                videoFrame.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
             }
             
             // 添加换台效果

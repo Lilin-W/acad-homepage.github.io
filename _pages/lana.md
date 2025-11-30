@@ -11,34 +11,27 @@ toc: false
 <style>
 /* --- 0. 全局设置：电影胶片噪点背景 --- */
 .lana-wrapper {
-    font-family: 'Cormorant Garamond', serif; /* 核心字体升级 */
-    background-color: #fdfbf7;
-    color: #1a1a1a;
-    overflow-x: hidden;
-    padding: 60px 0;
-    position: relative;
-    font-size: 18px; /* 基础字号调大 */
+    font-family: 'Cormorant Garamond', serif; /* 核心字体升级 */
+    background-color: #fdfbf7;
+    color: #1a1a1a;
+    overflow: visible; /* 改为 visible */
+    padding: 60px 0;
+    position: relative;
+    font-size: 18px; /* 基础字号调大 */
 }
 
 /* 动态噪点层 (Film Grain Overlay) */
 .lana-wrapper::after {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.08; /* 噪点透明度 */
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    animation: grain-flicker 1s infinite steps(5); /* 微微闪动 */
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1; /* 降低 z-index，不要遮住内容 */
+    opacity: 0.08; /* 噪点透明度 */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulance type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply; /* 使用混合模式代替高 z-index */
 }
 
-@keyframes grain-flicker {
-    0%, 100% { transform: translate(0, 0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(2px, -2px); }
-    60% { transform: translate(-2px, -2px); }
-    80% { transform: translate(2px, 2px); }
-}
 
 /* --- 1. 标题区：极简文学风 --- */
 .hero-header {

@@ -94,13 +94,21 @@ toc: false
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 0px; /* 紧挨着 */
+    gap: 30px; /* 间距 */
     margin: 100px auto 80px;
     padding: 0 20px;
     flex-wrap: wrap;
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     z-index: 10;
+}
+
+/* 电视+柜子组 */
+.tv-vhs-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 0px;
+    position: relative;
 }
 
 /* 霓虹灯 */
@@ -127,15 +135,13 @@ toc: false
     border-bottom: 10px solid #3e2723; /* 底部加厚 */
     display: flex;
     align-items: center;
-    max-width: 800px;
-    min-width: 550px;
     position: relative;
     z-index: 5;
 }
 
-/* 电视屏幕区 */
+/* 电视屏幕区 - 4:3 比例 */
 .tv-screen-bezel {
-    flex: 3;
+    width: 480px; /* 4:3 比例: 360 * 4/3 = 480 */
     background: #111;
     border-radius: 30px; /* CRT 的大圆角 */
     border: 8px solid #dcdcdc; /* 银色镀铬边框 */
@@ -144,10 +150,11 @@ toc: false
         inset 0 0 20px #000;
     overflow: hidden;
     position: relative;
-    height: 420px;
+    height: 360px; /* 4:3 比例 */
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 /* 屏幕玻璃反光层 */
@@ -166,14 +173,15 @@ toc: false
 
 /* 电视右侧控制面板 */
 .tv-control-panel {
-    flex: 0.8;
-    margin-left: 25px;
+    width: 100px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-left: 2px solid rgba(0,0,0,0.2); /* 分割线 */
     padding-left: 10px;
+    flex-shrink: 0;
 }
 
 /* 巨大的镀铬旋钮 */
@@ -257,42 +265,42 @@ toc: false
 .vhs-tape:nth-child(3) .vhs-spine { border-left: 15px solid #27ae60; background: #ffecb3; }
 .vhs-tape:nth-child(4) .vhs-spine { border-left: 15px solid #8e44ad; }
 
-/* --- C. 超市小票 (贴在电视上) --- */
+/* --- C. 超市小票 (独立放置) --- */
 .receipt-paper {
-    position: absolute;
-    top: -40px;
-    right: -30px;
-    width: 220px;
+    width: 240px;
     background: #fff;
-    padding: 15px;
+    padding: 20px 15px;
     font-family: 'VT323', monospace;
     font-size: 1em;
     color: #333;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
-    transform: rotate(5deg);
+    transform: rotate(3deg) translateY(20px);
     z-index: 6;
-    /* 胶带固定 */
     border-top: 1px solid #eee;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    position: relative;
 }
 /* 贴纸胶带 */
 .receipt-paper::before {
     content: ""; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 20px; background: rgba(255,255,255,0.5); border: 1px solid #ddd;
 }
 
-.receipt-header { text-align: center; border-bottom: 1px dashed #333; padding-bottom: 5px; margin-bottom: 5px; }
-.receipt-item { display: flex; justify-content: space-between; font-size: 0.9em; }
-.receipt-end { text-align: center; margin-top: 10px; font-size: 0.8em; }
+.receipt-header { text-align: center; border-bottom: 1px dashed #333; padding-bottom: 5px; margin-bottom: 5px; font-weight: bold; }
+.receipt-item { display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 3px; }
+.receipt-end { text-align: center; margin-top: 10px; font-size: 0.8em; font-weight: bold; }
 
 /* 移动端适配 */
 @media (max-width: 900px) {
-    .vintage-scene-container { flex-direction: column; align-items: center; }
-    .tv-unit { width: 100%; min-width: auto; flex-direction: column; }
+    .vintage-scene-container { flex-direction: column; align-items: center; gap: 40px; }
+    .tv-vhs-group { flex-direction: column; align-items: center; }
+    .tv-unit { width: 100%; flex-direction: column; }
+    .tv-screen-bezel { width: 100%; max-width: 360px; height: 270px; } /* 保持 4:3 比例 */
     .tv-control-panel { flex-direction: row; height: auto; margin-left: 0; margin-top: 20px; width: 100%; border-left: none; border-top: 2px solid rgba(0,0,0,0.2); }
     .knob { width: 50px; height: 50px; margin: 0 10px; }
     .speaker-grille { height: 50px; margin-top: 0; flex: 1; margin-left: 10px; }
-    .vhs-crate { transform: none; margin-top: 40px; width: 280px; }
-    .receipt-paper { position: relative; top: auto; right: auto; margin-top: 30px; transform: rotate(-2deg); }
-    .tv-screen-bezel { height: 350px; }
+    .vhs-crate { transform: none; margin-top: 30px; width: 280px; }
+    .receipt-paper { transform: rotate(-2deg); margin-bottom: 0; }
 }
 </style>
 
@@ -347,54 +355,56 @@ toc: false
         
         <div class="neon-sign">LDR • TV</div>
 
-        <div class="tv-unit">
-            
-            <div class="tv-screen-bezel">
-                <div class="tv-screen-overlay"></div>
-                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DN_UxT6Ea_o/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
-            </div>
-            
-            <div class="tv-control-panel">
-                <div class="knob channel"></div>
-                <div class="knob volume"></div>
-                <div class="speaker-grille"></div>
+        <div class="tv-vhs-group">
+            <div class="tv-unit">
                 
-                <div class="receipt-paper">
-                    <div class="receipt-header">LANA'S PLAYLIST</div>
-                    <div class="receipt-item"><span>01. BORN TO DIE</span></div>
-                    <div class="receipt-item"><span>02. BLUE JEANS</span></div>
-                    <div class="receipt-item"><span>03. VIDEO GAMES</span></div>
-                    <div class="receipt-end">TOTAL MOOD: SAD</div>
+                <div class="tv-screen-bezel">
+                    <div class="tv-screen-overlay"></div>
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DN_UxT6Ea_o/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+                
+                <div class="tv-control-panel">
+                    <div class="knob channel"></div>
+                    <div class="knob volume"></div>
+                    <div class="speaker-grille"></div>
+                </div>
+            </div>
+
+            <div class="vhs-crate">
+                <div class="vhs-tape">
+                    <div class="vhs-spine">
+                        <span>BORN TO DIE</span>
+                        <small>'12</small>
+                    </div>
+                </div>
+                <div class="vhs-tape">
+                    <div class="vhs-spine">
+                        <span>ULTRAVIOLENCE</span>
+                        <small>'14</small>
+                    </div>
+                </div>
+                <div class="vhs-tape">
+                    <div class="vhs-spine">
+                        <span>HONEYMOON</span>
+                        <small>'15</small>
+                    </div>
+                </div>
+                <div class="vhs-tape">
+                    <div class="vhs-spine">
+                        <span>LUST FOR LIFE</span>
+                        <small>'17</small>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="vhs-crate">
-            <div class="vhs-tape">
-                <div class="vhs-spine">
-                    <span>BORN TO DIE</span>
-                    <small>'12</small>
-                </div>
-            </div>
-            <div class="vhs-tape">
-                <div class="vhs-spine">
-                    <span>ULTRAVIOLENCE</span>
-                    <small>'14</small>
-                </div>
-            </div>
-            <div class="vhs-tape">
-                <div class="vhs-spine">
-                    <span>HONEYMOON</span>
-                    <small>'15</small>
-                </div>
-            </div>
-            <div class="vhs-tape">
-                <div class="vhs-spine">
-                    <span>LUST FOR LIFE</span>
-                    <small>'17</small>
-                </div>
-            </div>
+        <div class="receipt-paper">
+            <div class="receipt-header">LANA'S PLAYLIST</div>
+            <div class="receipt-item"><span>01. BORN TO DIE</span></div>
+            <div class="receipt-item"><span>02. BLUE JEANS</span></div>
+            <div class="receipt-item"><span>03. VIDEO GAMES</span></div>
+            <div class="receipt-end">TOTAL MOOD: SAD</div>
         </div>
 
     </div>

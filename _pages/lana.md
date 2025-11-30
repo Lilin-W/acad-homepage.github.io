@@ -40,47 +40,50 @@ toc: false
 .hero-subtitle-text {
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
-    color: #6a1b9a; /* 复古紫 */
+    color: #6a1b9a;
     margin-top: 10px;
     transform: rotate(-2deg);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* --- 2. 胶片长廊 (Film Strip) - 方形齿孔修正版 --- */
+/* --- 2. 胶片长廊 (Film Strip) - 齿孔精细化 V9.0 --- */
 .film-strip-container {
-    background-color: #151515; /* 纯黑稍淡一点点，更有胶片质感 */
-    padding: 45px 0; /* 增加上下内边距，给方形孔留出位置 */
+    background-color: #121212; /* 深黑底色 */
+    padding: 35px 0; /* 稍微减小内边距，匹配更小的孔 */
     margin: 50px -20px;
     overflow-x: auto;
     white-space: nowrap;
     position: relative;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5); /* 更深的阴影 */
-    /* --- 关键修改：方形齿孔 (Square Sprocket Holes) --- */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    /* --- 关键修改：更小、更密的长方形齿孔 --- */
     background-image: 
-        /* 上排方孔：使用线性渐变制作矩形 */
-        linear-gradient(90deg, #fdfbf7 60%, transparent 60%),
-        /* 下排方孔 */
-        linear-gradient(90deg, #fdfbf7 60%, transparent 60%);
+        /* 55% 的比例，让白孔稍微比黑间隙宽一点点，更像真胶片 */
+        linear-gradient(90deg, #fdfbf7 55%, transparent 55%),
+        linear-gradient(90deg, #fdfbf7 55%, transparent 55%);
     
-    background-position: 0 15px, 0 calc(100% - 15px); /* 孔距离边缘的位置 */
-    background-size: 30px 20px; /* 30px宽(包含间隙), 20px高 -> 形成长方形孔 */
+    /* 位置调整：离边缘 10px */
+    background-position: 0 10px, 0 calc(100% - 10px); 
+    
+    /* 尺寸大幅缩小：20px 宽 (含间隙), 12px 高 */
+    /* 这样单个孔大约是 11px * 12px 的小方块 */
+    background-size: 20px 12px; 
+    
     background-repeat: repeat-x;
-    background-attachment: local; /* 让孔随胶片滚动 */
+    background-attachment: local;
 }
 
 .film-strip-container::-webkit-scrollbar {
-    display: none; /* 隐藏滚动条 */
+    display: none;
 }
 
 .film-frame {
     display: inline-block;
-    height: 260px; /* 稍微加高胶片内容 */
-    margin: 0 1px; /* 间隙极小 */
-    padding: 0 10px; 
+    height: 240px; /* 内容高度 */
+    margin: 0 1px;
+    padding: 0 8px; /* 左右黑边也稍微收窄 */
     vertical-align: middle;
     position: relative;
-    /* 胶片之间的分割线 */
-    border-left: 1px solid #333; 
+    border-left: 1px solid #2a2a2a; /* 稍微明显的分割线 */
 }
 
 .film-frame img {
@@ -105,23 +108,22 @@ toc: false
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start; /* 顶部对齐 */
-    gap: 60px; /* 增加间距 */
+    align-items: flex-start;
+    gap: 60px;
     margin: 80px 20px;
 }
 
-/* 左侧：撕页便签 (加长加宽版) */
+/* 左侧：撕页便签 (保持加长版) */
 .torn-diary-entry {
-    flex: 1.5; /* 增加权重，让它占更多宽度 */
-    min-width: 400px; /* 强制最小宽度，解决"太短"的问题 */
-    min-height: 400px; /* 增加高度，看起来更像一张完整的信纸 */
+    flex: 1.5;
+    min-width: 400px;
+    min-height: 400px;
     background: #fffdf0;
-    padding: 40px 35px; /* 增加内边距 */
+    padding: 40px 35px;
     position: relative;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.15);
     transform: rotate(1deg);
     
-    /* 撕裂边缘 */
     --mask: radial-gradient(10px at 50% 12.5px, #000 99%, #0000 101%) 50% -12.5px / 20px 25px repeat-x;
     -webkit-mask: var(--mask) bottom, var(--mask) top;
     mask: var(--mask) bottom, var(--mask) top;
@@ -132,7 +134,7 @@ toc: false
     top: -18px;
     left: 50%;
     transform: translateX(-50%) rotate(-1deg);
-    width: 140px; /* 胶带更长 */
+    width: 140px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(2px);
@@ -144,15 +146,15 @@ toc: false
 
 .diary-content {
     font-family: 'Special Elite', cursive;
-    font-size: 1.15em; /* 字体稍微加大 */
-    line-height: 2; /* 行间距加大，更有手写信的感觉 */
+    font-size: 1.15em;
+    line-height: 2;
     color: #333;
 }
 
 .lyric-highlight {
     color: #a83f39;
     font-weight: bold;
-    background: rgba(168, 63, 57, 0.1); /* 淡淡的背景色高亮 */
+    background: rgba(168, 63, 57, 0.1);
     padding: 0 5px;
 }
 
@@ -160,7 +162,7 @@ toc: false
 .journal-photos {
     flex: 1;
     min-width: 300px;
-    height: 400px; /* 与左侧高度匹配 */
+    height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -172,7 +174,7 @@ toc: false
     border: 12px solid #fff;
     border-bottom: 35px solid #fff;
     box-shadow: 10px 15px 30px rgba(0,0,0,0.25);
-    width: 260px; /* 照片加大 */
+    width: 260px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 

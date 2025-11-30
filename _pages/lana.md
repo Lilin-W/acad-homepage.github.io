@@ -35,14 +35,15 @@ toc: false
 
 /* --- 1. 标题区：极简文学风 --- */
 .hero-header {
-    text-align: center;
-    margin-bottom: 70px;
-    position: relative;
-    padding: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.1); /* 细线分割 */
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* 细线分割 */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10; /* 确保在噪点层之上 */
 }
 
 .hero-title {
@@ -69,16 +70,17 @@ toc: false
 
 /* --- 2. 胶片长廊：保留 V9 的精致方孔，但加深色调 --- */
 .film-strip-container {
-    background-color: #0a0a0a; /* 接近纯黑 */
-    padding: 30px 0;
-    margin: 60px -20px;
-    overflow-x: auto;
-    white-space: nowrap;
-    position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    transform: rotate(-2deg); /* 胶片倾斜效果 */
-    width: 105%; /* 稍微加宽让倾斜后不留白 */
-    left: -2.5%;
+    background-color: #0a0a0a; /* 接近纯黑 */
+    padding: 30px 0;
+    margin: 60px -20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: rotate(-2deg); /* 胶片倾斜效果 */
+    width: 105%; /* 稍微加宽让倾斜后不留白 */
+    left: -2.5%;
+    z-index: 10; /* 确保在噪点层之上 */
 
     /* 精致的小方孔 */
     background-image: 
@@ -120,11 +122,13 @@ toc: false
 
 /* --- 3. 文艺手账区 (Editorial Layout) --- */
 .journal-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 左右分栏 */
-    gap: 60px;
-    margin: 80px 20px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 左右分栏 */
+    gap: 60px;
+    margin: 80px 20px;
+    align-items: center;
+    position: relative;
+    z-index: 10; /* 确保在噪点层之上 */
 }
 
 /* 左侧：便签样式 */

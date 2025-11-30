@@ -123,7 +123,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 ---
 
-## <img src="/images/ava.png" alt="cat" width="60" style="vertical-align: middle; margin-right: 5px;"> More Than Work
+## <img src="/images/ava.png" alt="cat" width="40" style="vertical-align: middle; margin-right: 5px;"> More Than Work
 
 When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/) — my furry little boss. She sits on my keyboard, supervises every Git commit, and makes sure I never get overwhelmed. 🐱💻
 

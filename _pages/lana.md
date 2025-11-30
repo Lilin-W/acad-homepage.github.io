@@ -248,14 +248,13 @@ toc: false
     </div>
 
     <div class="film-strip-container">
-        <div class="film-frame"><img src="/images/xiaoman-portrait-1.png"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-2.png"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-3.png"></div>
-        <div class="film-frame"><img src="/images/cute.jpg"></div>
-        <div class="film-frame"><img src="/images/wink.jpg"></div>
-        <div class="film-frame"><img src="/images/jump.jpg"></div>
-        <div class="film-frame"><img src="/images/xiaoman-portrait-4.png"></div>
-        <div class="film-frame"><img src="/images/keyboard.jpg"></div>
+        <div class="film-frame"><img src="/images/lana1.jpg"></div>
+        <div class="film-frame"><img src="/images/lana2.jpg"></div>
+        <div class="film-frame"><img src="/images/lana3.png"></div>
+        <div class="film-frame"><img src="/images/lana4.png"></div>
+        <div class="film-frame"><img src="/images/lana6.png"></div>
+        <div class="film-frame"><img src="/images/lana8.png"></div>
+        <div class="film-frame"><img src="/images/lana9.png"></div>
     </div>
 
     <div class="journal-layout">
@@ -281,7 +280,7 @@ toc: false
             </div>
             
             <div class="framed-photo">
-                <img src="/images/xiaoman-portrait-4.png" alt="Memory">
+                <img src="/images/lana9.png" alt="Memory">
                 <div style="font-family:'Monsieur La Doulaise'; font-size:1.8em; text-align:center; margin-top:10px; color:#444;">
                     Summertime Sadness
                 </div>

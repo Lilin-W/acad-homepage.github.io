@@ -139,8 +139,6 @@ body {
     align-items: center;
     -ms-overflow-style: none; scrollbar-width: none;
     box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
-    transform: rotate(-2deg);
-    margin: 40px 0;
 }
 .film-scroller::-webkit-scrollbar { display: none; }
 

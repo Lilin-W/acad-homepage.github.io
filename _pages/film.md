@@ -9,7 +9,7 @@ toc: false
 <link href="https://fonts.googleapis.com/css2?family=Prata&family=Courier+Prime&display=swap" rel="stylesheet">
 
 <style>
-/* --- 核心设定 --- */
+/* --- 核心设定 (保持不变) --- */
 :root {
     --bg-color: #fdfbf7; /* 象牙白，复古信纸色 */
     --film-black: #111111; /* 胶卷黑 */
@@ -29,7 +29,7 @@ body {
     position: relative;
 }
 
-/* 全局复古颗粒层 (Grain) */
+/* 全局复古颗粒层 */
 .ldr-wrapper::after {
     content: "";
     position: fixed;
@@ -43,11 +43,13 @@ body {
 /* --- 标题区域 --- */
 .header-section {
     text-align: center;
-    padding: 80px 20px 40px;
+    padding: 80px 20px 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 40px;
 }
 
 .main-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0;
@@ -63,17 +65,21 @@ body {
     font-style: italic;
 }
 
-/* --- 事件块 --- */
+/* --- 事件块结构 --- */
 .event-block {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    position: relative;
 }
 
 .event-header {
-    padding-left: 5%; /* 左侧对齐，更有杂志感 */
-    margin-bottom: 20px;
+    padding-left: 5%;
+    margin-bottom: 30px;
     border-left: 2px solid #111;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .event-name {
@@ -87,80 +93,142 @@ body {
     color: #555;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 5px;
 }
 
-/* --- 胶卷条核心代码 (The Film Strip) --- */
+/* --- 切换按钮样式 --- */
+.toggle-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    font-family: var(--font-meta);
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.toggle-btn:hover {
+    border-color: #111;
+    color: #111;
+    background: rgba(0,0,0,0.05);
+}
+
+/* --- 模式 A: 横向胶卷条 (Preview) --- */
 .film-scroller {
     background-color: var(--film-black);
-    width: 100vw; /* 占据全屏宽度 */
+    width: 100vw;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 40px 0; /* 上下给齿孔留出空间 */
-    
-    /* 核心：用 CSS 渐变画出逼真的齿孔，而不是简单的方块 */
+    left: 50%; right: 50%;
+    margin-left: -50vw; margin-right: -50vw;
+    padding: 40px 0;
+    /* 齿孔背景 */
     background-image: 
-        linear-gradient(to right, #fff 50%, transparent 50%), /* 上排齿孔 */
-        linear-gradient(to right, #fff 50%, transparent 50%); /* 下排齿孔 */
-    background-size: 20px 12px; /* 齿孔大小 */
+        linear-gradient(to right, #fff 50%, transparent 50%),
+        linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 20px 12px;
     background-repeat: repeat-x;
-    background-position: 0 10px, 0 calc(100% - 10px); /* 上下位置 */
-    
+    background-position: 0 10px, 0 calc(100% - 10px);
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
     align-items: center;
-    
-    /* 隐藏滚动条但保留功能 */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    box-shadow: inset 0 0 50px rgba(0,0,0,0.8); /* 内阴影，增加深邃感 */
+    -ms-overflow-style: none; scrollbar-width: none;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
 }
+.film-scroller::-webkit-scrollbar { display: none; }
 
-.film-scroller::-webkit-scrollbar {
-    display: none;
-}
-
-/* 胶卷内的照片容器 */
 .film-frame {
     flex: 0 0 auto;
-    height: 350px; /* 胶卷高度 */
-    margin: 0 10px; /* 照片间距 */
+    height: 350px;
+    margin: 0 10px;
     position: relative;
-    border: 8px solid #000; /* 照片黑边 */
+    border: 8px solid #000;
     background: #000;
 }
-
-.film-frame:first-child {
-    margin-left: 5vw; /* 让第一张图不贴边 */
-}
-.film-frame:last-child {
-    margin-right: 5vw;
-}
-
+.film-frame:first-child { margin-left: 5vw; }
+.film-frame:last-child { margin-right: 5vw; }
 .film-frame img {
-    height: 100%;
-    width: auto;
-    display: block;
+    height: 100%; width: auto; display: block;
     transition: filter 0.5s ease;
 }
-
-.film-frame:hover img {
-    filter: brightness(1.05);
-}
-
-/* 胶卷编号 (像真实底片那样) */
+.film-frame:hover img { filter: brightness(1.05); }
 .frame-number {
-    position: absolute;
-    bottom: -30px;
-    right: 0;
+    position: absolute; bottom: -30px; right: 0;
     color: rgba(255,255,255,0.4);
-    font-family: var(--font-meta);
-    font-size: 10px;
+    font-family: var(--font-meta); font-size: 10px;
 }
 
+/* --- 模式 B: 完整彩色归档墙 (Full Archive) --- */
+.full-archive {
+    /* 撑满全屏宽度 */
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    
+    padding: 60px 8%; /* 左右留白 */
+    background-color: var(--bg-color); /* 保持背景一致，不要黑色 */
+    box-sizing: border-box;
+    
+    /* 网格布局：自动适应一行放几张 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px; /* 照片间距 */
+    
+    /* 上下加一点微妙的阴影分割线 */
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.08), inset 0 -20px 20px -20px rgba(0,0,0,0.08);
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.archive-frame {
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    padding: 5px; /* 类似拍立得白边 */
+    border-radius: 2px;
+}
+
+.archive-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    z-index: 10;
+}
+
+.archive-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 3/2; /* 强制 3:2 比例，看起来整齐 */
+    object-fit: cover;
+}
+
+.archive-num {
+    position: absolute;
+    bottom: -25px;
+    right: 5px;
+    font-family: var(--font-meta);
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .main-title { font-size: 2rem; }
+    .film-frame { height: 250px; }
+    .full-archive { 
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+        padding: 40px 4%;
+    }
+}
 </style>
 
 <div class="ldr-wrapper">
@@ -170,54 +238,72 @@ body {
         <div class="sub-title">Moments captured on analog</div>
     </div>
 
-    <div class="event-block">
+    <div class="event-block" id="event-rainier">
         <div class="event-header">
             <h2 class="event-name">Mount Rainier</h2>
             <div class="event-date">Late July • Kodak Gold 200</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-rainier')">
+                [ View Full Roll ]
+            </button>
         </div>
 
-        <div class="film-scroller">
-            
-            <div class="film-frame">
-                <img src="/images/rainier1.jpg" alt="Rainier">
-                <span class="frame-number">01</span>
-            </div>
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights"><span class="frame-number">07</span></div>
+            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights"><span class="frame-number">12</span></div>
+            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights"><span class="frame-number">18</span></div>
+        </div>
 
-            <div class="film-frame">
-                <img src="/images/rainier2.jpg" alt="Rainier">
-                <span class="frame-number">02</span>
-            </div>
-
-            <div class="film-frame">
-                <img src="/images/rainier3.jpg" alt="Rainier">
-                <span class="frame-number">03</span>
-            </div>
-            
-            <div class="film-frame">
-                <img src="/images/rainier4.jpg" alt="Rainier">
-                <span class="frame-number">04</span>
-            </div>
-            
-             <div class="film-frame">
-                <img src="/images/rainier5.jpg" alt="Rainier">
-                <span class="frame-number">05</span>
-            </div>
-
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/rainier1.jpg" alt="Full Roll"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/rainier2.jpg" alt="Full Roll"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/rainier3.jpg" alt="Full Roll"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/rainier4.jpg" alt="Full Roll"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/rainier5.jpg" alt="Full Roll"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/rainier6.jpg" alt="Full Roll"><span class="archive-num">06</span></div>
         </div>
     </div>
 
-    <div style="text-align:center; font-family:var(--font-meta); font-size:12px; margin-top:80px; opacity:0.5;">
+
+    <div style="text-align:center; font-family:var(--font-meta); font-size:12px; margin-top:80px; opacity:0.5; letter-spacing: 2px;">
         END OF ROLL
     </div>
 
 </div>
 
 <script>
-    const scrollers = document.querySelectorAll('.film-scroller');
-    scrollers.forEach(scroller => {
-        scroller.addEventListener('wheel', (evt) => {
-            evt.preventDefault();
-            scroller.scrollLeft += evt.deltaY;
-        });
+// 1. 切换视图的函数
+function toggleView(eventId) {
+    const block = document.getElementById(eventId);
+    // 获取该 block 下的两个视图和按钮
+    const teaser = block.querySelector('.view-teaser');
+    const full = block.querySelector('.view-full');
+    const btn = block.querySelector('.toggle-btn');
+    
+    if (full.style.display === 'none') {
+        // 展开完整版
+        teaser.style.display = 'none';
+        full.style.display = 'grid'; // 注意这里用 grid
+        btn.textContent = "[ Close Roll ]"; // 改变按钮文字
+        btn.style.borderColor = "#111";
+    } else {
+        // 收起回到精选
+        teaser.style.display = 'flex';
+        full.style.display = 'none';
+        btn.textContent = "[ View Full Roll ]"; // 恢复按钮文字
+        btn.style.borderColor = "#ccc";
+        // 可选：收起时滚动回该事件顶部
+        block.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
+}
+
+// 2. 鼠标滚轮横向滚动脚本
+const scrollers = document.querySelectorAll('.film-scroller');
+scrollers.forEach(scroller => {
+    scroller.addEventListener('wheel', (evt) => {
+        evt.preventDefault();
+        scroller.scrollLeft += evt.deltaY;
     });
+});
 </script>

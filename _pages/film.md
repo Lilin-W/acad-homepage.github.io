@@ -6,240 +6,239 @@ author_profile: true
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Courier+Prime&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-/* Global settings */
+/* --- VARIABLES --- */
+:root {
+    --bg-color: #f4f1ea; /* 暖米色，像旧纸张 */
+    --text-main: #2b2b2b; /* 柔和的黑 */
+    --text-meta: #6e6e6e;
+    --accent-red: #cc4e4e; /* 模仿莱卡标或柯达红 */
+}
+
+/* --- GLOBAL WRAPPER --- */
 .film-wrapper {
     font-family: 'Cormorant Garamond', serif;
-    background-color: #ffffff;
-    color: #1a1a1a;
-    overflow-x: hidden;
-    padding: 60px 0;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 80px 40px;
     position: relative;
     font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Film grain overlay */
-.film-wrapper::after {
-    content: ""; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    pointer-events: none; 
-    z-index: 999; 
-    opacity: 0.06;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    animation: grain-flicker 1s infinite steps(5);
+/* 全局噪点层 - 调整得更细腻 */
+.film-wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-@keyframes grain-flicker { 
-    0%, 100% { transform: translate(0, 0); } 
-    20% { transform: translate(-2px, 2px); } 
-    80% { transform: translate(2px, 2px); } 
-}
-
-/* Header section */
-.hero-header {
-    text-align: center; 
-    margin-bottom: 70px; 
-    position: relative; 
-    padding: 20px; 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
-    max-width: 80%; 
-    margin-left: auto; 
-    margin-right: auto; 
-    z-index: 10;
-}
-
-.hero-title {
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 4em; 
-    font-weight: 400; 
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    color: #111; 
-    margin: 0; 
-    line-height: 1.2;
-}
-
-.hero-subtitle {
-    font-family: 'Courier Prime', monospace; 
-    font-size: 1.2em; 
-    color: #666; 
-    margin-top: 15px; 
-    letter-spacing: 3px;
-}
-
-/* Event container */
-.event-section {
-    margin: 100px auto;
-    max-width: 1400px;
-    padding: 0 20px;
+/* --- TYPOGRAPHY --- */
+.header-section {
+    text-align: center;
+    margin-bottom: 100px;
     position: relative;
     z-index: 10;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 60px;
 }
 
-/* Event title */
-.event-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3em;
-    font-weight: 600;
-    color: #2c2c2c;
+.main-title {
+    font-size: clamp(3rem, 8vw, 6rem); /* 响应式大标题 */
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: var(--text-meta);
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.sub-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--accent-red);
+    margin: 10px auto 0;
+}
+
+/* --- EVENT SECTION --- */
+.event-container {
+    max-width: 1200px;
+    margin: 0 auto 120px;
+}
+
+.event-info {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-name {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
     margin-bottom: 10px;
+}
+
+.event-meta {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.85rem;
+    color: var(--text-meta);
+    margin-bottom: 25px;
     letter-spacing: 1px;
 }
 
-.event-date {
-    font-family: 'Courier Prime', monospace;
-    font-size: 1em;
-    color: #888;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+.event-desc {
+    font-size: 1.1rem;
+    color: #4a4a4a;
 }
 
-.event-description {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3em;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 40px;
-    max-width: 800px;
+/* --- PHOTO GRID (THE CONTACT SHEET LOOK) --- */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* 宽间距 */
+    padding: 20px;
 }
 
-/* Film strip gallery */
-.film-strip-container {
-    background-color: #0a0a0a; 
-    padding: 30px 0; 
-    margin: 40px -20px; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    position: relative; 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
-    transform: rotate(-1deg); 
-    width: 105%; 
-    left: -2.5%; 
-    z-index: 5;
-    background-image: linear-gradient(90deg, #fdfbf7 50%, transparent 50%), linear-gradient(90deg, #fdfbf7 50%, transparent 50%);
-    background-position: 0 10px, 0 calc(100% - 10px); 
-    background-size: 16px 10px; 
-    background-repeat: repeat-x; 
-    background-attachment: local;
-}
-
-.film-strip-container::-webkit-scrollbar { 
-    display: none; 
-}
-
-.film-frame { 
-    display: inline-block; 
-    height: 220px; 
-    padding: 0 10px; 
-    vertical-align: middle; 
-    border-right: 1px solid #222; 
-}
-
-.film-frame img { 
-    height: 100%; 
-    width: auto; 
-    object-fit: cover; 
-    transition: all 0.6s ease; 
-    border-radius: 1px; 
+/* 每一张照片的容器 */
+.photo-card {
+    background: #fff;
+    padding: 15px 15px 40px 15px; /* 底部留白像拍立得 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 柔和阴影 */
+    transition: all 0.4s ease;
+    transform: rotate(0deg);
+    position: relative;
     cursor: pointer;
 }
 
-.film-frame:hover img { 
-    transform: scale(1.05); 
-    z-index: 10; 
-    box-shadow: 0 0 30px rgba(255,255,255,0.1); 
+/* 让照片稍微有些随机的角度，更自然 */
+.photo-card:nth-child(odd) { transform: rotate(-1deg); }
+.photo-card:nth-child(even) { transform: rotate(1deg); }
+.photo-card:nth-child(3n) { transform: rotate(0.5deg); }
+
+/* Hover 效果 */
+.photo-card:hover {
+    transform: scale(1.02) rotate(0deg) translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    z-index: 10;
 }
 
-/* Divider */
-.event-divider {
-    width: 60%;
-    height: 2px;
-    background: linear-gradient(to right, transparent, #ccc 20%, #ccc 80%, transparent);
-    margin: 120px auto;
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: sepia(10%) contrast(1.1); /* 轻微胶片滤镜 */
+    transition: filter 0.3s ease;
 }
 
-/* Footer text */
-.footer-text {
-    text-align: center; 
-    margin-top: 100px; 
-    font-size: 0.8em; 
-    letter-spacing: 3px; 
-    opacity: 0.6;
-    font-family: 'Courier Prime', monospace;
+.photo-card:hover img {
+    filter: sepia(0%) contrast(1.0); /* Hover时还原 */
 }
 
-/* Responsive design */
+/* 照片下方的元数据 */
+.photo-meta {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.7rem;
+    color: #ccc;
+    opacity: 0; /* 默认隐藏 */
+    transition: opacity 0.3s ease;
+}
+
+.photo-card:hover .photo-meta {
+    opacity: 1;
+    color: #999;
+}
+
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5em;
-    }
-    
-    .event-title {
-        font-size: 2em;
-    }
-    
-    .film-strip-container {
-        transform: rotate(0deg);
-        width: 100%;
-        left: 0;
-    }
+    .film-wrapper { padding: 40px 20px; }
+    .photo-grid { gap: 20px; }
+    .photo-card { padding: 10px 10px 30px 10px; }
+    /* 手机端取消旋转，保持整洁 */
+    .photo-card:nth-child(n) { transform: rotate(0deg); } 
 }
 </style>
 
 <div class="film-wrapper">
 
-    <div class="hero-header">
-        <h1 class="hero-title">Film Photography</h1>
-        <div class="hero-subtitle">Capturing Moments on Analog</div>
+    <div class="header-section">
+        <h1 class="main-title">Analog Journal</h1>
+        <div class="sub-title">Light, Shadow & Time</div>
     </div>
 
-    <!-- Event 1: Mount Rainier -->
-    <div class="event-section">
-        <h2 class="event-title">Mount Rainier</h2>
-        <p class="event-date">MOUNT RAINIER • 2024</p>
-        <div class="event-description">
-            During my trip to Mount Rainier, I truly experienced the magic of film photography for the first time.
-            The morning mist, the play of light through the mountains, and those unexpected moments of serendipity—all captured in these frames.
+    <div class="event-container">
+        <div class="event-info">
+            <h2 class="event-name">Mount Rainier</h2>
+            <div class="event-meta">KODAK PORTRA 400 • PENTAX K1000</div>
+            <p class="event-desc">
+                The morning mist, the play of light through the mountains, and those unexpected moments of serendipity.
+            </p>
         </div>
-        
-        <div class="film-strip-container">
-            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Mount Rainier 1"></div>
-            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Mount Rainier 2"></div>
-            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Mount Rainier 3"></div>
-            <div class="film-frame"><img src="/images/rainier4.jpg" alt="Mount Rainier 4"></div>
-            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Mount Rainier 5"></div>
-            <div class="film-frame"><img src="/images/rainier6.jpg" alt="Mount Rainier 6"></div>
+
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="/images/rainier1.jpg" alt="Rainier 1" loading="lazy">
+                <div class="photo-meta">f/8 • 1/250</div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="/images/rainier2.jpg" alt="Rainier 2" loading="lazy">
+                <div class="photo-meta">f/5.6 • 1/125</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="/images/rainier3.jpg" alt="Rainier 3" loading="lazy">
+                <div class="photo-meta">f/11 • 1/500</div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="/images/rainier4.jpg" alt="Rainier 4" loading="lazy">
+                <div class="photo-meta">Double Exposure</div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="/images/rainier5.jpg" alt="Rainier 5" loading="lazy">
+                <div class="photo-meta">f/2.8 • 1/60</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="/images/rainier6.jpg" alt="Rainier 6" loading="lazy">
+                <div class="photo-meta">f/4 • 1/125</div>
+            </div>
         </div>
     </div>
 
-    <div class="event-divider"></div>
-
-    <!-- More events can be added here -->
-    <!-- Event 2 placeholder -->
-
-    <div class="footer-text">
-        FILM PHOTOGRAPHY JOURNAL • EST. 2024
+    <div style="text-align: center; margin: 80px 0; opacity: 0.3;">
+        <span style="font-family: 'Inconsolata'; letter-spacing: 5px;">* * *</span>
     </div>
 
 </div>
-
-<script>
-// Image click functionality (optional)
-document.addEventListener('DOMContentLoaded', function() {
-    const filmFrames = document.querySelectorAll('.film-frame img');
-    
-    filmFrames.forEach(img => {
-        img.addEventListener('click', function() {
-            // Can add lightbox effect or other interactions
-            console.log('Image clicked:', this.src);
-        });
-    });
-});
-</script>
-

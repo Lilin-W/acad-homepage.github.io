@@ -155,8 +155,11 @@ body {
 .film-frame img {
     height: 100%; width: auto; display: block;
     transition: filter 0.5s ease;
+    cursor: pointer;
 }
-.film-frame:hover img { filter: brightness(1.05); }
+.film-frame:hover img { 
+    filter: brightness(1.05);
+}
 .frame-number {
     position: absolute; bottom: -30px; right: 0;
     color: rgba(255,255,255,0.4);
@@ -208,6 +211,7 @@ body {
     display: block;
     aspect-ratio: 3/2; /* 强制 3:2 比例，看起来整齐 */
     object-fit: cover;
+    cursor: pointer;
 }
 
 .archive-num {
@@ -229,6 +233,48 @@ body {
         padding: 40px 4%;
     }
 }
+
+/* --- 灯箱效果 --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+}
+.lightbox.active {
+    display: flex;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+    box-shadow: 0 0 50px rgba(255,255,255,0.1);
+}
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family: var(--font-meta);
+}
+.lightbox-close:hover {
+    transform: scale(1.1);
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 </style>
 
 <div class="ldr-wrapper">
@@ -249,19 +295,19 @@ body {
         </div>
 
         <div class="film-scroller view-teaser">
-            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights"><span class="frame-number">03</span></div>
-            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights"><span class="frame-number">07</span></div>
-            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights"><span class="frame-number">12</span></div>
-            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights"><span class="frame-number">18</span></div>
+            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights" onclick="openLightbox('/images/rainier1.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights" onclick="openLightbox('/images/rainier2.jpg')"><span class="frame-number">07</span></div>
+            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights" onclick="openLightbox('/images/rainier3.jpg')"><span class="frame-number">12</span></div>
+            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights" onclick="openLightbox('/images/rainier5.jpg')"><span class="frame-number">18</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
-            <div class="archive-frame"><img src="/images/rainier1.jpg" alt="Full Roll"><span class="archive-num">01</span></div>
-            <div class="archive-frame"><img src="/images/rainier2.jpg" alt="Full Roll"><span class="archive-num">02</span></div>
-            <div class="archive-frame"><img src="/images/rainier3.jpg" alt="Full Roll"><span class="archive-num">03</span></div>
-            <div class="archive-frame"><img src="/images/rainier4.jpg" alt="Full Roll"><span class="archive-num">04</span></div>
-            <div class="archive-frame"><img src="/images/rainier5.jpg" alt="Full Roll"><span class="archive-num">05</span></div>
-            <div class="archive-frame"><img src="/images/rainier6.jpg" alt="Full Roll"><span class="archive-num">06</span></div>
+            <div class="archive-frame"><img src="/images/rainier1.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier1.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/rainier2.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier2.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/rainier3.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier3.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/rainier4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier4.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/rainier5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier5.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/rainier6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier6.jpg')"><span class="archive-num">06</span></div>
         </div>
     </div>
 
@@ -270,6 +316,12 @@ body {
         END OF ROLL
     </div>
 
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged view">
 </div>
 
 <script>
@@ -305,5 +357,22 @@ scrollers.forEach(scroller => {
         evt.preventDefault();
         scroller.scrollLeft += evt.deltaY;
     });
+});
+
+// 3. 灯箱功能
+function openLightbox(imgSrc) {
+    document.getElementById('lightbox').classList.add('active');
+    document.getElementById('lightbox-img').src = imgSrc;
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// ESC键关闭灯箱
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
 });
 </script>

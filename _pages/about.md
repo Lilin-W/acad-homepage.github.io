@@ -129,7 +129,7 @@ When I'm coding or reading papers, I'm usually with [**Xiaoman Xia**](/xiaoman/)
 
 I love [**Lana Del Rey's music**](/lana/) and the aesthetic of her work. I've been experimenting with capturing similar vibes in my own photos and videos.
 
-I've also gotten into film photography lately. Still learning, but I love the process and I'm always looking to get better at it.
+I've also gotten into [**film photography**](/film/) lately. Still learning, but I love the process and I'm always looking to get better at it.
 
 ---
 

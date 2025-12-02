@@ -12,18 +12,12 @@ toc: false
 /* Global settings */
 .film-wrapper {
     font-family: 'Cormorant Garamond', serif;
-    background-color: #fdfbf7;
-    background-image: url('/images/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #ffffff;
     color: #1a1a1a;
     overflow-x: hidden;
     padding: 60px 0;
     position: relative;
     font-size: 18px;
-    box-shadow: inset 0 0 150px rgba(0,0,0,0.08);
 }
 
 /* Film grain overlay */

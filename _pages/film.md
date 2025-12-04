@@ -312,9 +312,9 @@ body {
     </div>
 
     <!-- Hasselblad 区块 -->
-    <div class="event-block" id="event-rainier-hasselblad">
+    <div class="event-block" id="event-rainier-hasselblad" style="margin-top: 40px;">
         <div class="event-header">
-            <h2 class="event-name">Mount Rainier - Hasselblad</h2>
+            <h2 class="event-name">Hasselblad</h2>
             <div class="event-date">Late July • Hasselblad 500C • Portra 400</div>
             
             <button class="toggle-btn" onclick="toggleView('event-rainier-hasselblad')">
@@ -325,8 +325,8 @@ body {
         <div class="film-scroller view-teaser">
             <div class="film-frame"><img src="/images/rainierH1.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH1.jpg')"><span class="frame-number">01</span></div>
             <div class="film-frame"><img src="/images/rainierH2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH2.jpg')"><span class="frame-number">02</span></div>
-            <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">04</span></div>
-            <div class="film-frame"><img src="/images/rainierH6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH6.jpg')"><span class="frame-number">06</span></div>
+            <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH3.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/rainierH6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">06</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">

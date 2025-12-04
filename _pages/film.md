@@ -311,6 +311,34 @@ body {
         </div>
     </div>
 
+    <!-- Hasselblad 区块 -->
+    <div class="event-block" id="event-rainier-hasselblad">
+        <div class="event-header">
+            <h2 class="event-name">Mount Rainier - Hasselblad</h2>
+            <div class="event-date">Late July • Hasselblad 500C • Portra 400</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-rainier-hasselblad')">
+                [ View Full Roll ]
+            </button>
+        </div>
+
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/rainierH1.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH1.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/rainierH2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH2.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/rainierH6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH6.jpg')"><span class="frame-number">06</span></div>
+        </div>
+
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/rainierH1.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH1.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/rainierH2.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH2.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/rainierH3.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH3.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/rainierH4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH4.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/rainierH5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH5.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/rainierH6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH6.jpg')"><span class="archive-num">06</span></div>
+        </div>
+    </div>
+
 
     <div style="text-align:center; font-family:var(--font-meta); font-size:12px; margin-top:80px; opacity:0.5; letter-spacing: 2px;">
         END OF ROLL

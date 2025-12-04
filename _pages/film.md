@@ -314,7 +314,6 @@ body {
     <!-- Hasselblad 区块 -->
     <div class="event-block" id="event-rainier-hasselblad" style="margin-top: 40px;">
         <div class="event-header">
-            <h2 class="event-name">Hasselblad</h2>
             <div class="event-date">Late July • Hasselblad 500C • Portra 400</div>
             
             <button class="toggle-btn" onclick="toggleView('event-rainier-hasselblad')">

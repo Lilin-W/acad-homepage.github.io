@@ -97,10 +97,10 @@ toc: false
 /* --- 4. 极致复古场景区 (The Living Room) --- */
 .vintage-scene-container {
     display: flex;
-    justify-content: flex-start; /* 改为左对齐 */
-    align-items: flex-end;
+    justify-content: center; /* 居中对齐 */
+    align-items: center;
     gap: 40px; /* 增加间距 */
-    margin: 100px auto 80px;
+    margin: 180px auto 80px; /* 增加顶部边距，往下移动 */
     padding: 0 20px;
     flex-wrap: wrap;
     position: relative;
@@ -114,7 +114,6 @@ toc: false
     align-items: flex-end;
     gap: 0px;
     position: relative;
-    margin-right: auto; /* 推到左边 */
 }
 
 /* 霓虹灯 */
@@ -458,13 +457,6 @@ toc: false
             </div>
         </div>
 
-        <div class="receipt-paper">
-            <div class="receipt-header">LANA'S PLAYLIST</div>
-            <div class="receipt-item"><span>01. BORN TO DIE</span></div>
-            <div class="receipt-item"><span>02. BLUE JEANS</span></div>
-            <div class="receipt-item"><span>03. VIDEO GAMES</span></div>
-            <div class="receipt-end">TOTAL MOOD: SAD</div>
-        </div>
 
     </div>
     

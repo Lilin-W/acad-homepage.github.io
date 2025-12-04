@@ -324,8 +324,8 @@ body {
         <div class="film-scroller view-teaser">
             <div class="film-frame"><img src="/images/rainierH1.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH1.jpg')"><span class="frame-number">01</span></div>
             <div class="film-frame"><img src="/images/rainierH2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH2.jpg')"><span class="frame-number">02</span></div>
-            <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH3.jpg')"><span class="frame-number">04</span></div>
-            <div class="film-frame"><img src="/images/rainierH6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">06</span></div>
+            <div class="film-frame"><img src="/images/rainierH3.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH3.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">04</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">

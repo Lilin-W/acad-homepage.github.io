@@ -307,7 +307,6 @@ body {
             <div class="archive-frame"><img src="/images/rainier3.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier3.jpg')"><span class="archive-num">03</span></div>
             <div class="archive-frame"><img src="/images/rainier4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier4.jpg')"><span class="archive-num">04</span></div>
             <div class="archive-frame"><img src="/images/rainier5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier5.jpg')"><span class="archive-num">05</span></div>
-            <div class="archive-frame"><img src="/images/rainier6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier6.jpg')"><span class="archive-num">06</span></div>
         </div>
     </div>
 

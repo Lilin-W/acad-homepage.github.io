@@ -451,7 +451,7 @@ toc: false
                 <div class="vhs-tape" data-video="https://player.bilibili.com/player.html?bvid=BV1yG4y1W7AD&page=1&high_quality=1&danmaku=0" data-type="bilibili">
                     <div class="vhs-spine">
                         <span>TV IN B&W</span>
-                        <small>'24</small>
+                        <small>'13</small>
                     </div>
                 </div>
             </div>

@@ -347,7 +347,7 @@ toc: false
 
     <div class="hero-header">
         <h1 class="hero-title">Lana Del Rey</h1>
-        <div class="hero-subtitle">The Honeymoon Era</div>
+        <div class="hero-subtitle">Chemtrails Era</div>
     </div>
 
     <div class="film-strip-container">
@@ -421,22 +421,22 @@ toc: false
                 <div class="vhs-tape" data-video="https://www.youtube.com/embed/vK1YiArMDfg?autoplay=0&mute=0" data-type="youtube">
                     <div class="vhs-spine">
                         <span>CALIFORNIA</span>
-                        <small>'23</small>
+                        <small>'19</small>
                     </div>
                 </div>
-                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/ZFWC4SiZBao?autoplay=0&mute=0" data-type="youtube">
                     <div class="vhs-spine">
                         <span>ULTRAVIOLENCE</span>
                         <small>'14</small>
                     </div>
                 </div>
-                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/oPU8XJcA__k?autoplay=0&mute=0&list=OLAK5uy_nIKMbuSAOxnLGiMM09jdug9vn_JAGsj_Y" data-type="youtube">
                     <div class="vhs-spine">
                         <span>HONEYMOON</span>
                         <small>'15</small>
                     </div>
                 </div>
-                <div class="vhs-tape" data-video="https://www.instagram.com/reel/DN_UxT6Ea_o/embed" data-type="instagram">
+                <div class="vhs-tape" data-video="https://www.youtube.com/embed/eP4eqhWc7sI?autoplay=0&mute=0" data-type="youtube">
                     <div class="vhs-spine">
                         <span>LUST FOR LIFE</span>
                         <small>'17</small>
@@ -445,7 +445,7 @@ toc: false
                 <div class="vhs-tape" data-video="https://www.youtube.com/embed/xFv0wg_alGk?autoplay=0&mute=0" data-type="youtube">
                     <div class="vhs-spine">
                         <span>LIE DOWN W/ ME</span>
-                        <small>'23</small>
+                        <small>'21</small>
                     </div>
                 </div>
                 <div class="vhs-tape" data-video="https://player.bilibili.com/player.html?bvid=BV1yG4y1W7AD&page=1&high_quality=1&danmaku=0" data-type="bilibili">

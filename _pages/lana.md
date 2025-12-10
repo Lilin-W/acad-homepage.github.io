@@ -364,10 +364,10 @@ toc: false
         <div class="poem-card">
             <p>
                 <strong>September 2025.</strong><br><br>
-                Sitting on the porch, listening to <span class="lyric-highlight">Ultraviolence</span>. 
-                The world feels like a grainy movie scene.
+                Watching <span style="color:#80A1BA; font-weight:bold;">Chemtrails</span> fade into the twilight. 
+                Finding the strength to carry on in every melody.
                 <br><br>
-                "That's how the light gets in. <br>
+                "That's how the light gets in, <br>
                 Then you're <strong style="color:#d4af37;">golden</strong>."
             </p>
             <div class="signature-text">— Yours, L.</div>

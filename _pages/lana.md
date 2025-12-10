@@ -77,7 +77,7 @@ toc: false
 }
 .visual-stack { position: relative; height: 400px; display: flex; justify-content: center; align-items: center; }
 .framed-photo {
-    position: absolute; width: 280px; padding: 15px 15px 50px 15px; background: #fff; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transform: rotate(-3deg); z-index: 2; transition: transform 0.4s;
+    position: absolute; width: 280px; padding: 15px 15px 50px 15px; background: #fff; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transform: rotate(-3deg); z-index: 2; transition: transform 0.4s; cursor: pointer;
 }
 .framed-photo img { width: 100%; filter: grayscale(20%); }
 .framed-photo:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
@@ -377,7 +377,7 @@ toc: false
             <div class="vinyl-record" id="vinyl-record" data-video="https://www.youtube.com/embed/TdrL3QxjyVw?autoplay=0&mute=0" data-type="youtube">
                 <div class="vinyl-label"></div>
             </div>
-            <div class="framed-photo">
+            <div class="framed-photo" id="framed-photo" data-video="https://www.youtube.com/embed/TdrL3QxjyVw?autoplay=0&mute=0" data-type="youtube">
                 <img src="/images/lana9.png" alt="Memory">
                 <div style="font-family:'Monsieur La Doulaise'; font-size:1.8em; text-align:center; margin-top:10px; color:#444;">
                     Summertime Sadness
@@ -461,7 +461,7 @@ toc: false
     </div>
     
     <div style="text-align:center; margin-top:80px; font-size:0.8em; letter-spacing:3px; opacity:0.6;">
-        EST. 2025 • LOS ANGELES
+        EST. 2025 
     </div>
 
 </div>
@@ -537,6 +537,21 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 this.style.animationDuration = '10s';
             }, 2000);
+        });
+    }
+    
+    // 照片点击事件
+    const framedPhoto = document.getElementById('framed-photo');
+    if (framedPhoto) {
+        framedPhoto.addEventListener('click', function() {
+            // 移除所有录像带的 active 状态
+            tapes.forEach(t => t.classList.remove('active'));
+            
+            // 获取视频 URL
+            const videoUrl = this.getAttribute('data-video');
+            const videoType = this.getAttribute('data-type');
+            
+            switchVideo(videoUrl, videoType);
         });
     }
 });

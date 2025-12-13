@@ -104,7 +104,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 - 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University (*First Class Honours*)
 
 # 🏆 Honors and Awards
-- *2024* National AI Application Scenario Innovation Challenge (CICAS 2024) — **Grand Prize**
+- *2024* **Grand Prize**, China's Innovation Challenge on Artificial Intelligence Application Scene (CICAS)
 - *2023-2024* XJTLU Excellence Academic Award — **Top 5%**
 - *2021-2022* XJTLU Achievement Academic Award — **Top 10%** 
 

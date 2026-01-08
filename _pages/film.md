@@ -298,7 +298,11 @@ body {
             <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights" onclick="openLightbox('/images/rainier1.jpg')"><span class="frame-number">01</span></div>
             <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights" onclick="openLightbox('/images/rainier2.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights" onclick="openLightbox('/images/rainier3.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainier4.jpg" alt="Highlights" onclick="openLightbox('/images/rainier4.jpg')"><span class="frame-number">04</span></div>
             <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights" onclick="openLightbox('/images/rainier5.jpg')"><span class="frame-number">05</span></div>
+            <div class="film-frame"><img src="/images/rainier6.jpg" alt="Highlights" onclick="openLightbox('/images/rainier6.jpg')"><span class="frame-number">06</span></div>
+            <div class="film-frame"><img src="/images/rainier7.jpg" alt="Highlights" onclick="openLightbox('/images/rainier7.jpg')"><span class="frame-number">07</span></div>
+            <div class="film-frame"><img src="/images/rainier8.jpg" alt="Highlights" onclick="openLightbox('/images/rainier8.jpg')"><span class="frame-number">08</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -328,6 +332,8 @@ body {
             <div class="film-frame"><img src="/images/rainierH2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH2.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/rainierH3.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH3.jpg')"><span class="frame-number">03</span></div>
             <div class="film-frame"><img src="/images/rainierH4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH4.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/rainierH5.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH5.jpg')"><span class="frame-number">05</span></div>
+            <div class="film-frame"><img src="/images/rainierH6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierH6.jpg')"><span class="frame-number">06</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -354,6 +360,9 @@ body {
             <div class="film-frame"><img src="/images/rainierdark0.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark0.jpg')"><span class="frame-number">01</span></div>
             <div class="film-frame"><img src="/images/rainierdark2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark2.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/rainierdark3.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark3.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainierdark4.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark4.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/rainierdark5.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark5.jpg')"><span class="frame-number">05</span></div>
+            <div class="film-frame"><img src="/images/rainierdark6.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark6.jpg')"><span class="frame-number">06</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -381,6 +390,8 @@ body {
             <div class="film-frame"><img src="/images/north0.jpg" alt="Highlights" onclick="openLightbox('/images/north0.jpg')"><span class="frame-number">01</span></div>
             <div class="film-frame"><img src="/images/north1.jpg" alt="Highlights" onclick="openLightbox('/images/north1.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/north2.jpg" alt="Highlights" onclick="openLightbox('/images/north2.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/north3.jpg" alt="Highlights" onclick="openLightbox('/images/north3.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/north4.jpg" alt="Highlights" onclick="openLightbox('/images/north4.jpg')"><span class="frame-number">05</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -407,6 +418,9 @@ body {
             <div class="film-frame"><img src="/images/northsmall2.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall2.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/northsmall3.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall3.jpg')"><span class="frame-number">03</span></div>
             <div class="film-frame"><img src="/images/northsmall4.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall4.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/northsmall5.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall5.jpg')"><span class="frame-number">05</span></div>
+            <div class="film-frame"><img src="/images/northsmall6.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall6.jpg')"><span class="frame-number">06</span></div>
+            <div class="film-frame"><img src="/images/northsmall7.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall7.jpg')"><span class="frame-number">07</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -436,6 +450,9 @@ body {
             <div class="film-frame"><img src="/images/philly1.jpg" alt="Highlights" onclick="openLightbox('/images/philly1.jpg')"><span class="frame-number">02</span></div>
             <div class="film-frame"><img src="/images/philly2.jpg" alt="Highlights" onclick="openLightbox('/images/philly2.jpg')"><span class="frame-number">03</span></div>
             <div class="film-frame"><img src="/images/philly3.jpg" alt="Highlights" onclick="openLightbox('/images/philly3.jpg')"><span class="frame-number">04</span></div>
+            <div class="film-frame"><img src="/images/philly4.jpg" alt="Highlights" onclick="openLightbox('/images/philly4.jpg')"><span class="frame-number">05</span></div>
+            <div class="film-frame"><img src="/images/philly5.jpg" alt="Highlights" onclick="openLightbox('/images/philly5.jpg')"><span class="frame-number">06</span></div>
+            <div class="film-frame"><img src="/images/philly6.jpg" alt="Highlights" onclick="openLightbox('/images/philly6.jpg')"><span class="frame-number">07</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">

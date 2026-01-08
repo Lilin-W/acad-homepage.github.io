@@ -446,7 +446,6 @@ body {
             <div class="archive-frame"><img src="/images/philly4.jpg" alt="Full Roll" onclick="openLightbox('/images/philly4.jpg')"><span class="archive-num">05</span></div>
             <div class="archive-frame"><img src="/images/philly5.jpg" alt="Full Roll" onclick="openLightbox('/images/philly5.jpg')"><span class="archive-num">06</span></div>
             <div class="archive-frame"><img src="/images/philly6.jpg" alt="Full Roll" onclick="openLightbox('/images/philly6.jpg')"><span class="archive-num">07</span></div>
-            <div class="archive-frame"><img src="/images/philly7.jpg" alt="Full Roll" onclick="openLightbox('/images/philly7.jpg')"><span class="archive-num">08</span></div>
         </div>
     </div>
 

@@ -295,10 +295,10 @@ body {
         </div>
 
         <div class="film-scroller view-teaser">
-            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights" onclick="openLightbox('/images/rainier1.jpg')"><span class="frame-number">03</span></div>
-            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights" onclick="openLightbox('/images/rainier2.jpg')"><span class="frame-number">07</span></div>
-            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights" onclick="openLightbox('/images/rainier3.jpg')"><span class="frame-number">12</span></div>
-            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights" onclick="openLightbox('/images/rainier5.jpg')"><span class="frame-number">18</span></div>
+            <div class="film-frame"><img src="/images/rainier1.jpg" alt="Highlights" onclick="openLightbox('/images/rainier1.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/rainier2.jpg" alt="Highlights" onclick="openLightbox('/images/rainier2.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/rainier3.jpg" alt="Highlights" onclick="openLightbox('/images/rainier3.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/rainier5.jpg" alt="Highlights" onclick="openLightbox('/images/rainier5.jpg')"><span class="frame-number">05</span></div>
         </div>
 
         <div class="full-archive view-full" style="display: none;">
@@ -307,6 +307,9 @@ body {
             <div class="archive-frame"><img src="/images/rainier3.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier3.jpg')"><span class="archive-num">03</span></div>
             <div class="archive-frame"><img src="/images/rainier4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier4.jpg')"><span class="archive-num">04</span></div>
             <div class="archive-frame"><img src="/images/rainier5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier5.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/rainier6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier6.jpg')"><span class="archive-num">06</span></div>
+            <div class="archive-frame"><img src="/images/rainier7.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier7.jpg')"><span class="archive-num">07</span></div>
+            <div class="archive-frame"><img src="/images/rainier8.jpg" alt="Full Roll" onclick="openLightbox('/images/rainier8.jpg')"><span class="archive-num">08</span></div>
         </div>
     </div>
 
@@ -334,6 +337,116 @@ body {
             <div class="archive-frame"><img src="/images/rainierH4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH4.jpg')"><span class="archive-num">04</span></div>
             <div class="archive-frame"><img src="/images/rainierH5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH5.jpg')"><span class="archive-num">05</span></div>
             <div class="archive-frame"><img src="/images/rainierH6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierH6.jpg')"><span class="archive-num">06</span></div>
+        </div>
+    </div>
+
+    <!-- Mount Rainier - Dark/Night 区块 -->
+    <div class="event-block" id="event-rainier-dark" style="margin-top: 40px;">
+        <div class="event-header">
+            <div class="event-date">Late July • Contax T2 • Kodak Gold 200</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-rainier-dark')">
+                [ View Full Roll ]
+            </button>
+        </div>
+
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/rainierdark0.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark0.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/rainierdark2.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark2.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/rainierdark3.jpg" alt="Highlights" onclick="openLightbox('/images/rainierdark3.jpg')"><span class="frame-number">03</span></div>
+        </div>
+
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/rainierdark0.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark0.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/rainierdark2.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark2.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/rainierdark3.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark3.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/rainierdark4.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark4.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/rainierdark5.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark5.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/rainierdark6.jpg" alt="Full Roll" onclick="openLightbox('/images/rainierdark6.jpg')"><span class="archive-num">06</span></div>
+        </div>
+    </div>
+
+    <!-- North Cascades - Hasselblad 区块 -->
+    <div class="event-block" id="event-north-hasselblad">
+        <div class="event-header">
+            <h2 class="event-name">North Cascades National Park</h2>
+            <div class="event-date">Late July • Hasselblad 500C • E 100</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-north-hasselblad')">
+                [ View Full Roll ]
+            </button>
+        </div>
+
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/north0.jpg" alt="Highlights" onclick="openLightbox('/images/north0.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/north1.jpg" alt="Highlights" onclick="openLightbox('/images/north1.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/north2.jpg" alt="Highlights" onclick="openLightbox('/images/north2.jpg')"><span class="frame-number">03</span></div>
+        </div>
+
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/north0.jpg" alt="Full Roll" onclick="openLightbox('/images/north0.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/north1.jpg" alt="Full Roll" onclick="openLightbox('/images/north1.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/north2.jpg" alt="Full Roll" onclick="openLightbox('/images/north2.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/north3.jpg" alt="Full Roll" onclick="openLightbox('/images/north3.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/north4.jpg" alt="Full Roll" onclick="openLightbox('/images/north4.jpg')"><span class="archive-num">05</span></div>
+        </div>
+    </div>
+
+    <!-- North Cascades - Contax T2 区块 -->
+    <div class="event-block" id="event-north-contax" style="margin-top: 40px;">
+        <div class="event-header">
+            <div class="event-date">Late July • Contax T2 • E 100</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-north-contax')">
+                [ View Full Roll ]
+            </button>
+        </div>
+
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/northsmall1.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall1.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/northsmall2.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall2.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/northsmall3.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall3.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/northsmall4.jpg" alt="Highlights" onclick="openLightbox('/images/northsmall4.jpg')"><span class="frame-number">04</span></div>
+        </div>
+
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/northsmall1.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall1.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/northsmall2.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall2.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/northsmall3.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall3.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/northsmall4.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall4.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/northsmall5.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall5.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/northsmall6.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall6.jpg')"><span class="archive-num">06</span></div>
+            <div class="archive-frame"><img src="/images/northsmall7.jpg" alt="Full Roll" onclick="openLightbox('/images/northsmall7.jpg')"><span class="archive-num">07</span></div>
+        </div>
+    </div>
+
+    <!-- Philadelphia 区块 -->
+    <div class="event-block" id="event-philly">
+        <div class="event-header">
+            <h2 class="event-name">Philadelphia</h2>
+            <div class="event-date">Early July • Contax T2 • Kodak Gold 200</div>
+            
+            <button class="toggle-btn" onclick="toggleView('event-philly')">
+                [ View Full Roll ]
+            </button>
+        </div>
+
+        <div class="film-scroller view-teaser">
+            <div class="film-frame"><img src="/images/philly0.jpg" alt="Highlights" onclick="openLightbox('/images/philly0.jpg')"><span class="frame-number">01</span></div>
+            <div class="film-frame"><img src="/images/philly1.jpg" alt="Highlights" onclick="openLightbox('/images/philly1.jpg')"><span class="frame-number">02</span></div>
+            <div class="film-frame"><img src="/images/philly2.jpg" alt="Highlights" onclick="openLightbox('/images/philly2.jpg')"><span class="frame-number">03</span></div>
+            <div class="film-frame"><img src="/images/philly3.jpg" alt="Highlights" onclick="openLightbox('/images/philly3.jpg')"><span class="frame-number">04</span></div>
+        </div>
+
+        <div class="full-archive view-full" style="display: none;">
+            <div class="archive-frame"><img src="/images/philly0.jpg" alt="Full Roll" onclick="openLightbox('/images/philly0.jpg')"><span class="archive-num">01</span></div>
+            <div class="archive-frame"><img src="/images/philly1.jpg" alt="Full Roll" onclick="openLightbox('/images/philly1.jpg')"><span class="archive-num">02</span></div>
+            <div class="archive-frame"><img src="/images/philly2.jpg" alt="Full Roll" onclick="openLightbox('/images/philly2.jpg')"><span class="archive-num">03</span></div>
+            <div class="archive-frame"><img src="/images/philly3.jpg" alt="Full Roll" onclick="openLightbox('/images/philly3.jpg')"><span class="archive-num">04</span></div>
+            <div class="archive-frame"><img src="/images/philly4.jpg" alt="Full Roll" onclick="openLightbox('/images/philly4.jpg')"><span class="archive-num">05</span></div>
+            <div class="archive-frame"><img src="/images/philly5.jpg" alt="Full Roll" onclick="openLightbox('/images/philly5.jpg')"><span class="archive-num">06</span></div>
+            <div class="archive-frame"><img src="/images/philly6.jpg" alt="Full Roll" onclick="openLightbox('/images/philly6.jpg')"><span class="archive-num">07</span></div>
+            <div class="archive-frame"><img src="/images/philly7.jpg" alt="Full Roll" onclick="openLightbox('/images/philly7.jpg')"><span class="archive-num">08</span></div>
         </div>
     </div>
 

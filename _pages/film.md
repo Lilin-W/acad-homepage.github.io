@@ -43,7 +43,7 @@ body {
 /* --- 标题区域 --- */
 .header-section {
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 80px 20px 40px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     margin-bottom: 40px;
 }
@@ -63,6 +63,47 @@ body {
     margin-top: 15px;
     letter-spacing: 2px;
     font-style: italic;
+}
+
+/* --- 筛选按钮组 --- */
+.filter-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.filter-buttons {
+    display: inline-flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #666;
+    font-family: var(--font-meta);
+    font-size: 0.75rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.filter-btn:hover {
+    border-color: #111;
+    color: #111;
+    background: rgba(0,0,0,0.03);
+}
+
+.filter-btn.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
 }
 
 /* --- 事件块结构 --- */
@@ -282,9 +323,18 @@ body {
     <div class="header-section">
         <h1 class="main-title">Film Archive</h1>
         <div class="sub-title">Moments captured on analog</div>
+        
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterLocation('all')">All</button>
+                <button class="filter-btn" onclick="filterLocation('rainier')">Mount Rainier</button>
+                <button class="filter-btn" onclick="filterLocation('north')">North Cascades</button>
+                <button class="filter-btn" onclick="filterLocation('philly')">Philadelphia</button>
+            </div>
+        </div>
     </div>
 
-    <div class="event-block" id="event-rainier">
+    <div class="event-block" id="event-rainier" data-location="rainier">
         <div class="event-header">
             <h2 class="event-name">Mount Rainier</h2>
             <div class="event-date">Late July • Kodak Gold 200</div>
@@ -318,7 +368,7 @@ body {
     </div>
 
     <!-- Hasselblad 区块 -->
-    <div class="event-block" id="event-rainier-hasselblad" style="margin-top: 40px;">
+    <div class="event-block" id="event-rainier-hasselblad" style="margin-top: 40px;" data-location="rainier">
         <div class="event-header">
             <div class="event-date">Late July • Hasselblad 500C • Portra 400</div>
             
@@ -347,7 +397,7 @@ body {
     </div>
 
     <!-- Mount Rainier - Dark/Night 区块 -->
-    <div class="event-block" id="event-rainier-dark" style="margin-top: 40px;">
+    <div class="event-block" id="event-rainier-dark" style="margin-top: 40px;" data-location="rainier">
         <div class="event-header">
             <div class="event-date">Late July • Contax T2 • Kodak Gold 200</div>
             
@@ -376,7 +426,7 @@ body {
     </div>
 
     <!-- North Cascades - Hasselblad 区块 -->
-    <div class="event-block" id="event-north-hasselblad">
+    <div class="event-block" id="event-north-hasselblad" data-location="north">
         <div class="event-header">
             <h2 class="event-name">North Cascades National Park</h2>
             <div class="event-date">Late July • Hasselblad 500C • E 100</div>
@@ -404,7 +454,7 @@ body {
     </div>
 
     <!-- North Cascades - Contax T2 区块 -->
-    <div class="event-block" id="event-north-contax" style="margin-top: 40px;">
+    <div class="event-block" id="event-north-contax" style="margin-top: 40px;" data-location="north">
         <div class="event-header">
             <div class="event-date">Late July • Contax T2 • E 100</div>
             
@@ -435,7 +485,7 @@ body {
     </div>
 
     <!-- Philadelphia 区块 -->
-    <div class="event-block" id="event-philly">
+    <div class="event-block" id="event-philly" data-location="philly">
         <div class="event-header">
             <h2 class="event-name">Philadelphia</h2>
             <div class="event-date">Early July • Contax T2 • Kodak Gold 200</div>
@@ -480,6 +530,37 @@ body {
 </div>
 
 <script>
+// 0. 地点筛选功能
+function filterLocation(location) {
+    const allBlocks = document.querySelectorAll('.event-block');
+    const allButtons = document.querySelectorAll('.filter-btn');
+    
+    // 更新按钮状态
+    allButtons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // 显示/隐藏对应的区块
+    allBlocks.forEach(block => {
+        if (location === 'all') {
+            block.style.display = 'block';
+        } else {
+            if (block.dataset.location === location) {
+                block.style.display = 'block';
+            } else {
+                block.style.display = 'none';
+            }
+        }
+    });
+    
+    // 滚动到第一个可见的区块
+    const firstVisible = document.querySelector(`.event-block[data-location="${location}"]`);
+    if (firstVisible && location !== 'all') {
+        setTimeout(() => {
+            firstVisible.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }, 100);
+    }
+}
+
 // 1. 切换视图的函数
 function toggleView(eventId) {
     const block = document.getElementById(eventId);

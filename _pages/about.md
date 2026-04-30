@@ -19,22 +19,23 @@ redirect_from:
 
 # 👨‍💻 About Me
 
-Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering at the **University of Pennsylvania**.
+Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering at the **University of Pennsylvania**. I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**, advised by Prof. **Yonghui Wu**.
 
-I'm a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a co-evolving agentic AI system for medical imaging analysis.
+I'm currently a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a computational platform for medical imaging analysis.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-My research focuses on **AI for healthcare**, with particular interest in medical image analysis and large language models (LLMs) for clinical and psychological applications. I'm interested in how intelligent systems can connect human expertise, data, and computation to support diagnosis, discovery, and clinical decision-making.
+My research interests lie in **medical research and healthcare**, with a particular focus on medical imaging and clinical applications. I'm interested in how computational tools can connect human expertise, data, and analysis to support diagnosis, discovery, and clinical decision-making.
 
-I hope to contribute to building intelligent systems that help make healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
+I hope to contribute to making healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 
 
 # 🔥 News
-- *2025.09*: &nbsp;📝 New paper "A co-evolving agentic AI system for medical imaging analysis" is now under review!
-- *2025.06*: &nbsp;🚀 Started working as a Research Assistant at the **Perelman School of Medicine, University of Pennsylvania**, contributing to TissueLab project!
-- *2025.01*: &nbsp;🎉 Our paper "A Survey of Large Language Models in Psychotherapy" has been accepted to **Findings of ACL 2025**!
-- *2024.10*: &nbsp;📄 Our paper "Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection" accepted to **IEEE UIC 2024**!
+- *2026.04*: &nbsp;🎓 Excited to share that I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**, advised by Prof. **Yonghui Wu**!
+- *2025.09*: &nbsp;📝 New paper on medical imaging analysis is now under review!
+- *2025.06*: &nbsp;🚀 Started working as a Research Assistant at the **Perelman School of Medicine, University of Pennsylvania**, contributing to the TissueLab project!
+- *2025.01*: &nbsp;🎉 Our paper has been accepted to **Findings of ACL 2025**!
+- *2024.10*: &nbsp;📄 Our paper accepted to **IEEE UIC 2024**!
 - *2024.09*: &nbsp;🎓 Started my Master's program in Electrical Engineering at the **University of Pennsylvania**! 
 
 # 📝 Publications 
@@ -97,6 +98,8 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 📖 Education
 
+- 2026 - (incoming), **Ph.D. in Medical Sciences**, University of Florida
+
 - 2024 - 2026, **MSE in Electrical Engineering**, University of Pennsylvania
 
 - 2020 - 2024, **BEng in Data Science and Big Data Technology**, University of Liverpool (*First Class Honours*)
@@ -104,7 +107,6 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 - 2020 - 2024, **BEng in Data Science and Big Data Technology**, Xi'an Jiaotong-Liverpool University (*First Class Honours*)
 
 # 🏆 Honors and Awards
-- *2024* **Grand Prize**, China's Innovation Challenge on Artificial Intelligence Application Scene (CICAS)
 - *2023-2024* XJTLU Excellence Academic Award — **Top 5%**
 - *2021-2022* XJTLU Achievement Academic Award — **Top 10%** 
 

@@ -21,11 +21,11 @@ redirect_from:
 
 Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering at the **University of Pennsylvania**. I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**, advised by Prof. **Yonghui Wu**.
 
-I'm currently a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a computational platform for medical imaging analysis.
+I'm currently a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a clinical system for medical imaging analysis to support diagnosis and patient care.
 
 I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-My research interests lie in **medical research and healthcare**, with a particular focus on medical imaging and clinical applications. I'm interested in how computational tools can connect human expertise, data, and analysis to support diagnosis, discovery, and clinical decision-making.
+My research interests lie in **medical research and healthcare**, with a particular focus on medical imaging and clinical applications. I'm interested in how computational tools can connect human expertise, data, and analysis to support clinical diagnosis, improve patient outcomes, and assist medical decision-making.
 
 I hope to contribute to making healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 

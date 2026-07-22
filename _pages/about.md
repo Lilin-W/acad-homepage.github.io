@@ -19,21 +19,17 @@ redirect_from:
 
 # 👨‍💻 About Me
 
-Hi, I'm **Lilin Wang**, a second-year Master's student in Electrical Engineering at the **University of Pennsylvania**. I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**, advised by Prof. **Yonghui Wu**.
+Hi, I'm **Lilin Wang**. I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences** with a concentration in **Biomedical Informatics**, in the College of Medicine.
 
-I'm currently a Research Assistant at the **Perelman School of Medicine**, advised by Prof. [Zhi Huang](https://www.zhihuang.ai/) in the [Huang Lab](https://www.zhihuang.ai/lab-members). My current work centers on TissueLab [[website](https://www.tissuelab.org/)] [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)], a clinical system for medical imaging analysis to support diagnosis and patient care.
+I recently completed my M.S.E. in Electrical Engineering at the **University of Pennsylvania**, and I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
-
-My research interests lie in **medical research and healthcare**, with a particular focus on medical imaging and clinical applications. I'm interested in how computational tools can connect human expertise, data, and analysis to support clinical diagnosis, improve patient outcomes, and assist medical decision-making.
+My research focuses on making better use of the information in patients' electronic health records. Much of this information is written as free-text clinical notes that are difficult to search and analyze. My work aims to extract meaningful medical information from these records, so that clinicians and researchers can study diseases and recognize health risks earlier. I am also interested in the social and economic factors recorded in these notes, which may affect how early a patient receives care.
 
 I hope to contribute to making healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 
-
 # 🔥 News
-- *2026.04*: &nbsp;🎓 Excited to share that I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**, advised by Prof. **Yonghui Wu**!
+- *2026.04*: &nbsp;🎓 Excited to share that I will be joining the **University of Florida** in Fall 2026 as a Ph.D. student in **Medical Sciences**!
 - *2025.09*: &nbsp;📝 New paper on medical imaging analysis is now under review!
-- *2025.06*: &nbsp;🚀 Started working as a Research Assistant at the **Perelman School of Medicine, University of Pennsylvania**, contributing to the TissueLab project!
 - *2025.01*: &nbsp;🎉 Our paper has been accepted to **Findings of ACL 2025**!
 - *2024.10*: &nbsp;📄 Our paper accepted to **IEEE UIC 2024**!
 - *2024.09*: &nbsp;🎓 Started my Master's program in Electrical Engineering at the **University of Pennsylvania**! 
@@ -43,11 +39,11 @@ I hope to contribute to making healthcare more accessible, reliable, and human-c
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review 2025</div><a href="https://www.tissuelab.org/"><img src='images/Tissuelab.jpg' alt="TissueLab" style="max-width: 100%; max-height: 180px; object-fit: cover;"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-**A co-evolving agentic AI system for medical image analysis**
+**A Co-evolving Agentic AI System for Medical Imaging Analysis**
 
 Songhao Li, Jonathan Xu, Tiancheng Bao, Yuxuan Liu, Yuchen Liu, Yihang Liu, **Lilin Wang**, Wenhui Lei, Sheng Wang, Yinuo Xu, Yan Cui, Jialu Yao, Shunsuke Koga, Zhi Huang
 
-*Under review*, 2025
+*Preprint*, 2025
 
 [[Paper]](https://arxiv.org/abs/2509.20279) [[Website]](https://tissuelab.org/) [[![](https://img.shields.io/github/stars/zhihuanglab/TissueLab?style=social)](https://github.com/zhihuanglab/TissueLab)]
 
@@ -98,7 +94,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 📖 Education
 
-- 2026 - (incoming), **Ph.D. in Medical Sciences**, University of Florida
+- 2026 - (incoming), **Ph.D. in Medical Sciences (Biomedical Informatics)**, University of Florida
 
 - 2024 - 2026, **MSE in Electrical Engineering**, University of Pennsylvania
 
@@ -108,20 +104,28 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 🏆 Honors and Awards
 - *2023-2024* XJTLU Excellence Academic Award — **Top 5%**
-- *2021-2022* XJTLU Achievement Academic Award — **Top 10%** 
+- *2021-2022* XJTLU Achievement Academic Award — **Top 10%**
+
+# 🎓 Certifications
+- *2025.09* CITI Human Subjects Research
+- *2025.09* CITI Conflicts of Interest
 
 # 💻 Internships
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  
-  Reduced inquiry time through database optimization and created 10+ data visualization panels
+  Reduced inquiry time through database optimization and built 10+ data visualization dashboards
 
 - *2022.07 - 2022.09*, **Management Consulting Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
-  Engineered a logistics data platform to unify node information, structure interfaces, and enable real-time operational visibility.
+  Organized data fields and terminology for the project and built web prototypes with HTML and Axure
 
 - *2022.05 - 2022.07*, **Data Analyst Intern**, Suzhou Dayu Network Technology Co., LTD.  
-  Streamlined data collection for 200+ brands from TikTok, analyzing 1M+ data points
+  Analyzed brand and marketing data for 200+ brands on Douyin to support marketing decisions
 
 - *2021.07 - 2021.09*, **Data Analyst Intern**, PatSnap Co., LTD.  
-  Maintained and updated SQL databases supporting the 'Synapse' Drug Intelligence platform
+  Maintained an intellectual property database of patents, trademarks, and copyrights for multiple companies
+
+# 🤝 Extracurricular
+- *2021.03 - 2022.06*, **Supervisor, "Silent Cubicle" Initiative** (Enactus, XJTLU)  
+  Supervised a non-profit study room that created quiet study spaces and job opportunities for people with hearing impairments, donating profits to the Suzhou Disabled Persons Federation
 
 ---
 
@@ -139,20 +143,6 @@ I've also gotten into [**film photography**](/film/) lately. Still learning, but
 
 <div style="width: 100%; overflow-x: auto; padding: 10px 0; margin: 1em 0;">
   <div style="display: flex; gap: 20px; padding: 10px; min-width: min-content;">
-    
-    <!-- Testimonial Card 1: Prof. Zhi Huang -->
-    <div style="flex: 0 0 500px; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
-      <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="display: block; text-decoration: none; margin-bottom: 15px;">
-        <img src="/images/ZHI.jpg" alt="Recommendation from Prof. Zhi Huang" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      </a>
-      <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #e0e0e0;">
-        <p style="color: #333; font-weight: 600; margin: 0; font-size: 1em;">Prof. Zhi Huang</p>
-        <p style="color: #666; font-size: 0.9em; margin: 5px 0 10px 0;">Perelman School of Medicine, University of Pennsylvania</p>
-        <a href="https://www.linkedin.com/posts/zhi-huang-90b552a0_lilin-wang-is-on-2026-phd-market-the-future-activity-7388777850729979904-awrt" target="_blank" style="color: #0077b5; text-decoration: none; font-size: 0.9em;">
-          View full post →
-        </a>
-      </div>
-    </div>
 
     <!-- Coming Soon Card -->
     <div style="flex: 0 0 350px; background: #fafafa; border: 2px dashed #d0d0d0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; align-items: center; justify-content: center;">

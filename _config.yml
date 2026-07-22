@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Lilin Wang"
   avatar           : "images/avatar.jpg"
-  bio              : "Master's Student in EE at UPenn"
-  location         : "Philadelphia, PA"
+  bio              : "Incoming PhD Student in Medical Sciences at UF"
+  location         : "Gainesville, FL"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=F7g4ieMAAAAJ"
-  email            : "lilinw@seas.upenn.edu"
+  email            : "a13410519@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

@@ -23,7 +23,7 @@ Hi, I'm **Lilin Wang**. I will be joining the **University of Florida** in Fall 
 
 I recently completed my M.S.E. in Electrical Engineering at the **University of Pennsylvania**, and I received my B.Eng. in Data Science and Big Data Technology, jointly awarded by the University of Liverpool and Xi'an Jiaotong-Liverpool University.
 
-My research focuses on making better use of the information in patients' electronic health records. Much of this information is written as free-text clinical notes that are difficult to search and analyze. My work aims to extract meaningful medical information from these records, so that clinicians and researchers can study diseases and recognize health risks earlier. I am also interested in the social and economic factors recorded in these notes, which may affect how early a patient receives care.
+My research focuses on making better use of information in patients’ electronic health records. These records include doctors’ notes, test results, and medical histories collected during patient care. Much of this information appears in free-text clinical notes that are difficult to search and analyze. My work aims to identify meaningful medical information in these records so that clinicians and researchers can study diseases and recognize health risks earlier. I am also interested in social and economic factors documented in clinical notes that may affect how early a patient receives care.
 
 I hope to contribute to making healthcare more accessible, reliable, and human-centered. Always happy to connect and collaborate! 😊
 
@@ -112,7 +112,7 @@ Hongbin Na\*, **Lilin Wang**\*, Xinyao Zhuang, Jianfei He, Zhenyu Liu, Zimu Wang
 
 # 💻 Internships
 - *2023.01 - 2023.04*, **Data Analyst Intern**, ByteDance LTD.  
-  Reduced inquiry time through database optimization and built 10+ data visualization dashboards
+  Created database-query guidance that reduced inquiry time and built more than 10 data visualization dashboards.
 
 - *2022.07 - 2022.09*, **Management Consulting Intern**, Deloitte Consulting (Shanghai) Co., LTD.  
   Organized data fields and terminology for the project and built web prototypes with HTML and Axure

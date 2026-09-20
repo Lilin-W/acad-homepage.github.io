@@ -1,0 +1,48 @@
+<header class="site-header">
+  <a class="home-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">↖</span> LILIN'S CORNER</a>
+  <nav aria-label="Page navigation"><a href="#listening-room">The room</a><a href="#journal">The journal</a><a href="#cinema">Late-night TV</a></nav>
+  <span class="header-edition">A PERSONAL COLLECTION</span>
+</header>
+
+<main>
+  <section class="page-intro" aria-labelledby="page-title">
+    <p class="eyebrow">RECORDS, REVERIES & A LITTLE NOSTALGIA</p>
+    <h1 id="page-title">Lana <em>Del Rey</em><span class="intro-star" aria-hidden="true">✧</span></h1>
+    <div class="intro-bottom"><span class="fine-rule"></span><p>Somewhere between a love letter and a listening room.</p><span class="fine-rule"></span></div>
+  </section>
+
+  <section class="listening-room" id="listening-room" aria-label="Interactive vintage listening room">
+    <div class="room-frame">
+      <div class="room-heading"><div><span class="eyebrow">01 / THE LISTENING ROOM</span><p>Stay a little longer.</p></div><button class="light-switch" id="light-switch" type="button" aria-pressed="false"><span aria-hidden="true">☾</span> Evening light</button></div>
+      <div class="room-stage" id="room-stage" aria-label="A vintage room with records on the wall and a walnut turntable. Select a record with the buttons below.">
+        <a class="portrait-link" id="xiaoman-portrait-link" href="https://lilin-wang.com/xiaoman/">Visit Xiaoman — the cat in the oval portrait</a>
+        <div class="room-loading" id="room-loading"><span class="loading-record" aria-hidden="true"></span><p>Letting the light in…</p></div>
+        <div class="room-fallback" id="room-fallback" hidden><div class="fallback-disc"><span>LDR</span></div><p>Your little record collection</p><p>Choose a sleeve below to explore the music.</p></div>
+      </div>
+      <div class="room-caption"><p id="room-hint">Take a record from the wall. Make yourself at home.</p><button id="reset-view" type="button" aria-label="Reset room view">↺ Reset view</button></div>
+    </div>
+
+    <div class="record-console" id="record-controls" aria-label="Record player controls">
+      <div class="selected-record"><span class="status-lamp" id="status-lamp" aria-hidden="true"></span><div><p class="eyebrow" id="record-label">ON THE TURNTABLE</p><h2 id="record-title">Choose your first record</h2><p id="record-subtitle">A small ritual for a slow afternoon.</p></div></div>
+      <div class="transport"><button class="spin-button" id="spin-record" type="button" disabled><span aria-hidden="true">▷</span> Spin record</button><button class="eject-button" id="eject-record" type="button" disabled><span aria-hidden="true">↥</span> Put it back</button></div>
+      <div class="rpm-mark"><strong>33⅓</strong><span>RPM · STEREO</span></div>
+    </div>
+    <div class="record-note"><p class="record-status" id="record-status" role="status" aria-live="polite">Pick a song from the filmstrip. Let the afternoon linger.</p><a class="record-source-link" id="record-source-link" target="_blank" rel="noopener noreferrer" hidden>Open on YouTube ↗</a></div>
+    <div class="collection-heading"><p class="eyebrow">SONGS I KEEP COMING BACK TO</p><div class="film-navigation"><span>DRAG TO EXPLORE</span><button id="film-previous" type="button" aria-label="Previous songs" aria-controls="album-shelf">←</button><button id="film-next" type="button" aria-label="More songs" aria-controls="album-shelf">→</button></div></div>
+    <div class="album-shelf song-film" id="album-shelf" role="group" aria-label="Favorite songs, drag horizontally or use the arrow buttons"></div>
+    <noscript><p class="no-script">Enable JavaScript to choose a song. The original music links below are still here for you.</p></noscript>
+  </section>
+
+  <section class="journal" id="journal" aria-labelledby="journal-title">
+    <div class="journal-text"><p class="eyebrow">02 / NOTES IN THE MARGIN</p><h2 id="journal-title">For the days<br>that feel like <em>a song.</em></h2><p class="journal-lede">A little California dreaming.<br>A little beautiful melancholy.</p><p>I've always loved Lana's music and the worlds that live inside it. The faded colors, the slow afternoons, the feeling of remembering something you can't quite name.</p><p>These are a few records and moments I keep coming back to.</p><span class="signature">With love, L.</span></div>
+    <div class="journal-collage"><figure class="polaroid"><img src="{{ '/images/lana9.png' | relative_url }}" alt="A Lana Del Rey memory from the original collection" loading="lazy"><figcaption>summertime, somewhere.</figcaption></figure><div class="handwritten-note"><span>September, 2025</span><p>Watching chemtrails<br>fade into the twilight.<br>Finding the strength<br>to carry on in every melody.</p><span class="note-flower" aria-hidden="true">❋</span></div></div>
+  </section>
+
+  <section class="cinema" id="cinema" aria-labelledby="cinema-title">
+    <div class="section-title"><div><p class="eyebrow">03 / AFTER THE SUN GOES DOWN</p><h2 id="cinema-title">One more song, <em>before you go.</em></h2></div><span class="cinema-stamp" aria-hidden="true">LDR<br><small>HOME VIDEO</small></span></div>
+    <div class="cinema-layout"><div class="television"><div class="tv-body"><div class="tv-bezel"><div class="video-screen" id="video-screen"><div class="video-placeholder" id="video-placeholder"><span class="tv-channel">LDR · CH 01</span><span class="screen-monogram">Lana<br><em>Del Rey</em></span><button id="load-video" type="button"><span aria-hidden="true">▶</span> Watch & listen</button><span class="screen-footer">FISHTAIL / 2023</span></div></div></div><div class="tv-hardware" aria-hidden="true"><span class="tv-tuning">Ⅰ · Ⅲ · Ⅴ · Ⅶ</span><div class="tv-knob"></div><span>CHANNEL</span><div class="tv-knob small"></div><span>VOLUME</span><div class="tv-grille"></div><span class="tv-power"><i></i> HIGH FIDELITY</span></div><div class="tv-signature" aria-hidden="true"><em>LDR</em><span>EVENING COMPANION</span></div></div><div class="tv-feet" aria-hidden="true"></div><div class="tv-caption"><span id="video-title">Fishtail</span><a id="video-link" href="https://www.youtube.com/watch?v=cs8VlhUDna0" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a></div></div>
+    <div class="tape-library"><p class="eyebrow">THE LATE-NIGHT SELECTION</p><div id="tape-list"></div><p class="video-note">Pick a tape, then press play.<br>Videos play through YouTube or Bilibili.</p><noscript><p><a href="https://www.youtube.com/watch?v=cs8VlhUDna0">Fishtail</a> · <a href="https://www.youtube.com/watch?v=vBHild0PiTE">Chemtrails</a> · <a href="https://www.youtube.com/watch?v=vK1YiArMDfg">California</a> · <a href="https://www.youtube.com/watch?v=ZFWC4SiZBao">Ultraviolence</a> · <a href="https://www.youtube.com/watch?v=oPU8XJcA__k">Honeymoon</a> · <a href="https://www.youtube.com/watch?v=eP4eqhWc7sI">Lust for Life</a> · <a href="https://www.youtube.com/watch?v=xFv0wg_alGk">Lie Down with Me</a> · <a href="https://www.bilibili.com/video/BV1yG4y1W7AD/">TV in B&W</a> · <a href="https://www.youtube.com/watch?v=TdrL3QxjyVw">Summertime Sadness</a></p></noscript></div></div>
+  </section>
+</main>
+
+<footer class="site-footer"><a href="{{ '/' | relative_url }}">↖ Back to Lilin's world</a><p>Made of music & memories. <span>Est. 2025</span></p><a href="#page-title">Back to the beginning ↑</a></footer>

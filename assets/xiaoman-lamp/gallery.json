@@ -1,0 +1,31 @@
+{
+  "artworks": [
+    {
+      "id": "xiaoman-portrait-1",
+      "title": "Portrait I",
+      "description": "A little portrait of Xiaoman, made just for her.",
+      "src": "/images/xiaoman-portrait-1.png",
+      "alt": "A commissioned illustration of fluffy white Xiaoman sitting among warm golden doodles.",
+      "framed": false,
+      "background": "#faf5ea"
+    },
+    {
+      "id": "xiaoman-portrait-2",
+      "title": "Portrait II",
+      "description": "Little paws in the air, surrounded by sunshine yellow.",
+      "src": "/images/xiaoman-portrait-2.png",
+      "alt": "A commissioned illustration of Xiaoman lying on her back on a yellow cushion, with playful stars and toys.",
+      "framed": false,
+      "background": "#faf5ea"
+    },
+    {
+      "id": "xiaoman-portrait-4",
+      "title": "Portrait III",
+      "description": "Upside down on her favourite little yellow rug.",
+      "src": "/images/xiaoman-portrait-4.png",
+      "alt": "A commissioned illustration of Xiaoman upside down on a yellow fringed rug beside a little toy.",
+      "framed": false,
+      "background": "#faf5ea"
+    }
+  ]
+}

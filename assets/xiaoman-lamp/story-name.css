@@ -1,0 +1,109 @@
+.story-name {
+  position: relative;
+  margin: 0 0 100px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  scroll-margin-top: 45px;
+}
+.story-name::before { display: none; }
+.xiaoman-story [lang="zh-CN"] { font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif; font-weight: 400; }
+.story-section-heading { text-align: center; position: relative; margin-bottom: 40px; }
+.story-section-heading h2 { margin-bottom: 14px; }
+.story-section-heading > p:last-child:not(.story-eyebrow) { font-size: 14px; color: var(--story-muted); }
+.story-name .story-section-heading { margin-bottom: 35px; }
+.story-name .story-section-heading h2 { font-weight: 600; font-size: clamp(29px, 3vw, 40px); }
+.story-name-book {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+  filter: drop-shadow(0 18px 17px #9d77691a);
+}
+.story-name-book::before, .story-name-book::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  bottom: -5px;
+  width: calc(50% - 7px);
+  border: 1px solid #d8c7b566;
+  background: #eee5d8;
+  z-index: -1;
+}
+.story-name-book::before { left: 0; border-radius: 57px 9px 9px 20px; transform: rotate(-.5deg); }
+.story-name-book::after { right: 0; border-radius: 9px 57px 20px 9px; transform: rotate(.5deg); }
+.story-name-chapter {
+  --story-art-size: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  min-width: 0;
+  position: relative;
+  padding: 28px 0 30px;
+  background: linear-gradient(90deg, #fffaf2 0, #fffdf8 74%, #f4eade 100%);
+  border: 1px solid #d7c5ad99;
+  border-radius: 58px 9px 9px 20px;
+  text-align: center;
+}
+.story-name-chapter:last-child {
+  border-radius: 9px 58px 20px 9px;
+  background: linear-gradient(90deg, #f4eade 0, #fffdf8 26%, #fff7f1 100%);
+}
+.story-name-chapter::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid #d7bc952e;
+  border-radius: 49px 4px 4px 14px;
+  pointer-events: none;
+}
+.story-name-chapter:last-child::before { border-radius: 4px 49px 14px 4px; }
+.story-chapter-top { display: flex; align-items: center; gap: 12px; width: 80%; min-height: 30px; margin-bottom: 10px; color: #b39c89; font-size: 11px; }
+.story-chapter-top > span:first-child { font-size: 10px; letter-spacing: 1px; }
+.story-chapter-top > span:last-child { font-size: 19px; color: #ccb49b; }
+.story-chapter-top p { flex: 1; font-size: 9px; letter-spacing: 1.6px; text-transform: uppercase; margin: 0; }
+/* Equal illustration slots hold the names on one baseline, while the art itself drifts gently. */
+.story-name-illustration { display: grid; place-items: center; flex: none; width: 84%; height: calc(var(--story-art-size) + 8px); margin: 8px auto 30px; }
+.story-name-art.story-name-cat { display: block; width: var(--story-art-size); max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; margin: 0; }
+.story-name-chapter-lixia .story-name-art { transform: translateY(6px) scale(1.05); }
+.story-name-chapter-xiaoman .story-name-art { transform: translateY(-6px); }
+.story-name-heading { width: 88%; margin-bottom: 40px; }
+.story-name-chapter h3 { display: flex; align-items: baseline; justify-content: center; gap: 10px; font-size: 29px; font-weight: 600; line-height: 1.4; letter-spacing: -.7px; margin: 0; }
+.story-name-chapter h3 span { display: inline; margin: 0; vertical-align: baseline; font-weight: 400; }
+.story-name-chapter h3 [lang="zh-CN"] { font-size: .70em; letter-spacing: .1em; color: #b79789; }
+.story-name-chapter h3 .story-name-dot { font-size: .58em; letter-spacing: 0; color: #ceb6a5; align-self: center; }
+.story-name-heading .story-season-meaning { font-size: 12px; font-style: italic; font-weight: 500; line-height: 1.65; color: #a48c7e; letter-spacing: .1px; margin: 10px 0 0; }
+.story-chapter-copy { width: 74%; margin: 0 auto 32px; text-align: left; font-size: 14px; line-height: 1.95; }
+.story-chapter-copy p { margin: 0; }
+.story-chapter-copy p + p { margin-top: 20px; }
+.story-copy-break { display: none; }
+.story-page-number { position: relative; display: inline-block; align-self: center; margin-top: auto; padding-top: 15px; color: #b19b85; font-size: 10px; font-style: italic; letter-spacing: .8px; }
+.story-page-number::before { content: ''; position: absolute; top: 0; left: 50%; width: 74px; height: 1px; background: #cfbca545; transform: translateX(-50%); }
+.story-book-ribbon { position: absolute; top: 65%; bottom: -26px; left: calc(50% - 13px); width: 26px; background: linear-gradient(90deg, #d5aaa1, #ecd2c9 45%, #d2a198); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 11px), 0 100%); z-index: -1; }
+@media (min-width: 1280px) { .story-copy-break { display: initial; } }
+@media (max-width: 1050px) {
+  .story-name-chapter { --story-art-size: 210px; padding-top: 24px; padding-bottom: 27px; }
+  .story-chapter-top { gap: 7px; }
+  .story-chapter-top p { font-size: 8px; letter-spacing: 1.1px; }
+  .story-name-chapter h3 { font-size: 27px; }
+  .story-chapter-copy { font-size: 13px; }
+}
+@media (max-width: 760px) {
+  .story-name { margin-bottom: 65px; scroll-margin-top: 28px; }
+  .story-name .story-section-heading { margin-bottom: 27px; }
+  .story-name .story-section-heading h2 { font-size: 29px; max-width: 290px; margin-left: auto; margin-right: auto; }
+  .story-name-book { grid-template-columns: 1fr; max-width: 450px; margin: auto; gap: 21px; }
+  .story-name-book::before, .story-name-book::after { display: none; }
+  .story-name-chapter, .story-name-chapter:last-child { --story-art-size: 225px; border-radius: 38px 12px 20px 12px; padding: 25px 0 27px; background: linear-gradient(110deg, #fffdf8, #fff7ed); }
+  .story-name-chapter:last-child { background: linear-gradient(110deg, #fffdf8, #fcf0e9); }
+  .story-name-chapter::before, .story-name-chapter:last-child::before { border-radius: 30px 6px 13px 6px; }
+  .story-chapter-top { width: 82%; }
+  .story-chapter-top p { font-size: 8px; letter-spacing: 1.25px; }
+  .story-name-heading { margin-bottom: 34px; }
+  .story-name-chapter h3 { font-size: 28px; }
+  .story-chapter-copy { width: 80%; margin-bottom: 30px; }
+  .story-book-ribbon { top: 90%; bottom: -21px; left: calc(75% - 10px); width: 21px; }
+}

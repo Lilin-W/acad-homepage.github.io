@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-presentation="hero"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xiaoman · Little moments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=scallop-detail-1"><link rel="stylesheet" href="hero.css?v=quicksand-1">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+<script type="module" src="scene.js?v=homepage-quicksand-1"></script>
+</head><body>
+<main class="home-hero" aria-label="Xiaoman's memory carousel">
+<div class="hero-copy">
+ <p class="hero-wordmark">XIAOMAN <svg class="hero-paw" viewBox="0 0 44 44" aria-hidden="true"><ellipse cx="8" cy="18" rx="5" ry="7" transform="rotate(-24 8 18)"/><ellipse cx="18" cy="10" rx="5" ry="7"/><ellipse cx="29" cy="10" rx="5" ry="7"/><ellipse cx="38" cy="20" rx="5" ry="7" transform="rotate(22 38 20)"/><path d="M12 28C15 24 15 19 23 20C30 20 30 25 34 29C41 37 31 41 25 37C21 35 17 41 11 38C7 36 9 32 12 28Z"/></svg></p>
+ <h1><span>Round and round,</span><span>the memories stay.<svg class="hero-heart" viewBox="0 0 30 40" aria-hidden="true"><path d="M14 35C10 24 0 13 7 8C13 3 16 15 16 18C24 3 30 14 25 20C21 25 16 30 14 35Z"/></svg></span></h1>
+ <div class="hero-dedication">
+  <p class="hero-intro">Little moments with Xiaoman</p>
+  <p class="hero-quote"><span><span>The one who keeps</span><span>my world gentle</span></span></p>
+ </div>
+ <span class="hero-rule"></span><p class="hero-hint"><svg viewBox="0 0 20 30" aria-hidden="true"><rect x="2" y="1" width="16" height="28" rx="8"/><path d="M2 12H18"/><path class="mouse-wheel" d="M10 4v4"/></svg>drag to rotate · click a photo</p>
+</div>
+<button id="lighting" class="hero-light" aria-pressed="false">☾ Night</button>
+<div class="hero-stage-wrap">
+ <div id="stage" aria-label="3D memory carousel. Drag to rotate and click a photo to enlarge." tabindex="0"><p id="loading">Lighting up Xiaoman's memories…</p></div>
+ <div class="hero-controls" aria-label="Carousel controls">
+  <button id="rotation" aria-pressed="true">Ⅱ Pause</button><button id="wind" aria-pressed="false">〰 Breeze</button><span class="control-divider"></span>
+  <button id="zoom-in" class="zoom-button" aria-label="Zoom in">＋</button><button id="zoom-out" class="zoom-button" aria-label="Zoom out">−</button><button id="reset-view" aria-label="Reset view">↺</button>
+  <a class="hero-open" href="index.html" target="_top" aria-label="Open full carousel" title="Open full carousel">⤢</a>
+ </div>
+</div>
+<button class="hero-explore" id="explore">MORE ABOUT XIAOMAN <span aria-hidden="true">↓</span></button>
+<p id="status" role="status" aria-live="polite"></p>
+<div class="hero-hidden" aria-hidden="true"><button id="upload">挂上照片</button><input id="files" type="file" accept="image/jpeg,image/png,image/webp"><div id="photo-list"></div></div>
+</main>
+<dialog id="viewer" aria-labelledby="photo-title"><button id="close" aria-label="Close photo">×</button><img id="full-photo" alt=""><h2 id="photo-title"></h2><button id="swap-photo">交换位置</button><button id="edit-photo">调整 / 更换</button><button id="remove" hidden>取下这张照片</button></dialog>
+<dialog id="slots" aria-labelledby="slots-title"><button class="dialog-close" data-close="slots" aria-label="关闭位置选择">×</button><h2 id="slots-title">给照片选个位置</h2><p>16 个位置，把喜欢的瞬间挂起来。</p><div id="slot-grid"></div></dialog>
+<dialog id="editor" aria-labelledby="editor-title"><button class="dialog-close" data-close="editor" aria-label="关闭照片编辑">×</button><h2 id="editor-title">挂上照片</h2><div class="editor-layout"><canvas id="crop-preview" width="464" height="584" aria-label="照片裁剪预览"></canvas><div class="editor-controls"><button id="choose-file">选择一张照片</button><p>JPG、PNG、WebP · 最大 20 MB</p><label>照片下方文字<input id="caption" type="text" maxlength="32" placeholder="给这一刻写几个字"></label><label>放大画面<input id="crop-zoom" type="range" min="1" max="3" step="0.01" value="1"></label><label>左右位置<input id="crop-x" type="range" min="0" max="1" step="0.01" value="0.5"></label><label>上下位置<input id="crop-y" type="range" min="0" max="1" step="0.01" value="0.5"></label><button id="reset-crop">↺ 重置裁剪</button></div></div><p id="editor-status" role="status"></p><button id="save-photo" class="primary" disabled>确认挂上</button></dialog>
+
+<script>
+document.getElementById('explore').addEventListener('click',()=>{
+ if(parent!==window)parent.postMessage({type:'xiaoman:explore'},location.origin);
+ else location.href='../../xiaoman/#xiaoman-story';
+});
+</script></body></html>

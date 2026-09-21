@@ -1,0 +1,18 @@
+/* A slightly upright interior composition, inspired by a tall window-seat room. */
+.gallery-room-section{max-width:900px;margin-left:auto;margin-right:auto}
+.gallery-room-heading{align-items:center}
+.gallery-room-stage{height:auto;aspect-ratio:10/11;background:#e9decb}
+.gallery-room-shell{border-color:#d6c2a5;border-radius:5px;background:#f7f0e6}
+.gallery-room-wallviews{background:#f2e9db}
+.gallery-room-topline{background:#fbf6ed}
+.gallery-room-toolbar{align-items:flex-start;gap:18px}
+.gallery-room-caption{max-width:490px}
+.gallery-room-controls{gap:6px}
+#gallery-room-reset{margin-left:3px}
+@media(max-width:760px){
+ .gallery-room-stage{height:auto;aspect-ratio:4/5}
+ .gallery-room-wallviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:9px 22px;gap:3px 9px}
+ .gallery-room-wallviews button{justify-content:center;min-height:34px;font-size:10px}
+ .gallery-room-toolbar{align-items:center}
+ .gallery-room-caption{max-width:100%}
+}

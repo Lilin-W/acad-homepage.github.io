@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5eee5">
+    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      html { margin: 0; overflow-x: clip; }
+      body { margin: 0; font-size: 16px; line-height: 1.6; }
+      img { max-width: 100%; }
+      button, input { font: inherit; }
+      .xiaoman-hero { position: relative; width: 100%; height: 100vh; height: 100svh; min-height: 640px; background: #f5eee5; }
+      .xiaoman-hero-frame { display: block; width: 100%; height: 100%; border: 0; }
+      .xiaoman-skip { position: fixed; z-index: 100; top: 12px; left: 12px; padding: 10px 18px; border-radius: 8px; background: #fffaf5; color: #6c5147; transform: translateY(-180%); }
+      .xiaoman-skip:focus { transform: translateY(0); outline: 2px solid #b18073; outline-offset: 3px; }
+      .xiaoman-story { padding: clamp(45px, 7vw, 100px) 0 30px; scroll-margin-top: 20px; background: linear-gradient(#fffdf9, #fffdf900 200px); }
+      .xiaoman-back { display: block; width: fit-content; margin: 0 auto 50px; padding: 10px 18px; color: #967769; border-bottom: 1px solid #dfc7ba; font-size: 14px; letter-spacing: .04em; }
+      .xiaoman-back:focus-visible { outline: 2px solid #b18073; outline-offset: 5px; }
+      @media (max-width: 760px) { .xiaoman-hero { min-height: 840px; } }
+    </style>
+  </head>
+  <body>
+    <a class="xiaoman-skip" href="#xiaoman-story">Skip to Xiaoman's story</a>
+    <main id="xiaoman-top">
+      {{ content }}
+    </main>
+    <script>
+      (() => {
+        const frame = document.getElementById('xiaoman-hero-frame');
+        const story = document.getElementById('xiaoman-story');
+        if (!frame || !story) return;
+        const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let pendingScroll = 0;
+        let scrollFrame = 0;
+        const explore = () => story.scrollIntoView({ behavior: motionPreference.matches ? 'auto' : 'smooth', block: 'start' });
+        window.addEventListener('message', (event) => {
+          if (event.origin !== window.location.origin || event.source !== frame.contentWindow) return;
+          const message = event.data;
+          if (!message || typeof message !== 'object') return;
+          if (message.type === 'xiaoman:explore') {
+            explore();
+          } else if (message.type === 'xiaoman:scroll' && Number.isFinite(message.deltaY)) {
+            pendingScroll += Math.max(-1200, Math.min(1200, message.deltaY));
+            if (scrollFrame) return;
+            scrollFrame = window.requestAnimationFrame(() => {
+              window.scrollBy({ top: pendingScroll, behavior: 'auto' });
+              pendingScroll = 0;
+              scrollFrame = 0;
+            });
+          }
+        });
+        document.querySelector('.xiaoman-back')?.addEventListener('click', (event) => {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: motionPreference.matches ? 'auto' : 'smooth' });
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "slot": 0,
+      "title": "小满的正式肖像",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/0563a873fe3d0cf9ca4db80f.jpg"
+    },
+    {
+      "slot": 1,
+      "title": "键盘上的监督员",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/f4c010cbdd07c08252be2f12.jpg"
+    },
+    {
+      "slot": 2,
+      "title": "送你一个 wink",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/9669d069167c663e9cd3ef00.jpg"
+    },
+    {
+      "slot": 3,
+      "title": "有自己的小主意",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/eef3fa3306ff4da04d692052.jpg"
+    },
+    {
+      "slot": 4,
+      "title": "今天也很可爱",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/8b85a8698f8700e10cb43602.jpg"
+    },
+    {
+      "slot": 5,
+      "title": "腾空的小小瞬间",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/455bdfd30d60e5c4cd5871cd.jpg"
+    },
+    {
+      "slot": 6,
+      "title": "xiaoman-portrait-1",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": "../../images/xiaoman-memories/e9c88d7686e8635cdee3379c.jpg"
+    },
+    {
+      "slot": 7,
+      "title": "第 8 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 8,
+      "title": "第 9 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 9,
+      "title": "第 10 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 10,
+      "title": "第 11 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 11,
+      "title": "第 12 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 12,
+      "title": "第 13 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 13,
+      "title": "第 14 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 14,
+      "title": "第 15 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    },
+    {
+      "slot": 15,
+      "title": "第 16 个位置",
+      "crop": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "src": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+.gallery-room-section{margin:0 0 110px;scroll-margin-top:35px}
+.story-nav{flex-wrap:wrap;row-gap:0}
+.gallery-room-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:26px;padding:0 5px}
+.gallery-room-heading .story-eyebrow{font-size:9px;letter-spacing:2.5px;margin-bottom:12px}
+.xiaoman-story .gallery-room-heading h2{font-size:clamp(28px,3vw,38px);font-weight:600;letter-spacing:-.8px;margin:0}
+.gallery-room-heading>p{font-size:13px;line-height:1.8;color:var(--story-muted);margin:0 0 1px}
+.gallery-room-shell{background:#faf5ee;border:1px solid #d9c3ae9c;border-radius:5px;overflow:hidden;box-shadow:0 16px 40px -29px #8e756640}
+.gallery-room-topline{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:19px 24px;color:#9d8071;background:#faf5ee;border-bottom:1px solid #ddcbb84a}
+.gallery-room-topline>span:first-child{font-size:9px;letter-spacing:2px}
+.gallery-room-topline>span:last-child{font-size:12px;color:#aa8c79}
+.gallery-room-wallviews{display:flex;justify-content:center;gap:9px;padding:12px 15px;background:#f5ede3;border-bottom:1px solid #ddcbb84a}
+.gallery-room-wallviews button{display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:20px;padding:7px 14px;font:500 11px 'Quicksand',sans-serif;color:#977965;background:transparent;cursor:pointer}
+.gallery-room-wallviews button span{font-size:9px;color:#b49b87}
+.gallery-room-wallviews button:hover,.gallery-room-wallviews button[aria-pressed=true]{border-color:#d6bda38f;background:#fffbf5;color:#785e4d}
+.gallery-room-stage{position:relative;height:clamp(450px,57vw,690px);width:100%;background:#eee5d9;overflow:hidden;touch-action:pan-y}
+.gallery-room-stage canvas{display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+.gallery-room-stage canvas:active{cursor:grabbing}
+#gallery-room-status{position:absolute;z-index:2;inset:45% 15% auto;text-align:center;color:#917967;font-size:13px;line-height:1.7;pointer-events:none;background:#faf5eed9;padding:15px;border-radius:8px}
+#gallery-room-status[hidden]{display:none}
+.gallery-room-hint{position:absolute;bottom:16px;left:20px;font-size:10px;letter-spacing:.45px;color:#816c5c;pointer-events:none;padding:8px 12px;border-radius:20px;background:#fffaf1b3;backdrop-filter:blur(5px)}
+.gallery-room-toolbar{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:21px 24px 22px;border-top:1px solid #dbc6ae52}
+.gallery-room-caption{min-width:0}
+.gallery-room-caption h3{font-size:16px;line-height:1.5;font-weight:600;margin:0 0 5px}
+.gallery-room-caption p{font-size:11px;line-height:1.8;color:#a08675;margin:0}
+.gallery-room-controls{display:flex;gap:9px;align-items:center;flex:none}
+.gallery-room-controls button{height:34px;min-width:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d6bd9f88;border-radius:50%;background:#fffaf2;color:#9a7962;padding:0;font:500 17px 'Quicksand',sans-serif;cursor:pointer;transition:background .2s}
+.gallery-room-controls button:hover{background:#f2e5d7}
+.gallery-room-controls button:disabled{opacity:.45;cursor:default}
+#gallery-room-reset{margin-left:8px;border-radius:20px;padding:0 13px;font-size:11px;gap:4px}
+#gallery-room-count{font-size:10px;letter-spacing:1px;min-width:49px;text-align:center;color:#a08675}
+.gallery-room-choices{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:19px}
+.gallery-room-choices button{font:500 11px/1.5 'Quicksand',sans-serif;letter-spacing:.25px;color:#9b7d6b;background:transparent;border:1px solid transparent;border-radius:20px;padding:8px 14px;cursor:pointer;transition:background .2s,border-color .2s}
+.gallery-room-choices button:hover,.gallery-room-choices button[aria-pressed=true]{background:#fff9f0;border-color:#d7c0a481}
+.gallery-room-choices button{width:35px;height:35px;padding:0;border:1px solid #d7c0a466;border-radius:8px;font-size:11px;display:grid;place-items:center}
+.gallery-room-choices button.has-artwork{background:#f4e0d7;border-color:#d5b5a3}
+.gallery-room-choices button.is-reserved{border-style:dashed;color:#ae9482}
+.gallery-room-choices button[aria-pressed=true]{outline:1px solid #b88f73;outline-offset:3px}
+.gallery-room-note{text-align:center;font-size:9px;letter-spacing:1.2px;color:#b19887;margin:13px 0 0}
+@media(max-width:760px){.gallery-room-section{margin-bottom:76px}.gallery-room-heading{display:block;text-align:center;margin-bottom:23px}.gallery-room-heading>p{margin-top:15px;font-size:12px}.gallery-room-topline{padding:15px;gap:10px}.gallery-room-topline>span:first-child{font-size:8px;letter-spacing:1.1px}.gallery-room-topline>span:last-child{font-size:10px}.gallery-room-stage{height:440px}.gallery-room-toolbar{flex-direction:column;text-align:center;padding:18px 15px;gap:16px}.gallery-room-caption h3{font-size:15px}.gallery-room-caption p{font-size:11px}.gallery-room-hint{bottom:12px;left:12px;font-size:9px}.gallery-room-choices{gap:3px;margin-top:13px}.gallery-room-choices button{font-size:10px;padding:8px 10px}}
+@media(prefers-reduced-motion:reduce){.gallery-room-section *{transition:none!important}}
+@media(max-width:760px){.gallery-room-stage{height:auto;aspect-ratio:1.4}}
+@media(max-width:760px){.gallery-room-wallviews{gap:2px;padding:10px 4px}.gallery-room-wallviews button{font-size:10px;gap:4px;padding:7px 8px;min-height:36px}.gallery-room-wallviews button span{font-size:8px}.gallery-room-choices{gap:7px;max-width:210px;margin-left:auto;margin-right:auto}.gallery-room-choices button{width:34px;height:34px;padding:0}}
+
+.gallery-room-artviews{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin-top:24px}
+.gallery-room-artviews>span{font-size:10px;color:#a08675;margin-right:10px}
+.gallery-room-artviews button{font:500 10px 'Quicksand',sans-serif;color:#977965;border:1px solid #d6bda366;background:#faf5ee;border-radius:20px;padding:7px 12px;cursor:pointer}
+.gallery-room-artviews button[aria-pressed=true]{background:#f2e0d4;border-color:#c3a18b;color:#785e4d}
+@media(max-width:760px){.gallery-room-artviews>span{flex-basis:100%;text-align:center;margin:0 0 3px}.gallery-room-wallviews button{font-size:10px}}
